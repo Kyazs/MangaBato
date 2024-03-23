@@ -1,2 +1,2 @@
 # MangaBato
-A manga reader and publishing website
+MangaBato is a publishing/reading website where if you’re a manga enthusiast and want to read bunch of mangas or a manga author that want to share your work to the world this website is perfect for you.
