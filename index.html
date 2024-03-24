@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MANGABATO</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <script src="/js/navbar.js"></script>
+
 </head>
-<body>
-        
-    
+
+<body id="home">
+<!-- NAVBAR -->
+    <nav >
+        <ul class="sidebar">
+            <li onclick=closeSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960"
+                    width="26" fill="red">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg></li>
+            <li><a href="#home">
+                    <img class="logo" src="img/logo_mangabato.png" alt="logo" width="50px">MANGABATO</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Publish</a></li>
+            <li><a href="#">Logout</a></li>
+            <li><a href="#">Aboutus</a></li>
+        </ul>
+
+        <ul class="nav_link">
+            <li class="logo"><a href="#home">
+                    <img src="img/logo_mangabato.png" alt="logo" width="50px">MANGABATO</a></li>
+            <li><a href="#">Search</a></li>
+            <li><a href="#">LOGIN</a></li>
+            <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="34"
+                        viewBox="0 -960 960 960" width="34" fill="black">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+        </ul>
+
+    </nav>
+<!-- header -->
+
+</div>
+
 </body>
+
 </html>
