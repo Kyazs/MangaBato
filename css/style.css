@@ -1,5 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Oswald", "Raleway", sans-serif;
+    background-color: #2B2A2F;
+    background-image: url(/img/logo_mangabato.png);
+    min-height: auto;
+}
+
+.main_container {
+    display: grid;
+    min-height: 100vh;
+    margin: 20px 80px;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 300px 100%;
+    font-family: "Raleway", sans-serif;
 }

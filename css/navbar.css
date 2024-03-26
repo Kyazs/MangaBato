@@ -1,16 +1,10 @@
-/* header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 10%;
-    background-color: #A072EF;
-} */
 
 nav {
     background-color: #A072EF;
     box-shadow: 3px 3px 5px rgba(255, 255, 255, 0);
     font-family: "Oswald", sans-serif;
     font-weight: 500px;
+    font-size: 1.50rem;
 }
 
 nav ul {
@@ -19,10 +13,11 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 40px;
 }
 
 nav li {
-    height: 50px;
+    height: 80px;
 }
 
 nav a {
@@ -34,14 +29,22 @@ nav a {
     color: white;
 }
 .logo {
-    font-size: 25px;
+    font-size: 2.25rem;
     letter-spacing: 2px;
     font-weight: 700px;
 }
+.logo img {
+    width: 70px;
+}
 
-nav a:hover {
+nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.188);
 }
+
+.nav_link ul li .link:hover {
+    background-color:rgba(255, 255, 255, 0.188) ;
+}
+
 .nav_link li:first-child {
     margin-right: auto;
 }
@@ -51,7 +54,7 @@ nav a:hover {
     top: 0;
     right: 0;
     height: 100vh;
-    width: 250px;
+    width: 300px;
     z-index: 999;
     background-color: #a072ef22;
     backdrop-filter: blur(10px);
@@ -61,6 +64,7 @@ nav a:hover {
     align-items: flex-start;
     justify-content: flex-start;
     padding-left: 0;
+    padding-right: 0;
 }
 
 .sidebar li {
