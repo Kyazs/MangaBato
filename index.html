@@ -5,21 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MANGABATO</title>
+    <!-- link for the star icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="/css/header.css">
-    <script src="/js/navbar.js"></script>
+    <link rel="stylesheet" href="/css/maincontent.css">
+    <!-- <script src="/js/navbar.js"></script> -->
     <link rel="icon" href="/img/logo_mangabato.png" type="image/-icon">
 
 </head>
 
 <body id="home">
     <!-- NAVBAR -->
+
     <nav>
         <ul class="sidebar">
-            <li class="close" onclick=closeSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960"
-                    width="26" fill="red">
+            <li class="close" onclick=closeSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="26"
+                    viewBox="0 -960 960 960" width="26" fill="red">
                     <path
                         d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
                 </svg></li>
@@ -45,81 +51,362 @@
     </nav>
 
     <div class="main_container">
-
-        <!-- TRENDING MANGA -->
-        <header class="trending">
-            <div class="box">
-                <a href="#"><img src="/img/books/berserk.jpg" alt="Berserk">
-                    <p>BERSERK</p>
-                </a>
-            </div>
-            <div class="box">
-                <a href="#"><img src="/img/books/berserk.jpg" alt="Berserk">
-                    <p>BERSERK</p>
-                </a>
-            </div>
-            <div class="box">
-                <a href="#"><img src="/img/books/berserk.jpg" alt="Berserk">
-                    <p>BERSERK</p>
-                </a>
-            </div>
-            <div class="box"><a href="#"><img src="/img/books/berserk.jpg" alt="Berserk">
-                    <p>BERSERK</p>
-                </a></div>
-            <div class="box"><a href="#"><img src="/img/books/berserk.jpg" alt="Berserk">
-                    <p>BERSERK</p>
-                </a></div>
-            <div class="box"><a href="#"><img src="/img/books/berserk.jpg" alt="Berserk">
-                    <p>BERSERK</p>
-                </a></div>
-            <div class="box"><a href="#"><img src="/img/books/berserk.jpg" alt="Berserk">
-                    <p>BERSERK</p>
-                </a></div>
-            <div class="box"><a href="#"><img src="/img/books/berserk.jpg" alt="Berserk">
-                    <p>BERSERK</p>
-                </a></div>
-            <div class="box"><a href="#"><img src="/img/books/berserk.jpg" alt="Berserk">
-                    <p>BERSERK</p>
-                </a></div>
-            <div class="box"><a href="#"><img src="/img/books/berserk.jpg" alt="Berserk">
-                    <p>BERSERK</p>
-                </a></div>
-        </header>
-        <!-- LATEST MANGA -->
-        <article class="latest_manga">
-            <div class="topbar">
-                <h2>Latest Manga</h2>
-                <a href="#">View All</a>
-            </div>
-            <div class="latest_manga_content">
-                <div class="latest_box">
-                    <a href="/img/books/berserk.jpg"><img src="/img/books/berserk.jpg" alt=""></a>
-                    <a class="latest_content_title" href="#">BERSERK</a>
-                    <ul>
-                        <li>
-                            <a href="#">Chapter 1</a>
-                        </li>
-                    </ul>
+        <div class="featured">
+            <!-- TRENDING MANGA -->
+            <header class="trending">
+                <div class="box">
+                    <a href="#"><img src="/img/books/berserk.jpg" alt="Berserk">
+                        <p>BERSERK</p>
+                    </a>
                 </div>
-                <div class="latest_box"></div>
-                <div class="latest_box"></div>
-                <div class="latest_box"></div>
-                <div class="latest_box"></div>
-                <div class="latest_box"></div>
-                <div class="latest_box"></div>
-                <div class="latest_box"></div>
-                <div class="latest_box"></div>
-                <div class="latest_box"></div>
+                <div class="box">
+                    <a href="#"><img src="/img/books/berserk.jpg" alt="Berserk">
+                        <p>BERSERK</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="#"><img src="/img/books/berserk.jpg" alt="Berserk">
+                        <p>BERSERK</p>
+                    </a>
+                </div>
+                <div class="box"><a href="#"><img src="/img/books/berserk.jpg" alt="Berserk">
+                        <p>BERSERK</p>
+                    </a></div>
+                <div class="box"><a href="#"><img src="/img/books/berserk.jpg" alt="Berserk">
+                        <p>BERSERK</p>
+                    </a></div>
+                <div class="box"><a href="#"><img src="/img/books/berserk.jpg" alt="Berserk">
+                        <p>BERSERK</p>
+                    </a></div>
+                <div class="box"><a href="#"><img src="/img/books/berserk.jpg" alt="Berserk">
+                        <p>BERSERK</p>
+                    </a></div>
+                <div class="box"><a href="#"><img src="/img/books/berserk.jpg" alt="Berserk">
+                        <p>BERSERK</p>
+                    </a></div>
+                <div class="box"><a href="#"><img src="/img/books/berserk.jpg" alt="Berserk">
+                        <p>BERSERK</p>
+                    </a></div>
+                <div class="box"><a href="#"><img src="/img/books/berserk.jpg" alt="Berserk">
+                        <p>BERSERK</p>
+                    </a></div>
+            </header>
+            <!-- LATEST MANGA -->
+            <article class="latest_manga">
+                <div class="topbar">
+                    <h2>Latest Manga</h2>
+                    <a href="#">View All</a>
+                </div>
+                <div class="latest_manga_content">
+                    <div class="latest_box">
+                        <a href="/img/books/berserk.jpg"><img src="/img/books/berserk.jpg" alt=""></a>
+                        <div class="title-chapter">
+                            <a class="latest_content_title" href="#">BERSERK</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Chapter 3</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chapter 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chapter 1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="latest_box">
+                        <a href="/img/books/berserk.jpg"><img src="/img/books/berserk.jpg" alt=""></a>
+                        <div class="title-chapter">
+                            <a class="latest_content_title" href="#">BERSERK</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Chapter 3</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chapter 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chapter 1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="latest_box">
+                        <a href="/img/books/berserk.jpg"><img src="/img/books/berserk.jpg" alt=""></a>
+                        <div class="title-chapter">
+                            <a class="latest_content_title" href="#">BERSERK</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Chapter 3</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chapter 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chapter 1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="latest_box">
+                        <a href="/img/books/berserk.jpg"><img src="/img/books/berserk.jpg" alt=""></a>
+                        <div class="title-chapter">
+                            <a class="latest_content_title" href="#">BERSERK</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Chapter 3</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chapter 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chapter 1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="latest_box">
+                        <a href="/img/books/berserk.jpg"><img src="/img/books/berserk.jpg" alt=""></a>
+                        <div class="title-chapter">
+                            <a class="latest_content_title" href="#">BERSERK</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Chapter 3</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chapter 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chapter 1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="latest_box">
+                        <a href="/img/books/berserk.jpg"><img src="/img/books/berserk.jpg" alt=""></a>
+                        <div class="title-chapter">
+                            <a class="latest_content_title" href="#">BERSERK</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Chapter 3</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chapter 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chapter 1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="latest_box">
+                        <a href="/img/books/berserk.jpg"><img src="/img/books/berserk.jpg" alt=""></a>
+                        <div class="title-chapter">
+                            <a class="latest_content_title" href="#">BERSERK</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Chapter 3</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chapter 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chapter 1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="latest_box">
+                        <a href="/img/books/berserk.jpg"><img src="/img/books/berserk.jpg" alt=""></a>
+                        <div class="title-chapter">
+                            <a class="latest_content_title" href="#">BERSERK</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Chapter 3</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chapter 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chapter 1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="latest_box">
+                        <a href="/img/books/berserk.jpg"><img src="/img/books/berserk.jpg" alt=""></a>
+                        <div class="title-chapter">
+                            <a class="latest_content_title" href="#">BERSERK kjsadnjasndajksdkjasndkasjdknasdnasdnaskj
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="#">Chapter 3</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chapter 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chapter 1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="latest_box">
+                        <a href="/img/books/berserk.jpg"><img src="/img/books/berserk.jpg" alt=""></a>
+                        <div class="title-chapter">
+                            <a class="latest_content_title" href="#">BERSERK</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Chapter 3</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chapter 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chapter 1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+        </div>
+
+        <!-- RANKING OF MANGA -->
+        <aside class="ranking">
+            <!-- topbar -->
+            <div class="rtopbar">
+                <h2>Ranking</h2>
             </div>
-        </article>
-                <!-- RANKING OF MANGA -->
-                <aside class="ranking">
-                    <div class="rank_box"></div>
-                    <div class="rank_box"></div>
-                    <div class="rank_box"></div>
-                    <div class="rank_box"></div>
-                    <div class="rank_box"></div>
-                </aside>
+            <!--👌 CARDS -->
+            <div class="rank_box">
+                <div class="rank_image"><a href="/img/books/berserk.jpg "><img src="/img/books/berserk.jpg" alt=""></a>
+                </div>
+                <div class="chapter_contents">
+                    <a class="Tfont" class="title" href="">BERSERK</a>
+                    <ul>
+                        <!--  GENRES-->
+                        <li>Genre:</li>
+                        <li>action, </li>
+                        <li>romance, </li>
+                        <li>ecchi, </li>
+                        <li>Adventure</li>
+                        <li>Adventure</li>
+                        <li>Adventure</li>
+                    </ul>
+                    <div class="star-rating">
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">star_half</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="rank_box">
+                <div class="rank_image"><a href="/img/books/berserk.jpg "><img src="/img/books/berserk.jpg" alt=""></a>
+                </div>
+                <div class="chapter_contents">
+                    <a class="Tfont" class="title" href="">BERSERK</a>
+                    <ul>
+                        <!--  GENRES-->
+                        <li>Genre:</li>
+                        <li>action, </li>
+                        <li>romance, </li>
+                        <li>ecchi, </li>
+                        <li>Adventure</li>
+                        <li>Adventure</li>
+                        <li>Adventure</li>
+                    </ul>
+                    <div class="star-rating">
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">star_half</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="rank_box">
+                <div class="rank_image"><a href="/img/books/berserk.jpg "><img src="/img/books/berserk.jpg" alt=""></a>
+                </div>
+                <div class="chapter_contents">
+                    <a class="Tfont" class="title" href="">BERSERK</a>
+                    <ul>
+                        <!--  GENRES-->
+                        <li>Genre:</li>
+                        <li>action, </li>
+                        <li>romance, </li>
+                        <li>ecchi, </li>
+                        <li>Adventure</li>
+                        <li>Adventure</li>
+                        <li>Adventure</li>
+                    </ul>
+                    <div class="star-rating">
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">star_half</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="rank_box">
+                <div class="rank_image"><a href="/img/books/berserk.jpg "><img src="/img/books/berserk.jpg" alt=""></a>
+                </div>
+                <div class="chapter_contents">
+                    <a class="Tfont" class="title" href="">BERSERK</a>
+                    <ul>
+                        <!--  GENRES-->
+                        <li>Genre:</li>
+                        <li>action, </li>
+                        <li>romance, </li>
+                        <li>ecchi, </li>
+                        <li>Adventure</li>
+                        <li>Adventure</li>
+                        <li>Adventure</li>
+                    </ul>
+                    <div class="star-rating">
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">star_half</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="rank_box">
+                <div class="rank_image"><a href="/img/books/berserk.jpg "><img src="/img/books/berserk.jpg" alt=""></a>
+                </div>
+                <div class="chapter_contents">
+                    <a class="Tfont" class="title" href="">BERSERK</a>
+                    <ul>
+                        <!--  GENRES-->
+                        <li>Genre:</li>
+                        <li>action, </li>
+                        <li>romance, </li>
+                        <li>ecchi, </li>
+                        <li>Adventure</li>
+                        <li>Adventure</li>
+                        <li>Adventure</li>
+                    </ul>
+                    <div class="star-rating">
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">star_half</span>
+                    </div>
+
+                </div>
+            </div>
+        </aside>
     </div>
 
     <footer>
@@ -132,6 +419,7 @@
         </ul>
 
     </footer>
+    <script src="/js/navbar.js"></script>
 </body>
 
 </html>
