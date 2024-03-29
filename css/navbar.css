@@ -1,0 +1,164 @@
+nav {
+    background-color: var(--main-head-color);
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0);
+    font-family: "Oswald", sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.nav_link ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.nav_link a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+
+.nav_link .logo {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 700px;
+}
+
+.nav_link .logo img {
+    width: 50px;
+}
+
+/* effect for the button ♦️*/
+
+.nav_link ul li a button {
+    font-size: 16px;
+    position: relative;
+    margin: auto;
+    padding: 5px 10px 5px 10px;
+    border: none;
+    background-color: #fff;
+    transition: all 0.1s linear;
+    box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+}
+
+.nav_link ul li a button:active {
+    transform: scale(0.95);
+}
+
+.nav_link ul li a button span {
+    color: black;
+}
+
+.nav_link ul li a button .border {
+    position: absolute;
+    transition: all 0.3s 0.08s linear;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.nav_link ul li a button:hover .border {
+    display: block;
+    width: 115%;
+    height: 120%;
+    border: 0.15em solid #0F0F0F;
+}
+
+.nav_link ul li a button:hover {
+    background-color: rgba(255, 255, 255, .3);
+
+}
+
+.nav_link ul li a button .menu {
+    font-weight: bold;
+}
+
+.nav_link ul li a .full-rounded {
+    border-radius: 10px
+}
+
+/* to move the logo to the far left */
+.nav_link li:first-child {
+    margin-right: auto;
+}
+
+/* css code for the side bar 🆘🆘 */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    z-index: 999;
+    background-color: #a072ef22;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.sidebar ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+
+}
+
+.sidebar li {
+    height: 50px;
+}
+
+.sidebar a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.sidebar img {
+    width: 50px;
+
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar ul li a:hover {
+    background-color: #ffffff31;
+}
+
+.sidebar ul li button {
+    border-radius: 10px;
+    margin: 10px;
+    background-color: var(--main-bg-color);
+}
+
+.sidebar ul li button:hover {
+    background-color: rgba(255, 255, 255, 0.294);
+    border: 1px solid black;
+}
+
+
+.sidebar ul li .logout:hover {
+    background-color: #ffffff31;
+}
