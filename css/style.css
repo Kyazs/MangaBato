@@ -6,6 +6,13 @@
     border: 0;
 }
 
+:root {
+    --main-bg-color: #16161A;
+    --main-container-color: #94A1B2;
+    --main-head-color: #7F5AF0;
+    --main-font-color: #FFFFFE;
+}
+
 .Tfont {
     font-family: "Oswald", sans-serif;
     font-weight: 500;
@@ -23,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
     font-family: "Oswald", "Raleway", sans-serif;
-    background-color: #2B2A2F;
+    background-color: var(--main-bg-color);
     /* background-image: url(/img/logo_mangabato.png); */
     min-height: auto;
 }

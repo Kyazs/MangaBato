@@ -7,8 +7,8 @@
     align-items: center;
     font-weight: 600;
     letter-spacing: 1px;
-    background-color: rgba(0, 0, 0, 0.805);
     border-radius: 15px;
+    background-color: BLACK;
 }
 
 .trending .box {
@@ -54,6 +54,7 @@
 
 /* RANKING 😵‍💫😵‍💫🆘 */
 .ranking {
+    /* border: 1px solid var(--main-container-color); */
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -62,6 +63,7 @@
     height: 740px;
     overflow: hidden;
     align-content: flex-start;
+    border: 1px solid var(--main-container-color);
 
 }
 
