@@ -6,6 +6,13 @@
     border: 0;
 }
 
+.Tfont {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Oswald", sans-serif;
     font-weight: 500;
@@ -17,15 +24,21 @@ h1, h2, h3, h4, h5, h6 {
 body {
     font-family: "Oswald", "Raleway", sans-serif;
     background-color: #2B2A2F;
-    background-image: url(/img/logo_mangabato.png);
+    /* background-image: url(/img/logo_mangabato.png); */
     min-height: auto;
 }
 
 .main_container {
     display: grid;
-    min-height: 100vh;
     margin: 20px 80px;
     grid-template-columns: 70% 30%;
-    grid-template-rows: 300px 100%;
     font-family: "Raleway", sans-serif;
+    gap: 1em;
 }
+
+@media screen and (max-width: 768px) {
+    .main_container {
+        grid-template-columns: 100%;
+    }
+}
+
