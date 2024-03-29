@@ -3,11 +3,10 @@ footer {
     box-shadow: 3px 3px 5px rgba(255, 255, 255, 0);
     font-family: "Oswald", sans-serif;
     font-weight: 500px;
-    font-size: 1.50rem;
+    font-size: 1.25rem;
 }
 
 footer ul {
-    width: 100%;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -15,7 +14,7 @@ footer ul {
 }
 
 footer li {
-    height: 80px;
+    height: 50px;
 }
 
 footer a {
@@ -33,5 +32,5 @@ footer p {
 
 
 footer a:hover {
-    color: rgba(66, 12, 182, 0.627);
+    color: rgb(0, 0, 0);
 }
