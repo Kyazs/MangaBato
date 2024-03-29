@@ -1,0 +1,280 @@
+.trending {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    align-items: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: rgba(0, 0, 0, 0.805);
+    border-radius: 15px;
+}
+
+.trending .box {
+    flex: 0 0 0 auto;
+    background-color: aqua;
+    height: 200px;
+    min-width: 150px;
+    margin: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.trending .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.trending .box p {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.527);
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    bottom: 0px;
+    left: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 5px;
+}
+
+.trending .box:hover {
+    background-color: rgb(30, 0, 255);
+    box-shadow: -10px 0 10px #a072ef53;
+}
+
+.box p:hover {
+    color: rgb(96, 104, 255);
+}
+
+/* RANKING 😵‍💫😵‍💫🆘 */
+.ranking {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 5px;
+    height: 740px;
+    overflow: hidden;
+    align-content: flex-start;
+
+}
+
+.ranking .rtopbar {
+    border-bottom: 2px solid white;
+    padding-left: 10px;
+    padding: 5px;
+
+}
+
+.ranking .rank_box {
+    margin: 10px;
+    height: 120px;
+    display: flex;
+    flex-wrap: nowrap;
+    border: 1px solid rgba(255, 255, 255, 0.257);
+    overflow: hidden;
+}
+
+/* image */
+.ranking .rank_box .rank_image {
+    width: 25%;
+    margin-right: 10px;
+
+}
+
+.ranking .rank_box .rank_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 5px;
+}
+
+/* CONTENTS OF THE RANKING title/genre/star */
+.ranking .rank_box .chapter_contents {
+    display: flex;
+    width: 70%;
+    text-align: start;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-decoration: none;
+}
+
+.ranking .rank_box .chapter_contents .title {
+    height: 30%;
+    padding-bottom: 10px;
+}
+
+.ranking .rank_box .chapter_contents a:hover {
+    color: #A072EF;
+}
+
+.ranking .rank_box .chapter_contents ul {
+    color: gray;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-evenly;
+    padding-left: 0;
+
+
+    white-space: nowrap;
+    /* Prevent wrapping to next line */
+    overflow: hidden;
+    /* Hide content that overflows the container */
+    text-overflow: ellipsis;
+    /* Add ellipsis (...) if content overflows */
+    width: 100%;
+    /* set the width of the title to 100% */
+
+}
+
+/* CSS CODE FOR THE RATING STAR ⭐⭐ */
+
+.star-rating {
+    color: white;
+}
+
+.star-rating .material-symbols-outlined {
+    color: yellow;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24,
+}
+
+
+/* latest manga 😵‍💫😵‍💫🆘😒😒 */
+.latest_manga {
+    background-color: black;
+    width: 100%;
+    margin-top: 15px;
+    overflow-wrap: normal;
+    border-radius: 15px;
+    padding: 5px;
+
+}
+
+.latest_manga .topbar {
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    border-bottom: 2px solid white;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.latest_manga .topbar h2 {
+    font-size: 1.25rem;
+}
+
+.latest_manga .topbar a {
+    font-size: 15px;
+    text-decoration: underline;
+    color: white;
+}
+
+.latest_manga .topbar a:hover {
+    color: blue;
+}
+
+/* MAIN CONTENT🆘🆘 */
+.latest_manga_content {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* align-content: flex-start; */
+    padding-bottom: 10px;
+
+}
+
+.latest_manga_content .latest_box {
+    /* set the width & height of box */
+    width: 380px;
+    height: 150px;
+}
+
+.latest_box {
+    display: flex;
+    flex-wrap: nowrap;
+    border: 1px solid rgba(255, 255, 255, 0.257);
+    width: 100%;
+    overflow: hidden;
+}
+
+.latest_box a {
+    width: 30%;
+    margin-right: 10px;
+}
+
+.latest_box a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.latest_box .title-chapter {
+    display: flex;
+    width: 70%;
+    text-align: start;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-decoration: none;
+
+}
+
+.latest_box .title-chapter .latest_content_title {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+    /* Prevent wrapping to next line */
+    overflow: hidden;
+    /* Hide content that overflows the container */
+    text-overflow: ellipsis;
+    /* Add ellipsis (...) if content overflows */
+    width: 100%;
+    /* set the width of the title to 100% */
+
+}
+
+.latest_box .title-chapter .latest_content_title:hover {
+    color: #A072EF;
+}
+
+.latest_box .title-chapter {
+    padding-left: 0;
+    margin-top: 10px;
+    color: white;
+    align-items: flex-start;
+}
+
+.latest_box .title-chapter ul li {
+    padding-top: 10px;
+    color: #ff0000;
+}
+
+.latest_box .title-chapter ul li a {
+    color: rgb(128, 128, 128);
+    text-decoration: none;
+
+}
+
+.latest_box .title-chapter ul li>a:hover {
+    color: rgb(255, 255, 255);
+}
