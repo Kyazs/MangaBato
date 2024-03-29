@@ -1,0 +1,29 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ dev ]  # Trigger on pushes to the main branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest  # Specify the runner environment
+
+    steps:
+      - uses: actions/checkout@v3  # Checkout code from the repository
+      - uses: actions/setup-node@v3  # Set up Node.js environment (if needed)
+        with:
+          node-version: '16'  # Specify Node.js version (if needed)
+      - name: Install dependencies  # Install project dependencies (e.g., npm install)
+      - name: Build website  # Build process specific to your framework (e.g., npm run build)
+      - uses: actions/upload-artifact@v3  # Upload build artifacts
+        with:
+          name: website  # Name for the artifact
+
+      - uses: actions/deploy@v3  # Deployment step using GitHub Pages action
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Access token with deploy permissions
+        with:
+          source: 'path/to/build/artifacts'  # Path to the built website files (replace with your path)
+          branch: gh-pages  # Target branch for deployment (usually gh-pages)
+          token: ${{ secrets.GITHUB_TOKEN }}  # Access token again for deployment
+
