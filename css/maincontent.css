@@ -5,6 +5,8 @@
     background-color: black;
     width: 100%;
     color: white;
+    border: 1px solid var(--main-container-color);
+    border-bottom: none;
     border-top-left-radius:10px ;
     border-top-right-radius:10px ;
     padding: 5px;
@@ -21,6 +23,8 @@
 }
 
 .trending {
+    border: 1px solid var(--main-container-color);
+    border-top: none;
     scroll-behavior: smooth;
     width: 100%;
     display: flex;
@@ -77,7 +81,8 @@
 
 .trending .box:hover {
     background-color: rgb(30, 0, 255);
-    box-shadow: -10px 0 10px #a072ef53;
+    border: 2px solid #A072EF;
+    /* box-shadow: 5px 5px 2px #a072ef5a; */
 }
 
 .box p:hover {
@@ -198,6 +203,7 @@
 
 /* latest manga 😵‍💫😵‍💫🆘😒😒 */
 .latest_manga {
+    border: 1px solid var(--main-container-color);
     background-color: black;
     width: 100%;
     margin-top: 15px;
@@ -208,6 +214,7 @@
 }
 
 .latest_manga .topbar {
+    border: none;
     font-family: "Oswald", sans-serif;
     display: flex;
     border-bottom: 2px solid white;
