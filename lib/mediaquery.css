@@ -1,9 +1,9 @@
 /* media query for Phone */
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 390px) {
 
     /* media query for making the navbar more responsive */
     .nav_link .logo {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
     }
 
     .nav_link ul li a {
@@ -15,7 +15,7 @@
     }
 
     .nav_link ul li {
-        width: 70px;
+        width: 50px;
     }
 
     /* side bar  */
@@ -70,15 +70,15 @@
     }
 
     .main_container .latest_manga .topbar h2 {
-        font-size: 1rem;
+        font-size: 15px;
     }
 
     .main_container .latest_manga .topbar a {
-        font-size: 10px;
+        font-size: 8px;
     }
 
     .latest_manga_content .latest_box {
-        width: 150px;
+        width: 145px;
         height: 85px;
         padding-bottom: 3px;
         padding-top: 3px;
@@ -86,6 +86,7 @@
 
 
     .latest_manga_content .latest_box .title-chapter {
+        margin-top: 5px;
         padding: 0;
     }
 
@@ -97,6 +98,10 @@
 
     .latest_box .title-chapter .latest_content_title {
         font-size: 10px;
+    }
+
+    .latest_box .title-chapter ul {
+        padding-left: 20px;
     }
 
     .latest_box .title-chapter ul li {
