@@ -1,0 +1,46 @@
+
+/* media query for Phone */
+@media screen and (max-width: 475px) {
+/* media query for making the navbar more responsive */
+    .nav_link .logo {
+        font-size: 1.25rem;
+    }
+
+    .nav_link ul li a {
+        padding: 0;
+    }
+
+    .nav_link ul li a button {
+        font-size: 10px;
+    }
+
+    .nav_link ul li {
+        width: 70px;
+    }
+
+    /* side bar  */
+    .sidebar {
+        width: 150px;
+    }
+
+    .sidebar .logo {
+        font-size: 10px;
+    }
+
+    .sidebar .logo img {
+        width: 35px;
+    }
+
+    .sidebar .close svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .sidebar:last-child {
+        padding-right: 10px;
+    }
+
+
+/* Media query for responsive main container */
+
+}
