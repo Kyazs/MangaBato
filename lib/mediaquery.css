@@ -1,5 +1,5 @@
 /* media query for Phone */
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 412px) {
 
     /* media query for making the navbar more responsive */
     .nav_link .logo {
@@ -49,8 +49,8 @@
 
     /* CSS CODE FOR FEATURED */
     .trending .box {
-        height: 130px;
-        min-width: 100px;
+        height: 120px;
+        min-width: 90px;
     }
 
     .main_container .topbar p {
@@ -78,8 +78,10 @@
     }
 
     .latest_manga_content .latest_box {
-        width: 180px;
-        height: 100px;
+        width: 150px;
+        height: 85px;
+        padding-bottom: 3px;
+        padding-top: 3px;
     }
 
 
@@ -98,13 +100,13 @@
     }
 
     .latest_box .title-chapter ul li {
-        font-size: 8px;
+        font-size: 7px;
     }
 
     /* CODE FOR RANKING */
 
     .ranking {
-        height: 640px;
+        height: 610px;
     }
 
     .ranking .rtopbar h2 {
@@ -113,6 +115,7 @@
 
     .ranking .rank_box {
         height: 100px;
+        margin-bottom: 0;
     }
 
     .ranking .rank_box .chapter_contents a {
@@ -127,5 +130,15 @@
         font-size: 20px;
     }
 
-    
+    footer {
+        font-size: 10px;
+    }
+
+    footer ul li {
+        height: 35px;
+    }
+
+    footer p {
+        font-size: 7px;
+    }
 }

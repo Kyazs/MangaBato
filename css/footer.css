@@ -1,7 +1,7 @@
 footer {
     background-color: var(--main-head-color);
     font-family: "Oswald", sans-serif;
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 1.25rem;
 }
 
@@ -10,15 +10,17 @@ footer ul {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 footer li {
     height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 footer a {
     height: 100%;
-    padding: 0 30px;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -27,7 +29,9 @@ footer a {
 
 footer p {
     text-align: center;
-    color: white;
+    color: #0f0f0f;
+    font-size: 15px;
+    padding-bottom: 5px;
 }
 
 
