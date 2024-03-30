@@ -1,4 +1,5 @@
 
+/* FEATURED 🆘🆘👌⭐ */
 .topbar  {
 
     background-color: black;
@@ -33,6 +34,7 @@
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: BLACK;
+    padding: 0 5px 5px 5px;
 }
 
 .trending:first-child {
@@ -44,8 +46,8 @@
 .trending .box {
     flex: 0 0 0 auto;
     background-color: aqua;
-    height: 200px;
-    min-width: 150px;
+    height: 190px;
+    min-width: 140px;
     margin: 10px;
     border-radius: 10px;
     position: relative;
@@ -102,6 +104,14 @@
     border-bottom: 2px solid white;
     padding-left: 10px;
     padding: 5px;
+
+}
+
+.ranking .rtopbar h2 {
+    font-family: var(--main-font-family);
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-left: 10px;
 
 }
 

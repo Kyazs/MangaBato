@@ -1,7 +1,7 @@
-
 /* media query for Phone */
 @media screen and (max-width: 475px) {
-/* media query for making the navbar more responsive */
+
+    /* media query for making the navbar more responsive */
     .nav_link .logo {
         font-size: 1.25rem;
     }
@@ -40,7 +40,92 @@
         padding-right: 10px;
     }
 
+    /* Media query for responsive main container */
 
-/* Media query for responsive main container */
+    .main_container {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
 
+    /* CSS CODE FOR FEATURED */
+    .trending .box {
+        height: 130px;
+        min-width: 100px;
+    }
+
+    .main_container .topbar p {
+        font-size: 1rem;
+        padding-left: 10px;
+    }
+
+    .trending .box a p {
+        font-size: 10px;
+    }
+
+    /* CSS CODE FOR LATEST MANGA */
+
+    .main_container .latest_manga .topbar {
+        height: 30px;
+        padding-left: 10px;
+    }
+
+    .main_container .latest_manga .topbar h2 {
+        font-size: 1rem;
+    }
+
+    .main_container .latest_manga .topbar a {
+        font-size: 10px;
+    }
+
+    .latest_manga_content .latest_box {
+        width: 180px;
+        height: 100px;
+    }
+
+
+    .latest_manga_content .latest_box .title-chapter {
+        padding: 0;
+    }
+
+    .latest_manga_content .latest_box img {
+        width: 120%;
+        height: 100%;
+        padding: 3px;
+    }
+
+    .latest_box .title-chapter .latest_content_title {
+        font-size: 10px;
+    }
+
+    .latest_box .title-chapter ul li {
+        font-size: 8px;
+    }
+
+    /* CODE FOR RANKING */
+
+    .ranking {
+        height: 640px;
+    }
+
+    .ranking .rtopbar h2 {
+        font-size: 1rem;
+    }
+
+    .ranking .rank_box {
+        height: 100px;
+    }
+
+    .ranking .rank_box .chapter_contents a {
+        font-size: 15px;
+    }
+
+    .ranking .rank_box .chapter_contents ul li{
+        font-size: 12px;
+    }
+
+    .star-rating .material-symbols-outlined  {
+        font-size: 20px;
+    }
+
+    
 }
