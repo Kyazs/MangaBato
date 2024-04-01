@@ -5,12 +5,12 @@
     height: auto;
     width: 100vw;
     flex-direction: column;
-    gap: 1em;
     padding-top: 20px;
 }
 
 /* ! CSS CODE FOR THE SECTION BOOK */
 .container .book {
+    margin-bottom: 1em;
     height: 80%;
     width: 80vw;
     border: 1px solid var(--main-container-color);
@@ -305,14 +305,3 @@
 .container .article .chapter a h3:hover {
     color: var(--idk-color);
 }
-
-
-/* !CSS CODE for the ARTICLE TRENDING */
-.container .trending {
-    height: 200px;
-    width: 200px;
-    background-color: khaki;
-
-}
-
-@media screen and (min-width: 768px) {}

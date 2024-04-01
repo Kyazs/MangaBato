@@ -99,7 +99,7 @@
 
             <!-- ! TRENDING MANGA -->
             <article class="trending">
-                <!-- <?php include('php/trending.php'); ?> -->
+                <?php include('php/trending.php'); ?>
             </article>
         </div>
     </main>
