@@ -26,19 +26,19 @@
                                 d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
                         </svg></button>
                 </li>
-                <li><a class="logo" href="#home">
+                <li><a class="logo" href="../../index.html">
                         <img src="../img/logo_mangabato.png" alt="logo">MANGABATO</a></li>
                 <li><a href="#">Profile</a></li>
                 <li><a href="#">Publish</a></li>
-                <li><a class="logout" href="../index.html">Logout</a></li>
+                <li><a class="logout" href="../../index.html">Logout</a></li>
                 <li><a href="#">About us</a></li>
             </ul>
         </div>
         <div class="nav_link">
             <ul>
-                <li class="logo"><a href="#home">
+                <li class="logo"><a href="../../index.html">
                         <img src="../img/logo_mangabato.png" alt="logo" width="50px">MANGABATO</a></li>
-                <li><a href="#">
+                <li><a href="../login.php">
                         <button class="full-rounded">
                             <span>Login</span>
                             <div class="border full-rounded"></div>
