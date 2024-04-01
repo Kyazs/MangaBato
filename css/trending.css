@@ -1,0 +1,67 @@
+.section-container-trending {
+    display: flex;
+    justify-content: center;
+}
+
+.trending-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 80vw;
+    height: 200px;
+    border: 2px solid var(--main-container-color);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.trending-container .topbar {
+    color: var(--main-font-color);
+    height: 40px;
+    border-bottom: 1px solid var(--main-container-color);
+    padding: 5px 5px 5px 10px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.trending-container .trending {
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.trending-container .trending .box {
+    min-width: 100px;
+    height: 135px;
+    margin: 10px;
+    position: relative;
+}
+
+.trending-container .trending .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.trending-container .trending .box a p {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.527);
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    bottom: 0;
+    padding: 5px;
+}
+
+.trending-container .trending .box:hover {
+    background-color: rgb(30, 0, 255);
+    border: 2px solid var(--idk-color) ;
+    border-radius: 10px;
+}
+
+.trending-container .trending .box p:hover {
+    color: var(--main-head-color);
+}
