@@ -1,0 +1,318 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100vw;
+    flex-direction: column;
+    gap: 1em;
+    padding-top: 20px;
+}
+
+/* ! CSS CODE FOR THE SECTION BOOK */
+.container .book {
+    height: 80%;
+    width: 80vw;
+    border: 1px solid var(--main-container-color);
+    border-radius: 5px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.book .bgc-img {
+    background-image: url(../img/books/berserk.jpg);
+    background-size: cover;
+    background-position: top;
+    opacity: 0.5;
+    filter: blur(3px);
+    height: 150px;
+    width: 100%;
+}
+
+.book .cover {
+    position: absolute;
+    top: 50px;
+    left: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.book .cover img {
+    height: 130px;
+    width: 80px;
+}
+
+.book .cover .title {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 75px;
+    /* wrapping the text to the next line */
+    white-space: wrap;
+    overflow: hidden;
+}
+
+.book .cover .title h1 {
+    text-align: start;
+    color: #fff;
+    font-size: 20px;
+    width: 190px;
+    height: 60px;
+}
+
+.book .cover .title h2 {
+    text-align: start;
+    color: var(--main-font-color);
+    bottom: 0;
+    font-size: 10px;
+    font-weight: normal;
+    width: 190px;
+    height: 15px;
+    overflow: hidden;
+}
+
+.book .main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+}
+
+/* ? ASIDE */
+.book .main .aside {
+    color: white;
+    /* position: relative;
+    top: 50px; */
+    margin-top: 50px;
+    width: 95px;
+    height: 100px;
+    margin-left: 8px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.book .main .aside .status {
+    padding: 2px;
+    margin-top: 10px;
+    border: 1px solid var(--main-container-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.book .main .aside .status h3 {
+    display: fl;
+    font-size: 10px;
+}
+
+.book .main .aside .status p {
+    font-size: 10px;
+    font-weight: normal;
+    color: var(--second-font-color);
+}
+
+/* ? TYPE */
+
+.book .main .aside .type {
+    padding: 2px;
+    margin-top: 10px;
+    border: 1px solid var(--main-container-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.book .main .aside .type h3 {
+    font-size: 10px;
+}
+
+.book .main .aside .type p {
+    font-size: 10px;
+    color: var(--second-font-color);
+}
+
+/* ? GENRE */
+
+.book .main .aside .genre {
+    padding: 2px;
+    margin-top: 10px;
+    border: 1px solid var(--main-container-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.book .main .aside .genre h3 {
+    font-size: 10px;
+}
+
+.book .main .aside .genre p {
+    font-size: 10px;
+    color: var(--second-font-color);
+}
+
+/* ? AUTHOR */
+.book .main .aside .author {
+    padding: 2px;
+    margin-top: 10px;
+    border: 1px solid var(--main-container-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.book .main .aside .author h3 {
+    font-size: 10px;
+}
+
+.book .main .aside .author p {
+    font-size: 10px;
+    color: var(--second-font-color);
+}
+
+
+/* ? STAR ⭐ */
+.main .aside .star-rating {
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    border: 1px solid var(--main-container-color);
+    border-radius: 5px;
+    width: 95px;
+    height: 20px;
+}
+
+.main .aside .star-rating .material-symbols-outlined {
+    text-align: center;
+    color: yellow;
+    font-size: 15px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24,
+}
+
+/* ? SYNOPSIS */
+.book .main .synopsis {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 195px;
+    margin-top: 10px;
+}
+
+.book .main .synopsis h2 {
+    font-weight: normal;
+    text-align: start;
+    color: var(--main-font-color);
+    font-size: 13px;
+}
+
+.book .main .synopsis p {
+    padding-left: 10px;
+    padding-right: 10px;
+    position: inherit;
+    text-align: start;
+    color: var(--second-font-color);
+    font-size: 10px;
+    font-weight: normal;
+    overflow: hidden;
+}
+
+/* !CSS CODE for the section CHAPTER */
+.container .chapter {
+    height: 200px;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--main-container-color);
+    border-radius: 5px;
+}
+
+/* ? HEADER OF CHAPTER */
+
+.container .chapter .header {
+    padding: 5px 5px 5px 5px;
+    gap: 1em;
+    display: flex;
+    height: 25px;
+    width: 100%;
+    border-bottom: 1px solid var(--main-container-color);
+    margin-bottom: 5px;
+
+}
+
+.container .chapter .header h3 {
+
+    font-size: 12px;
+    color: var(--main-font-color);
+    font-weight: bold;
+    text-align: center;
+}
+
+.container .chapter .header h2 {
+    font-style: italic;
+    font-size: 10px;
+    color: var(--main-font-color);
+    font-weight: normal;
+    text-align: center;
+    /* ? add ellipsis when overflow */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* ? CHAPTERS */
+.container .article {
+    font-family: var(--second-font-family);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    align-items: center ;
+    padding-bottom: 10px;
+}
+
+.container .article .chapter {
+    border-radius: 5px;
+    padding: 5px;
+    width: 90%;
+}
+
+.container .article .chapter a {
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.container .article .chapter a h3 {
+    font-size: 10px;
+    color: var(--second-font-color);
+}
+
+.container .article .chapter:hover {
+    background-color: var(--hover-color);
+    border-radius: 5px;
+}
+.container .article .chapter a h3:hover {
+    color: var(--idk-color);
+}
+
+
+/* !CSS CODE for the ARTICLE TRENDING */
+.container .trending {
+    height: 200px;
+    width: 200px;
+    background-color: khaki;
+
+}
+
+@media screen and (min-width: 768px) {}
