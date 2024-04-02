@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../lib/mediaquery.css">
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/mangapage.css">
     <link rel="stylesheet" href="../css/trending.css">
+    <link rel="stylesheet" href="mediaquery/mangapage-query.css">
     <link rel="icon" href="../img/logo_mangabato.png" type="image/-icon">
 
 </head>
@@ -65,7 +65,8 @@
                     </div>
                     <div class="synopsis">
                         <h2>Synopsis:</h2>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, ea. Vel dolore, soluta doloremque ea commodi quam quis alias necessitatibus blanditiis. Consequatur repellendus autem quasi aperiam nulla assumenda reprehenderit similique.
+                        <p id="getClapSynopsis"> Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eum consectetur eaque tempora veniam ut magnam id quod vel! Laudantium aliquam harum quam facilis accusantium unde maxime, laborum perspiciatis ut.
+                        Adipisci itaque, illo voluptatum distinctio facere nostrum harum minima voluptate doloribus ab et quam quia. Id nisi quam recusandae iure asperiores enim eum, porro itaque ut corrupti possimus cupiditate quis! sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, ea. Vel dolore, soluta doloremque ea commodi quam quis alias necessitatibus blanditiis. Consequatur repellendus autem quasi aperiam nulla assumenda reprehenderit similique.
                             Aperiam, quisquam id fugit porro, iste sequi natus optio ipsam temporibus similique neque laudantium, cum enim atque. Fugiat error tenetur quaerat reiciendis et amet laudantium. Ab eos soluta exercitationem cumque?
                             Reiciendis veniam libero sint, placeat qui beatae totam aperiam temporibus, exercitationem consectetur rem. Veniam ut repellat, minus ad autem nesciunt maiores eos placeat, repudiandae tempora voluptatem hic non cum nemo. </p>
                     </div>
