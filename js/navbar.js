@@ -16,4 +16,8 @@ window.onload = function () {
     // ! ellipsis will be added when it overflow in line 1
     var element = document.getElementById('getClap1');
     $clamp(getClap1, { clamp: 1 });;
+    // ! ellipsis will be added when it overflow in line 12
+    // ! this is intended for the synopsis of the manga
+    var element = document.getElementById('getClapSynopsis');
+    $clamp(getClapSynopsis, { clamp: 12 });;
 }
