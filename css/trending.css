@@ -28,6 +28,7 @@
     flex-direction: row;
     overflow-y: hidden;
     overflow-x: scroll;
+    height: 100%;
 }
 
 .trending-container .trending .box {
