@@ -8,34 +8,32 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/login.css">
-    <link rel="stylesheet" href="../css/mangapage.css">
-    <link rel="stylesheet" href="../css/trending.css">
-    <link rel="stylesheet" href="mediaquery/mangapage-query.css">
-    <link rel="icon" href="../img/logo_mangabato.png" type="image/-icon">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/login.css">
+    <link rel="stylesheet" href="../../css/mangapage.css">
+    <link rel="stylesheet" href="../../css/trending.css">
+    <link rel="stylesheet" href="../mediaquery/mangapage-query.css">
+    <link rel="icon" href="../../img/logo_mangabato.png" type="image/-icon">
 
 </head>
 
 <body>
     <header>
-        <?php include('php/navbar.php'); ?>
+        <?php include('../php/navbar.php'); ?>
     </header>
     <main>
         <div class="container">
             <!-- ! for the manga title and synopsis -->
             <section class="book">
-                <div style="background-image: url(../img/books/domestic-na-kanojo.jpg);" class="bgc-img"></div>
+                <div style="background-image: url(../../img/books/gate.jpg);" class="bgc-img"></div>
                 <div class="cover">
-                    <a href="../img/books/domestic-na-kanojo.jpg">
-                        <img src="../img/books/domestic-na-kanojo.jpg" alt="cover"></a>
+                    <a href="../../img/books/gate.jpg">
+                        <img src="../../img/books/gate.jpg" alt="cover"></a>
                     <div class="title">
-                        <h1 id="getClap2">Domestic Na Kanojo</h1>
-                        <h2 id="getClap1">
-                            Domestic Girlfriend (english);
-                            ドメスティックな彼女 (Japanese);</h2>
+                        <h1 id="getClap2">Gate - Jietai Kare No Chi Nite, Kaku Tatakeri</h1>
+                        <h2 id="getClap1">Gate - Thus the JSDF Fought There (English);</h2>
                     </div>
                 </div>
                 <div class="main">
@@ -57,22 +55,19 @@
                         </div>
                         <div class="genre">
                             <h3>Genre:</h3>
-                            <p>Drama - Harem - Mature - Romance - School life - Shounen</p>
+                            <p>: 	Action - Adventure - Comedy - Drama - Fantasy - Mature - Romance - Seinen</p>
                         </div>
                         <div class="author">
                             <h3>Author:</h3>
-                            <p>Sasuga Kei</p>
+                            <p>Yanai Takumi - Sao Satoru</p>
                         </div>
 
                     </div>
                     <div class="synopsis">
                         <h2>Synopsis:</h2>
-                        <p id="getClapSynopsis"> Tonight, Natsuo loses his virginity. His partner? Her name is Rui and he just met her
-                             today after school. She's the one that brought up this whole situation, stating that she wanted to simply gain the knowledge about sex. 
-                             She does not want to start a relationship, nor does she care about Natsuo. Afterwards, Natsuo feels guilty for losing his virginity 
-                             to a girl he doesn't even particularly like. Mostly, it makes him feel like he betrayed his crush to his high school teacher: 
-                             Hina. A quirky love triangle story unfolds as Natsuo,
-                             Rui, and Hina all end up becoming part of the same family!</p>
+                        <p id="getClapSynopsis">A gate appears in Tokyo's Ginza district sometime in the 21st century. From the gate pours out monsters, 
+                            knights from middle-age Europe, and other fantasy-like beings, and they kill many of the citizens of Tokyo. This event is known as the Ginza Incident. The government sends a small group of soldiers from the Japanese Self-Defense Forces to the alternate world beyond the gate. Led by otaku soldier Yōji, they find that the villages in the world are being attacked by a dragon. 
+                            An elf girl who is a survivor from the dragon's rampage joins the group in their travels across the dangerous new world. </p>
                     </div>
                 </div>
             </section>
@@ -81,47 +76,37 @@
             <section class="chapter">
                 <header class="header">
                     <h3>Chapters: </h3>
-                    <h2 id="getClap2">Domestic na Kanojo</h2>
+                    <h2 id="getClap2">Gate: Jietai Kare No Chi Nite, Kaku Tatakeri</h2>
                 </header>
                 <article class="article">
                     <div class="chapter">
-                        <a href="#">
-                            <h3>chapter 5</h3>
-                        </a>
+                        <a href="#"><h3>chapter 5</h3></a>
                     </div>
                     <div class="chapter">
-                        <a href="#">
-                            <h3>chapter 4</h3>
-                        </a>
+                        <a href="#"><h3>chapter 4</h3></a>
                     </div>
                     <div class="chapter">
-                        <a href="#">
-                            <h3>chapter 3</h3>
-                        </a>
+                        <a href="#"><h3>chapter 3</h3></a>
                     </div>
                     <div class="chapter">
-                        <a href="#">
-                            <h3>chapter 2</h3>
-                        </a>
+                        <a href="#"><h3>chapter 2</h3></a>
                     </div>
                     <div class="chapter">
-                        <a href="#">
-                            <h3>chapter 1</h3>
-                        </a>
+                        <a href="#"><h3>chapter 1</h3></a>
                     </div>
                 </article>
             </section>
 
             <!-- ! TRENDING MANGA -->
             <article class="trending">
-                <?php include('php/trending.php'); ?>
+                <?php include('../php/trending.php'); ?>
             </article>
         </div>
     </main>
     <footer>
-        <?php include('php/footer.php'); ?>
+        <?php include('../php/footer.php'); ?>
     </footer>
-    <script src="../lib/clamp.js"></script>
+    <script src="../../lib/clamp.js"></script>
 </body>
 
 </html>

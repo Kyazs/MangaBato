@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MANGABATO</title>
     
-    <link rel="stylesheet" href="../css/navbar.css"> <!-- change the path to css/navbar.css -->
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../lib/mediaquery.css">
-    <link rel="icon" href="../img/logo_mangabato.png" type="image/-icon">
+    <link rel="stylesheet" href="../../css/navbar.css"> <!-- change the path to css/navbar.css -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../lib/mediaquery.css">
+    <link rel="icon" href="../../img/logo_mangabato.png" type="image/-icon">
 </head>
 
 <body>
@@ -27,7 +27,7 @@
                         </svg></button>
                 </li>
                 <li><a class="logo" href="../../index.html">
-                        <img src="../img/logo_mangabato.png" alt="logo">MANGABATO</a></li>
+                        <img src="../../img/logo_mangabato.png" alt="logo">MANGABATO</a></li>
                 <li><a href="#">Profile</a></li>
                 <li><a href="#">Publish</a></li>
                 <li><a class="logout" href="../../index.html">Logout</a></li>
@@ -37,7 +37,7 @@
         <div class="nav_link">
             <ul>
                 <li class="logo"><a href="../../index.html">
-                        <img src="../img/logo_mangabato.png" alt="logo" width="50px">MANGABATO</a></li>
+                        <img src="../../img/logo_mangabato.png" alt="logo" width="50px">MANGABATO</a></li>
                 <li><a href="../login.php">
                         <button class="full-rounded">
                             <span>Login</span>
@@ -60,5 +60,5 @@
 
 </body>
 
- <script src="../js/navbar.js"></script> <!-- change the path to js/navbar.js -->
+ <script src="../../js/navbar.js"></script> <!-- change the path to js/navbar.js -->
 </html>
