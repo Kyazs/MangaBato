@@ -60,6 +60,10 @@
                 </div>
             </article>
         </div>
+
+        <div class="read-button">
+            <a href="../index.html"><button><i class='bx bxs-book-reader'></button></i></a>
+        </div>
     </main>
     <footer>
         <?php include('php/footer.php'); ?>
