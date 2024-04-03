@@ -156,9 +156,14 @@
     text-decoration: none;
 }
 
-.ranking .rank_box .chapter_contents .title {
-    height: 30%;
+.ranking .rank_box .chapter_contents a {
+    height: 30px;
+    white-space: nowrap;
     padding-bottom: 10px;
+    /* added ellipsis when overflow */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .ranking .rank_box .chapter_contents a:hover {
