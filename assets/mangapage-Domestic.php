@@ -27,16 +27,15 @@
         <div class="container">
             <!-- ! for the manga title and synopsis -->
             <section class="book">
-                <div class="bgc-img"></div>
+                <div style="background-image: url(../img/books/domestic-na-kanojo.jpg);" class="bgc-img"></div>
                 <div class="cover">
-                    <a href="../img/books/berserk.jpg">
-                        <img src="../img/books/berserk.jpg" alt="cover"></a>
+                    <a href="../img/books/domestic-na-kanojo.jpg">
+                        <img src="../img/books/domestic-na-kanojo.jpg" alt="cover"></a>
                     <div class="title">
-                        <h1 id="getClap2">Berserk </h1>
+                        <h1 id="getClap2">Domestic Na Kanojo</h1>
                         <h2 id="getClap1">
-                            ベルセルク (Japanese) ;
-                            베르세르크 (Korean);
-                        </h2>
+                            Domestic Girlfriend (english);
+                            ドメスティックな彼女 (Japanese);</h2>
                     </div>
                 </div>
                 <div class="main">
@@ -58,20 +57,22 @@
                         </div>
                         <div class="genre">
                             <h3>Genre:</h3>
-                            <p>Action - Adventure - Fantasy - Horror - Mature - Seinen - Supernatural - Tragedy</p>
+                            <p>Drama - Harem - Mature - Romance - School life - Shounen</p>
                         </div>
                         <div class="author">
                             <h3>Author:</h3>
-                            <p>Miura Kentaro</p>
+                            <p>Sasuga Kei</p>
                         </div>
 
                     </div>
                     <div class="synopsis">
                         <h2>Synopsis:</h2>
-                        <p id="getClapSynopsis"> is a Japanese dark fantasy manga series illustrated and written by Kentaro Miura. Place in a medieval Europe-divine
-                            the narrative centers on the characters of Guts dark fantasy world, a lone mercenary, and Griffith, the leader of a mercenary group known as
-                            the Band of the Hawk. Motifs of camaraderie, isolation, as well as the question of whether mankind is basically good or bad pervade the narrative,
-                            as it investigates both the very best and worst of human nature. Both anime and the manga are noticed for their utilization of sexual content and heavy violence. </p>
+                        <p id="getClapSynopsis"> Tonight, Natsuo loses his virginity. His partner? Her name is Rui and he just met her
+                             today after school. She's the one that brought up this whole situation, stating that she wanted to simply gain the knowledge about sex. 
+                             She does not want to start a relationship, nor does she care about Natsuo. Afterwards, Natsuo feels guilty for losing his virginity 
+                             to a girl he doesn't even particularly like. Mostly, it makes him feel like he betrayed his crush to his high school teacher: 
+                             Hina. A quirky love triangle story unfolds as Natsuo,
+                             Rui, and Hina all end up becoming part of the same family!</p>
                     </div>
                 </div>
             </section>
@@ -80,7 +81,7 @@
             <section class="chapter">
                 <header class="header">
                     <h3>Chapters: </h3>
-                    <h2 id="getClap2">Tensei shitara slime datta ken</h2>
+                    <h2 id="getClap2">Domestic na Kanojo</h2>
                 </header>
                 <article class="article">
                     <div class="chapter">

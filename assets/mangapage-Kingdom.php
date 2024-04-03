@@ -27,16 +27,13 @@
         <div class="container">
             <!-- ! for the manga title and synopsis -->
             <section class="book">
-                <div class="bgc-img"></div>
+                <div style="background-image: url(../img/books/kingdom.jpg);" class="bgc-img"></div>
                 <div class="cover">
-                    <a href="../img/books/berserk.jpg">
-                        <img src="../img/books/berserk.jpg" alt="cover"></a>
+                    <a href="../img/books/kingdom.jpg">
+                        <img src="../img/books/kingdom.jpg" alt="cover"></a>
                     <div class="title">
-                        <h1 id="getClap2">Berserk </h1>
-                        <h2 id="getClap1">
-                            ベルセルク (Japanese) ;
-                            베르세르크 (Korean);
-                        </h2>
+                        <h1 id="getClap2">Kingdom</h1>
+                        <h2 id="getClap1">キングダム (Japanese); 王者天下 (Chinese); Kingdom (English);</h2>
                     </div>
                 </div>
                 <div class="main">
@@ -58,20 +55,20 @@
                         </div>
                         <div class="genre">
                             <h3>Genre:</h3>
-                            <p>Action - Adventure - Fantasy - Horror - Mature - Seinen - Supernatural - Tragedy</p>
+                            <p>Action - Adventure - Comedy - Drama - Historical - Martial arts - Romance</p>
                         </div>
                         <div class="author">
                             <h3>Author:</h3>
-                            <p>Miura Kentaro</p>
+                            <p>Hara Yasuhisa</p>
                         </div>
 
                     </div>
                     <div class="synopsis">
                         <h2>Synopsis:</h2>
-                        <p id="getClapSynopsis"> is a Japanese dark fantasy manga series illustrated and written by Kentaro Miura. Place in a medieval Europe-divine
-                            the narrative centers on the characters of Guts dark fantasy world, a lone mercenary, and Griffith, the leader of a mercenary group known as
-                            the Band of the Hawk. Motifs of camaraderie, isolation, as well as the question of whether mankind is basically good or bad pervade the narrative,
-                            as it investigates both the very best and worst of human nature. Both anime and the manga are noticed for their utilization of sexual content and heavy violence. </p>
+                        <p id="getClapSynopsis">Millions of years have passed since the times of legends, when the worlds of man and gods 
+                            were still the same. In these times it was the desires of man that moved the world. It is the era of the 500 year
+                             war - The Warring States period (403-222 BC in Chinese history). Kingdom is the story of a young boy named Shin who 
+                             grew into a great general and all the trials and bloodshed that lead him there.  </p>
                     </div>
                 </div>
             </section>
@@ -80,33 +77,23 @@
             <section class="chapter">
                 <header class="header">
                     <h3>Chapters: </h3>
-                    <h2 id="getClap2">Tensei shitara slime datta ken</h2>
+                    <h2 id="getClap2">Kingdom</h2>
                 </header>
                 <article class="article">
                     <div class="chapter">
-                        <a href="#">
-                            <h3>chapter 5</h3>
-                        </a>
+                        <a href="#"><h3>chapter 5</h3></a>
                     </div>
                     <div class="chapter">
-                        <a href="#">
-                            <h3>chapter 4</h3>
-                        </a>
+                        <a href="#"><h3>chapter 4</h3></a>
                     </div>
                     <div class="chapter">
-                        <a href="#">
-                            <h3>chapter 3</h3>
-                        </a>
+                        <a href="#"><h3>chapter 3</h3></a>
                     </div>
                     <div class="chapter">
-                        <a href="#">
-                            <h3>chapter 2</h3>
-                        </a>
+                        <a href="#"><h3>chapter 2</h3></a>
                     </div>
                     <div class="chapter">
-                        <a href="#">
-                            <h3>chapter 1</h3>
-                        </a>
+                        <a href="#"><h3>chapter 1</h3></a>
                     </div>
                 </article>
             </section>

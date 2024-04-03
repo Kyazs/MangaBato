@@ -27,15 +27,15 @@
         <div class="container">
             <!-- ! for the manga title and synopsis -->
             <section class="book">
-                <div class="bgc-img"></div>
+                <div style="background-image: url(../img/books/komisan.jpg);" class="bgc-img"></div>
                 <div class="cover">
-                    <a href="../img/books/berserk.jpg">
-                        <img src="../img/books/berserk.jpg" alt="cover"></a>
+                    <a href="../img/books/komisan.jpg">
+                        <img src="../img/books/komisan.jpg" alt="cover"></a>
                     <div class="title">
-                        <h1 id="getClap2">Berserk </h1>
+                        <h1 id="getClap2">Komi-san wa Komyushou Desu</h1>
                         <h2 id="getClap1">
-                            ベルセルク (Japanese) ;
-                            베르세르크 (Korean);
+                            Komi Can't Communicate (english);
+                            古見さんは、コミュ症です (Japanese); 
                         </h2>
                     </div>
                 </div>
@@ -58,20 +58,20 @@
                         </div>
                         <div class="genre">
                             <h3>Genre:</h3>
-                            <p>Action - Adventure - Fantasy - Horror - Mature - Seinen - Supernatural - Tragedy</p>
+                            <p>Comedy - Romance - School life - Shounen</p>
                         </div>
                         <div class="author">
                             <h3>Author:</h3>
-                            <p>Miura Kentaro</p>
+                            <p>Oda Tomohito</p>
                         </div>
 
                     </div>
                     <div class="synopsis">
                         <h2>Synopsis:</h2>
-                        <p id="getClapSynopsis"> is a Japanese dark fantasy manga series illustrated and written by Kentaro Miura. Place in a medieval Europe-divine
-                            the narrative centers on the characters of Guts dark fantasy world, a lone mercenary, and Griffith, the leader of a mercenary group known as
-                            the Band of the Hawk. Motifs of camaraderie, isolation, as well as the question of whether mankind is basically good or bad pervade the narrative,
-                            as it investigates both the very best and worst of human nature. Both anime and the manga are noticed for their utilization of sexual content and heavy violence. </p>
+                        <p id="getClapSynopsis">Komi-san is the beautiful and admirable girl that no-one can take their eyes 
+                            off her. Almost the whole school sees her as the cold beauty out of their league, but Tadano Shigeo knows
+                             the truth: she's just really bad at communicating with others. Komi-san, who wishes to fix this bad habit of hers, tries to 
+                             improve it with the help of Tadano-kun. </p>
                     </div>
                 </div>
             </section>
@@ -80,7 +80,7 @@
             <section class="chapter">
                 <header class="header">
                     <h3>Chapters: </h3>
-                    <h2 id="getClap2">Tensei shitara slime datta ken</h2>
+                    <h2 id="getClap2">Komi-san wa Komyushou Desu</h2>
                 </header>
                 <article class="article">
                     <div class="chapter">
