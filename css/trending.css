@@ -9,7 +9,7 @@
     margin-top: 20px;
     width: 80vw;
     height: 200px;
-    border: 2px solid var(--main-container-color);
+    border: 1px solid var(--main-container-color);
     border-radius: 10px;
     margin-bottom: 10px;
 }
