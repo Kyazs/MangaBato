@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin: 20px;
+}
+
+
+main .publish-container {
+    width: 80vw;
+    margin: 0 auto;
+    border: 1px solid var(--main-container-color);
+    border-radius: 10px;
+}
+
+.publish-container header {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding:0 5px 5px 5px;
+}
+
+main nav {
+    background-color: black;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+main nav ul {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    align-items: center;
+}
+
+main nav ul li {
+    list-style: none;
+    margin: 0 5px;
+}
+
+main nav ul li a {
+    text-decoration: none;
+    color: var(--idk-color);
+    font-size: 10px;
+}
+
+main nav ul li a:hover {
+    color: white;
+}
+
+.publish-container .head {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    border-bottom: 1px solid var(--main-container-color);
+    text-align: center;
+    padding: 5px;
+
+}
+
+.publish-container .head h2 {
+    font-size: 10px;
+
+}
+
+/* ?target the first child to center it */
+.publish-container .head> :first-child {
+    margin: 0 auto;
+
+}
+
+/* ? STAR ⭐ */
+.star-rating {
+    color: white;
+}
+
+.star-rating .material-symbols-outlined {
+    color: yellow;
+    font-size: 15px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24,
+}
+
+.publish-container header article {
+    padding-top: 5px;
+    display: flex;
+}
+
+/* todo CONTAINER FOR THE BOX */
+.publish-container header article .box-container {
+    display: flex;
+}
+
+/* ! MANGA CONTAINER */
+.publish-container header article .manga {
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid var(--main-container-color);
+    gap: 5px;
+}
+
+.publish-container header article .manga .box {
+    display: flex;
+    height: 95px;
+    width: 100%;
+    /* border-bottom: 1px  solid var(--main-container-color); */
+}
+
+.publish-container header article .manga .box .rank_image {
+    width: 35vw;
+}
+
+.publish-container header article .manga .box img {
+    width: 60px;
+    height: 90px;
+    border-radius: 10px;
+    object-fit: fill;
+}
+
+.publish-container header article .manga .box .chapter_contents {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    width: 65vw;
+    overflow: hidden;
+}
+
+.publish-container header article .manga .box .chapter_contents a {
+    font-size: 13px;
+    height: 20vh;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.publish-container header article .manga .box .chapter_contents a:hover {
+    color: var(--idk-color);
+}
+
+.publish-container header article .manga .box .chapter_contents ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    height: 50vh;
+    list-style-type: none;
+    justify-content: space-evenly;
+    overflow: scroll;
+}
+
+.publish-container header article .manga .box .chapter_contents ul li {
+    color: var(--second-font-color);
+    font-size: 10px;
+}
+
+
+/* ! CREATED ON CONTAINER */
+
+.publish-container header article .box-container .created-on {
+    border-right: 1px solid var(--main-container-color);
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+
+.publish-container header article .created-on p {
+    color: var(--second-font-color);
+    font-size: 10px;
+    font-weight: normal;
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ! LAST UPDATE ON CONTAINER */
+
+.publish-container header article .box-container .last-update {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+.publish-container header article .box-container .last-update p {
+    color: var(--second-font-color);
+    font-size: 10px;
+    font-weight: normal;
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
