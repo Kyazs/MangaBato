@@ -20,6 +20,9 @@
     <nav> <?php include('../php/navbar.php'); ?> </nav>
 
     <main>
+        <div class="add-manga">
+            <a href="#"><button><i class='bx bx-plus-circle'></i></button></a>
+        </div>
         <nav>
 
             <ul>
