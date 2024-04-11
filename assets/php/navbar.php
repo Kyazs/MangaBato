@@ -29,9 +29,9 @@
                 <li><a class="logo" href="../../index.html">
                         <img src="../../img/logo_mangabato.png" alt="logo">MANGABATO</a></li>
                 <li><a href="#">Profile</a></li>
-                <li><a href="#">Publish</a></li>
+                <li><a href="../publisher/publish.php">Publish</a></li>
                 <li><a class="logout" href="../../index.html">Logout</a></li>
-                <li><a href="#">About us</a></li>
+                <li><a href="../aboutus.php">About us</a></li>
             </ul>
         </div>
         <div class="nav_link">
