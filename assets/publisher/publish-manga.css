@@ -1,9 +1,192 @@
-bodu {
+body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 main {
+    width: 80vw;
     margin: 0 auto;
+    margin-top: 2vh;
+    flex: 1;
+    overflow: auto;
+}
+
+/*! code for the nav of the file */
+main nav ul {
+    background-color: black;
+    display: flex;
+    gap: 5px;
+    padding-left: 0;
+    list-style: none;
+}
+
+main nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+main nav ul li a:hover {
+    color:var(--idk-color);
+}
+
+/*! MAIN CONTAINER OF THE FORM */
+main form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid var(--main-container-color);
+    border-radius: 10px;
+}
+
+main form .container {
+    margin: 0 auto;
+}
+
+main form label {
+    font-size: 12px;
+    color: white;
+}
+
+/*! TITLE */
+main form .title {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+
+main form .title input {
+    color: white;
+    height: 3vh;
+    width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--main-bg-color);
+}
+
+main form .coverfile {
+    text-align: center;
+    color: white;
+    width: 100px;
+    height: 100px;
+    background-color: var(--main-bg-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main form .coverfile:hover {
+    color: var(--idk-color);
+}
+
+main form .coverfile:hover + .message {
+    display: block;
+}
+
+main form .coverfile label img{
+    object-fit: fill;
+    border-radius: 7px;
+}
+/*? to hide the BROWSER file input */
+main form #mangaCover {
+    display: none;
+}
+
+/*! GENRES🆘 */
+main form .genre {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+main form .genre select {
+    color: white;
+    background-color: var(--main-bg-color);
+    border-radius: 5px;
+}
+
+/*! SYNOPSIS🆘 */
+main form .synopsis {
+    padding-bottom: 10px;
+}
+main form .synopsis textarea {
+    width: 100%;
+    height: 100px;
+    background-color: var(--main-bg-color);
+    resize: none;
+    color: white;
+}
+
+/*! CHAPTER 🆘 */
+main form .chapter #chapupload{
+    color: var(--main-bg-color);
+
+}
+
+main form .chapter #chapter {
+    background-color: var(--main-bg-color);
+    border-radius: 5px;
+    color: white;
+}
+
+main form .chapter #chapupload:hover{
+    color: var(--idk-color);
+    cursor: pointer;
+}
+
+main form .chapter #chapupload:hover + .message {
+    display: block;
+}
+
+main form .chapter #chapterfile {
+    color: white;
+    display: none;
+}
+
+/*todo MESSAGE POP WHEN HOVERED */
+.message {
+    display: none;
+    background-color: black;
+    font-size: 12px;
+    color: red;
+}
+
+/*! SUBMIT BUTTON */
+
+main form .submit {
+    font-weight: 600;
+    width: 50px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: var(--main-bg-color);
+    color: white;
+    text-align: center;
+    
+}
+/*? to set the btn in the end */
+main form .submitcontainer {
+    display: flex;
+    justify-content: end;
+
+}
+
+main form .submit:hover {
+    background-color: var(--idk-color);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5;
+}
+/*? to hide the submit input btn */
+main form #submitinput {
+    display: none;
+}
+footer {
+    margin-top: auto;
 }
