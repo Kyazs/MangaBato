@@ -93,11 +93,11 @@
                 </div>
                 <div class="agreement">
                     <input type="checkbox" name="terms" id="terms" required>
-                    <label for="terms">I agree to the MangaBato’s <a href="">Privacy Policy</a> and <a href="">Terms & Conditions</a></label>
+                    <label for="terms">I agree to the MangaBato’s <a href="../privacypolicy.php" target="_blank">Privacy Policy</a> and <a href="../terms.php" target="_blank">Terms & Conditions</a></label>
                 </div>
                 <br>
                 <div class="submitcontainer">
-                    <button class="submit">Submit<input id="submitinput" type="submit"></button>
+                    <input class="submit" id="submitinput" type="submit">
                 </div>
             </div>
         </form>
