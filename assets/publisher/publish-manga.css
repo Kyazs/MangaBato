@@ -184,8 +184,6 @@ main form .submit:hover {
     transition: 0.5;
 }
 /*? to hide the submit input btn */
-main form #submitinput {
-}
 footer {
     margin-top: auto;
 }

@@ -97,7 +97,7 @@
                 </div>
                 <br>
                 <div class="submitcontainer">
-                    <input class="submit" id="submitinput" type="submit">
+                    <input class="submit" id="submitinput" type="submit" name="submit" value="Upload">
                 </div>
             </div>
         </form>
@@ -106,6 +106,17 @@
     <footer><?php include('../php/footer.php'); ?></footer>
 
     <script>
+
+        <?php
+        // Check if upload success session variable is set
+        if (isset($_SESSION['uploadSuccess']) && $_SESSION['uploadSuccess']) {
+            // Echo JavaScript code to show alert
+            echo 'alert("Upload successful!");';
+            // Unset the session variable to avoid showing the alert on page refresh
+            unset($_SESSION['uploadSuccess']);
+        }
+        ?>
+
         $(document).ready(function() {
             //! to view the image before uploading
             $('#mangaCover').change(function(e) {
