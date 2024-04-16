@@ -12,7 +12,8 @@ main {
 main .publish-container {
     width: 80vw;
     margin: 0 auto;
-    border: 1px solid var(--main-container-color);
+    /* border: 1px solid var(--main-container-color); */
+    box-shadow: 0 1px 0 2px var(--black-color);
     border-radius: 10px;
 }
 
@@ -24,7 +25,7 @@ main .publish-container {
 }
 
 main nav {
-    background-color: black;
+    background-color: transparent;
     width: 80vw;
     margin: 0 auto;
 }
@@ -55,7 +56,7 @@ main nav ul li a:hover {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
-    border-bottom: 1px solid var(--main-container-color);
+    border-bottom: 3px solid var(--black-color);
     text-align: center;
     padding: 5px;
 
@@ -133,7 +134,7 @@ main nav ul li a:hover {
     width: 45vw;
     display: flex;
     flex-direction: column;
-    border-right: 1px solid var(--main-container-color);
+    border-right: 1px solid var(--black-color);
     gap: 5px;
 }
 
@@ -194,7 +195,7 @@ main nav ul li a:hover {
 /* ! CREATED ON CONTAINER */
 
 .publish-container header article .box-container .created-on {
-    border-right: 1px solid var(--main-container-color);
+    border-right: 1px solid var(--black-color);
     padding-right: 10px;
     padding-left: 10px;
 
@@ -229,6 +230,5 @@ main nav ul li a:hover {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
+    margin-top: auto;
 }

@@ -8,6 +8,7 @@
     padding-top: 20px;
     width: fit-content;
     margin: 0 auto;
+    background-color: transparent;
 }
 
 /* ! CSS CODE FOR THE SECTION BOOK */
@@ -15,7 +16,8 @@
     margin-bottom: 1em;
     height: auto;
     width: 80vw;
-    border: 1px solid var(--main-container-color);
+    /* border: 1px solid var(--main-container-color); */
+    box-shadow:  0 1px 0 2px var(--black-color);
     border-radius: 5px;
     display: flex;
     overflow: hidden;
@@ -96,11 +98,13 @@
 .book .main .aside .status {
     padding: 2px;
     margin-top: 10px;
-    border: 1px solid var(--main-container-color);
+    /* border: 1px solid var(--main-container-color); */
+    box-shadow:  0 1px 0 2px var(--black-color);
     border-radius: 5px;
     display: flex;
     justify-content: space-around;
     gap: 5px;
+    cursor: default;
 }
 
 .book .main .aside .status h3 {
@@ -118,7 +122,9 @@
 .book .main .aside .type {
     padding: 2px;
     margin-top: 10px;
-    border: 1px solid var(--main-container-color);
+    /* border: 1px solid var(--main-container-color); */
+    box-shadow: 0 1px 0 2px var(--black-color);
+    cursor: default;
     border-radius: 5px;
     display: flex;
     justify-content: space-around;
@@ -139,7 +145,9 @@
 .book .main .aside .genre {
     padding: 2px;
     margin-top: 10px;
-    border: 1px solid var(--main-container-color);
+    /* border: 1px solid var(--main-container-color); */
+    box-shadow: 0 1px 0 2px var(--black-color);
+    cursor: default;
     border-radius: 5px;
     display: flex;
     justify-content: space-around;
@@ -159,7 +167,9 @@
 .book .main .aside .author {
     padding: 2px;
     margin-top: 10px;
-    border: 1px solid var(--main-container-color);
+    /* border: 1px solid var(--main-container-color); */
+    box-shadow: 0 1px 0 2px var(--black-color);
+    cursor: default;
     border-radius: 5px;
     display: flex;
     justify-content: space-around;
@@ -182,7 +192,9 @@
     display: flex;
     justify-content: center;
     color: white;
-    border: 1px solid var(--main-container-color);
+    /* border: 1px solid var(--main-container-color); */
+    box-shadow: 0 1px 0 2px var(--black-color);
+    cursor: default;
     border-radius: 5px;
     width: 95px;
     height: 20px;
@@ -230,7 +242,8 @@
     width: 80vw;
     display: flex;
     flex-direction: column;
-    border: 1px solid var(--main-container-color);
+    /* border: 1px solid var(--main-container-color); */
+    box-shadow: 0 1px 0 2px var(--black-color);
     border-radius: 5px;
 }
 
@@ -242,13 +255,11 @@
     display: flex;
     height: 25px;
     width: 100%;
-    border-bottom: 1px solid var(--main-container-color);
+    border-bottom: 3px solid var(--black-color);
     margin-bottom: 5px;
-
 }
 
 .container .chapter .header h3 {
-
     font-size: 12px;
     color: var(--main-font-color);
     font-weight: bold;
@@ -282,6 +293,7 @@
 .container .article .chapter {
     border-radius: 5px;
     padding: 5px;
+    margin-top: 5px;
     width: 90%;
 }
 
@@ -292,11 +304,11 @@
 
 .container .article .chapter a h3 {
     font-size: 10px;
-    color: var(--second-font-color);
 }
 
 .container .article .chapter:hover {
-    background-color: var(--hover-color);
+    /* background-color: var(--hover-color); */
+    box-shadow: 0 1px 0 2px var(--idk-color);
     border-radius: 5px;
 }
 .container .article .chapter a h3:hover {

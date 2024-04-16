@@ -37,7 +37,6 @@
                     <label class="coverfile" for="mangaCover">
                         <img id="preview" src="" alt="Upload Manga Cover" style="width: 98px; height: 98px;">
                     </label>
-                    <div class="message">Upload Image file only!</div>
                 </div>
 
                 <div class="genre">
@@ -88,7 +87,6 @@
                     <input type="number" name="chapter" id="chapter" required><br>
                     <label>Chapter File:</label>
                     <label id="chapupload" for="chapterfile">Upload a file</label>
-                    <div class="message">Upload Zip file only!</div>
                     <input type="file" name="chapterfile" id="chapterfile" accept="application/zip" required>
                 </div>
                 <div class="agreement">
@@ -109,7 +107,9 @@
 
         <?php
         // Check if upload success session variable is set
-        if (isset($_SESSION['uploadSuccess']) && $_SESSION['uploadSuccess']) {
+        
+        if (isset($_SESSION['uploadSuccess'])) {
+            session_start();
             // Echo JavaScript code to show alert
             echo 'alert("Upload successful!");';
             // Unset the session variable to avoid showing the alert on page refresh

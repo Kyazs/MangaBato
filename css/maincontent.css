@@ -1,15 +1,16 @@
-
 /* FEATURED 🆘🆘👌⭐ */
-.topbar  {
+.topbar {
 
-    background-color: black;
+    /* background-color: black; */
     width: 100%;
     color: white;
-    border: 1px solid var(--main-container-color);
+    /* border: 1px solid var(--main-container-color);
     border-bottom: none;
     border-top-left-radius:10px ;
-    border-top-right-radius:10px ;
+    border-top-right-radius:10px ; */
     padding: 5px;
+    border-bottom: 5px solid var(--black-color);
+
 }
 
 .topbar p {
@@ -18,13 +19,20 @@
     font-family: var(--main-font-family);
     font-size: 20px;
     font-weight: 500;
-    border-bottom: 1px solid white;
+    /* border-bottom: 1px solid white; */
+
+
+}
+
+.trendingContainer {
+    box-shadow: 0 2px 0px 4px var(--black-color);
+    border-radius: 5px;
 
 }
 
 .trending {
-    border: 1px solid var(--main-container-color);
-    border-top: none;
+    /* border: 1px solid var(--main-container-color);
+    border-top: none; */
     scroll-behavior: smooth;
     width: 100%;
     display: flex;
@@ -33,11 +41,11 @@
     align-items: center;
     font-weight: 600;
     letter-spacing: 1px;
-    border-top-left-radius: 0;
+    /* border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: BLACK;
+    border-bottom-right-radius: 15px; */
+    /* background-color: BLACK; */
     padding: 0 5px 5px 5px;
 }
 
@@ -83,7 +91,8 @@
 
 .trending .box:hover {
     background-color: rgb(30, 0, 255);
-    border: 2px solid #A072EF;
+    box-shadow: 0 2px 0px 4px var(--black-color);
+    transform: scale(0.95);
     /* box-shadow: 5px 5px 2px #a072ef5a; */
 }
 
@@ -94,7 +103,7 @@
 /* RANKING 😵‍💫😵‍💫🆘 */
 .ranking {
     /* border: 1px solid var(--main-container-color); */
-    background-color: black;
+    background-color: var(--black-color);
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -102,13 +111,16 @@
     height: 740px;
     overflow: hidden;
     align-content: flex-start;
-    border: 1px solid var(--main-container-color);
+    /* border: 1px solid var(--main-container-color); */
+    background-color: var(--main-bg-color);
     width: 100%;
+    box-shadow: 0 2px 0px 4px var(--black-color);
+
 
 }
 
 .ranking .rtopbar {
-    border-bottom: 2px solid white;
+    border-bottom: 5px solid var(--black-color);
     padding-left: 10px;
     padding: 5px;
 
@@ -127,8 +139,15 @@
     height: 120px;
     display: flex;
     flex-wrap: nowrap;
-    border: 1px solid rgba(255, 255, 255, 0.257);
+    /* border: 1px solid rgba(255, 255, 255, 0.257); */
+    box-shadow: 0 2px 0px 4px var(--black-color);
     overflow: hidden;
+}
+
+.ranking .rank_box:hover {
+    
+    transform: scale(0.95);
+    box-shadow: 0 2px 0px 4px var(--black-color);
 }
 
 /* image */
@@ -210,8 +229,9 @@
 
 /* latest manga 😵‍💫😵‍💫🆘😒😒 */
 .latest_manga {
-    border: 1px solid var(--main-container-color);
-    background-color: black;
+    /* border: 1px solid var(--main-container-color);
+    background-color: black; */
+    box-shadow: 0 2px 0px 4px var(--black-color);
     width: 100%;
     margin-top: 15px;
     overflow-wrap: normal;
@@ -224,7 +244,7 @@
     border: none;
     font-family: "Oswald", sans-serif;
     display: flex;
-    border-bottom: 2px solid white;
+    border-bottom: 5px solid var(--black-color);
     padding: 10px 20px;
     justify-content: space-between;
     align-items: center;
@@ -268,9 +288,15 @@
 .latest_box {
     display: flex;
     flex-wrap: nowrap;
-    border: 1px solid rgba(255, 255, 255, 0.257);
+    /* border: 1px solid rgba(255, 255, 255, 0.257); */
+    box-shadow: 0 2px 0px 4px var(--black-color);
     width: 100%;
     overflow: hidden;
+}
+
+.latest_box:hover {
+    transform: scale(0.95);
+    box-shadow: 0 2px 0px 4px var(--black-color);
 }
 
 .latest_box a {

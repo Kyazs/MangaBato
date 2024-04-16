@@ -15,6 +15,7 @@ if ($conn->connect_error) {
 } else {
 
     if (isset($_POST['submit'])) {
+        
         //? Variables from the form
         $title = $_POST['title'];
         $genre = $_POST['genre'];
@@ -57,12 +58,9 @@ if ($conn->connect_error) {
     } else {
         echo "Errpr Uploading Cover File.";
     }
-}
-$conn->close();
-$uploadSuccess = true;
-//todo AFTER EXECUTING THE DATABASE, REDIRECT TO PUBLISH-MANGA.PHP
-if ($uploadSuccess) { // Replace $uploadSuccess with your actual success condition
+    $conn->close();
+    //todo AFTER EXECUTING THE DATABASE, REDIRECT TO PUBLISH-MANGA.PHP
     header("Location: ../../publisher/publish-manga.php");
-    exit(); // Stop script execution after redirect
+    exit();
 }
 ?>
