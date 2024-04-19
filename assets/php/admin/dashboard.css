@@ -78,8 +78,6 @@ main .aside .aside-container .profile .circle img {
     order: 1;
 }
 
-.article .dashboard-container {
-}
 
 .article .dashboard-container .total {
     margin-top: 10px;
@@ -154,10 +152,6 @@ main .aside .aside-container .profile .circle img {
     margin: 20px;
 }
 
-.article .manga-container .table {
-
-}
-
 .article .manga-container table {
     width: 100%;
     border-collapse: collapse;
@@ -203,10 +197,6 @@ main .aside .aside-container .profile .circle img {
     display: none;
     overflow-y: scroll;
     margin: 20px;
-}
-
-.article .pending-container .table {
-
 }
 
 .article .pending-container table {
