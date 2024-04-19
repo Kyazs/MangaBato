@@ -10,23 +10,17 @@ function navbar() {
                             <path
                                 d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
                         </svg></button>
-                </li>
+                        </li>
                 <li><a href="#">Profile</a></li>
-                <li><a href="../publisher/publish.php">Publish</a></li>
-                <li><a class="logout" href="../../index.html">Logout</a></li>
-                <li><a href="../aboutus.php">About us</a></li>
+                <li><a href="../../publisher/publish.php">Publish</a></li>
+                <li><a class="logout" href="../../../index.html">Logout</a></li>
+                <li><a href="../../aboutus.php">About us</a></li>
             </ul>
         </div >
         <div class="nav_link">
             <ul>
-                <li class="logo"><a href="../../index.html">
+                <li class="logo"><a href="../../../index.html">
                     <img src="../../../img/logo_mangabato.png" alt="logo" width="50px">MANGABATO</a></li>
-                <li><a href="../login.php">
-                    <button class="full-rounded">
-                        <span>Login</span>
-                        <div class="border full-rounded"></div>
-                    </button>
-                </a></li>
                 <li onclick=showSidebar()><a href="#">
                     <button class="full-rounded">
                         <span class="menu"><svg xmlns="http://www.w3.org/2000/svg" height="20"
@@ -43,4 +37,32 @@ function navbar() {
      `;
 }
 
+function footer() {
+    return `
+    <footer>
+        <div class="footer-container">
+            <!-- ! ICONS FROM BOXICONS -->
+            <div class="icons">
+                <a href="https://www.facebook.com">
+                    <i class='bx bxl-facebook-circle'></i></a>
+                <a href="https://www.discord.com">
+                    <i class='bx bxl-discord-alt'></i></a>
+                <a href="https://www.reddit.com">
+                    <i class='bx bxl-reddit'></i></a>
+                <a href="https://github.com/Kyazs/MangaBato">
+                    <i class='bx bxl-github'></i></a>
+            </div>
+            <ul>
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a href="../../privacypolicy.php">Privacy Policy</a></li>
+                <li><a href="../../terms.php">Terms of Service</a></li>
+                <li><a href="../../aboutus.php">About us</a></li>
+            </ul>
+            <p>© 2024 - Present MangaBato</p>
+        </div>
+    </footer>
+    `;
+}
+
 export default navbar;
+export {footer};
