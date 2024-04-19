@@ -52,6 +52,7 @@ main form {
 main form .container {
     margin: 0 auto;
     box-shadow: 0 2px 0px 3px var(--black-color);
+    background-color: var(--main-container-color);
     border-radius: 5px;
     padding: 5px;
     margin: 10px;
