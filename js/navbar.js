@@ -21,3 +21,4 @@ window.onload = function () {
     var element = document.getElementById('getClapSynopsis');
     $clamp(getClapSynopsis, { clamp: 12 });;
 }
+
