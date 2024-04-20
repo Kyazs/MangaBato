@@ -12,7 +12,6 @@ main {
     margin: 0 auto;
     margin-top: 2vh;
     flex: 1;
-    overflow: auto;
 }
 
 /*! code for the nav of the file */
@@ -65,8 +64,9 @@ main form label {
 
 /*! TITLE */
 main form .title {
+    padding-top: 10px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
     width: 100%;
@@ -122,7 +122,9 @@ main form .coverfile:hover::after {
     /* Prevent line break */
 }
 
-main form .coverfile label img {
+main form .coverfile  img {
+    width: 98px;
+    height: 98px;
     object-fit: fill;
     border-radius: 7px;
 }
@@ -135,7 +137,7 @@ main form #mangaCover {
 /*! GENRES🆘 */
 main form .genre {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     padding-top: 10px;
 }
 
@@ -155,7 +157,10 @@ main form .genre select option {
 /*! SYNOPSIS🆘 */
 main form .synopsis {
     padding-bottom: 10px;
-}
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;}
 
 main form .synopsis textarea {
     width: 100%;
@@ -167,6 +172,13 @@ main form .synopsis textarea {
 }
 
 /*! CHAPTER 🆘 */
+main form .chapter {
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px; */
+}
 main form .chapter #chapupload {
     color: var(--main-bg-color);
     position: relative;
@@ -224,6 +236,10 @@ main form .submit {
 }
 
 /*? to set the btn in the end */
+main form .agreement { 
+    text-align: center;
+}
+
 main form .submitcontainer {
     display: flex;
     justify-content: end;
@@ -240,4 +256,102 @@ main form .submit:hover {
 /*? to hide the submit input btn */
 footer {
     margin-top: auto;
+}
+
+@media screen and (min-width: 600px) {
+
+    main form label{
+        font-size: 15px;
+    }
+    main form .title input {
+        width: 50%;
+        height: 30px;
+    }
+
+    main form .coverfile {
+        width: 120px;
+        height: 120px;
+    }
+
+    main form .coverfile img {
+        width: 100%;
+        height: 100%;
+    }
+
+    main form .genre{
+        gap: 10px;
+    }
+
+    main form .genre select {
+        height: 30px;
+        width: 50%;
+    }
+
+
+    main form .synopsis textarea {
+        width: 100%;
+        height: 200px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+
+        main form {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        main form .title {
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        main form .title input {
+            width: 50%;
+            height: 30px;
+        }
+
+        main form .coverfile {
+            width: 120px;
+            height: 120px;
+        }
+
+        main form .coverfile img {
+            width: 100%;
+            height: 100%;
+        }
+
+        main form .genre {
+            gap: 10px;
+        }
+
+        main form .genre select {
+            height: 30px;
+            width: 50%;
+        }
+
+        main form .synopsis textarea {
+            width: 100%;
+            height: 200px;
+        }
+
+        main form .chapter {
+            gap: 10px;
+        }
+
+        main form .chapter #chapter {
+            width: 50%;
+            height: 30px;
+        }
+
+        main form .submit {
+            width: 100px;
+            height: 40px;
+        }
+
+    }
+
+
+
+    
+
 }

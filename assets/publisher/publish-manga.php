@@ -35,7 +35,7 @@
                     <input type="text" name="title" id="title" required>
                     <input type="file" name="mangaCover" id="mangaCover" accept="image/*" required>
                     <label class="coverfile" for="mangaCover">
-                        <img id="preview" src="" alt="Upload Manga Cover" style="width: 98px; height: 98px;">
+                        <img id="preview" src="" alt="Upload Manga Cover">
                     </label>
                 </div>
 
