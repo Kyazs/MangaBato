@@ -2,10 +2,12 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
 
 main {
     margin: 20px;
+    min-height: 100vh;
 }
 
 
@@ -231,4 +233,10 @@ main nav ul li a:hover {
 
 footer {
     margin-top: auto;
+}
+
+@media screen and (min-width: 600px) {
+    
+    
+    
 }
