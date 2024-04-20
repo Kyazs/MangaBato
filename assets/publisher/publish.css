@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
+
 }
 
 main {
@@ -15,7 +15,8 @@ main .publish-container {
     width: 80vw;
     margin: 0 auto;
     /* border: 1px solid var(--main-container-color); */
-    box-shadow: 0 1px 0 2px var(--black-color);
+    background-color: var(--main-container-color);
+    box-shadow: 0 2px 3px 4px var(--black-color);
     border-radius: 10px;
 }
 
@@ -23,7 +24,7 @@ main .publish-container {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    padding:0 5px 5px 5px;
+    padding: 0 5px 5px 5px;
 }
 
 main nav {
@@ -86,7 +87,7 @@ main nav ul li a:hover {
     right: 50px;
 }
 
-.add-manga button i{
+.add-manga button i {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,7 +96,7 @@ main nav ul li a:hover {
 }
 
 .add-manga button i:hover,
-.add-manga button:hover{
+.add-manga button:hover {
     width: 30px;
     height: 30px;
     display: flex;
@@ -236,7 +237,127 @@ footer {
 }
 
 @media screen and (min-width: 600px) {
-    
-    
-    
+
+    main nav ul li a {
+        font-size: 12px;
+    }
+
+    .publish-container .head h2 {
+        font-size: 1rem;
+    }
+
+    .publish-container .head> :nth-child(2),
+    .publish-container .head> :nth-child(3) {
+        font-size: 12px;
+    }
+
+    .add-manga button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .add-manga button i {
+        font-size: 30px;
+    }
+
+    .add-manga button i:hover,
+    .add-manga button:hover,
+    .add-manga button:hover::after{
+        width: 42px;
+        height: 42px;
+    }
+
+    .publish-container header article .manga .box {
+        height: 140px;
+        padding: 10px;
+        width: 120%;
+        border-right: 1px solid var(--black-color);
+    }
+
+    .publish-container header article .manga .box img {
+        width: 90px;
+        height: 130px;
+    }
+    .publish-container header article .manga {
+        border: none;
+    }
+
+    .publish-container header article .manga .box .chapter_contents a {
+        font-size: 17px;
+    }
+
+    .publish-container header article .manga .box .chapter_contents ul li {
+        font-size: 15px;
+    }
+
+    .star-rating .material-symbols-outlined {
+        font-size: 25px;
+    }
+
+    .publish-container header article .created-on p {
+        font-size: 15px;
+    }
+
+    .publish-container header article .box-container .last-update p {
+        font-size: 15px;
+    }
 }
+
+@media only screen and (min-width: 1024px) {
+    /* Styles for large screens */
+
+    main {
+        margin-bottom: 30px;
+    }
+
+    .publish-container {
+        padding-bottom: 10px;
+    }
+
+    .publish-container header article .manga .box {
+        height: 170px;
+        padding: 10px;
+        width: 120%;
+        border-right: 1px solid var(--black-color);
+    }
+
+    .publish-container header article .manga .box .rank_image {
+        width: 300px;
+    }
+
+    .publish-container header article .manga .box img {
+        width: 130px;
+        height: 160px;
+    }
+
+    .publish-container header article .manga .box .chapter_contents a {
+        font-size: 20px;
+    }
+
+    .publish-container header article .manga .box .chapter_contents ul li {
+        font-size: 18px;
+    }
+
+    .star-rating .material-symbols-outlined {
+        font-size: 30px;
+    }
+
+    .publish-container header article .created-on p {
+        font-size: 20px;
+    }
+
+    .publish-container header article .box-container .last-update p {
+        font-size: 20px;
+    }
+
+    .add-manga button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .add-manga button i {
+        font-size: 40px;
+    }
+
+
+  }
