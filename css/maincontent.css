@@ -9,11 +9,11 @@
     border-top-left-radius:10px ;
     border-top-right-radius:10px ; */
     padding: 5px;
-    border-bottom: 5px solid var(--black-color);
 
 }
 
 .topbar p {
+    border-bottom: 2px solid var(--black-color);
     width: 100%;
     padding-left: 20px;
     font-family: var(--main-font-family);
@@ -25,8 +25,10 @@
 }
 
 .trendingContainer {
-    box-shadow: 0 2px 0px 4px var(--black-color);
+    box-shadow: 0 2px 3px 4px var(--black-color);
+    background-color: var(--main-container-color);
     border-radius: 5px;
+    margin-bottom: 1.5rem;
 
 }
 
@@ -103,7 +105,7 @@
 /* RANKING 😵‍💫😵‍💫🆘 */
 .ranking {
     /* border: 1px solid var(--main-container-color); */
-    background-color: var(--black-color);
+    background-color: var(--main-container-color);
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -112,15 +114,14 @@
     overflow: hidden;
     align-content: flex-start;
     /* border: 1px solid var(--main-container-color); */
-    background-color: var(--main-bg-color);
     width: 100%;
-    box-shadow: 0 2px 0px 4px var(--black-color);
+    box-shadow: 0 2px 3px 4px var(--black-color);
 
 
 }
 
 .ranking .rtopbar {
-    border-bottom: 5px solid var(--black-color);
+    border-bottom: 3px solid var(--black-color);
     padding-left: 10px;
     padding: 5px;
 
@@ -140,7 +141,7 @@
     display: flex;
     flex-wrap: nowrap;
     /* border: 1px solid rgba(255, 255, 255, 0.257); */
-    box-shadow: 0 2px 0px 4px var(--black-color);
+    box-shadow: 0 1px 3px 2px var(--black-color);
     overflow: hidden;
 }
 
@@ -229,22 +230,22 @@
 
 /* latest manga 😵‍💫😵‍💫🆘😒😒 */
 .latest_manga {
-    /* border: 1px solid var(--main-container-color);
-    background-color: black; */
-    box-shadow: 0 2px 0px 4px var(--black-color);
+    /* border: 1px solid var(--main-container-color);*/
+    background-color: var(--main-container-color);
+    box-shadow: 0 2px 3px 4px var(--black-color);
     width: 100%;
     margin-top: 15px;
     overflow-wrap: normal;
     border-radius: 15px;
     padding: 5px;
-
+    margin-bottom: 1.5rem;
 }
 
 .latest_manga .topbar {
     border: none;
     font-family: "Oswald", sans-serif;
     display: flex;
-    border-bottom: 5px solid var(--black-color);
+    border-bottom: 3px solid var(--black-color);
     padding: 10px 20px;
     justify-content: space-between;
     align-items: center;
@@ -262,7 +263,7 @@
 }
 
 .latest_manga .topbar a:hover {
-    color: blue;
+    color: var(--idk-color);
 }
 
 /* MAIN CONTENT🆘🆘 */
@@ -289,7 +290,7 @@
     display: flex;
     flex-wrap: nowrap;
     /* border: 1px solid rgba(255, 255, 255, 0.257); */
-    box-shadow: 0 2px 0px 4px var(--black-color);
+    box-shadow: 0 1px 3px 2px var(--black-color);
     width: 100%;
     overflow: hidden;
 }
