@@ -28,17 +28,17 @@
                             <div class="flip-card__front">
                                 <div class="title">Log in</div>
                                 <form class="flip-card__form" action="../logon.html">
-                                    <input class="flip-card__input" name="email" placeholder="Email" type="email">
-                                    <input class="flip-card__input" name="password" placeholder="Password" type="password">
+                                    <input class="flip-card__input" name="email" placeholder="Email" type="email" required>
+                                    <input class="flip-card__input" name="password" placeholder="Password" type="password" required>
                                     <button class="flip-card__btn">Let`s go!</button>
                                 </form>
                             </div>
                             <div class="flip-card__back">
                                 <div class="title">Sign up</div>
                                 <form class="flip-card__form" action="../logon.html">
-                                    <input class="flip-card__input" placeholder="Name" type="name">
-                                    <input class="flip-card__input" name="email" placeholder="Email" type="email">
-                                    <input class="flip-card__input" name="password" placeholder="Password" type="password">
+                                    <input class="flip-card__input" placeholder="Name" type="name" required>
+                                    <input class="flip-card__input" name="email" placeholder="Email" type="email" required>
+                                    <input class="flip-card__input" name="password" placeholder="Password" type="password" required>
                                     <button class="flip-card__btn">Confirm!</button>
                                 </form>
                             </div>
