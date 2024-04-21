@@ -48,34 +48,13 @@ nav {
     box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
 }
 
-.nav_link ul li a button:active {
+.nav_link ul li a button:hover {
     transform: scale(0.95);
+    box-shadow: 0 1px 2px 2px black;
 }
 
 .nav_link ul li a button span {
     color: black;
-}
-
-.nav_link ul li a button .border {
-    position: absolute;
-    transition: all 0.3s 0.08s linear;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    transform: translate(-50%, -50%);
-}
-
-.nav_link ul li a button:hover .border {
-    display: block;
-    width: 115%;
-    height: 120%;
-    border: 0.15em solid #0F0F0F;
-}
-
-.nav_link ul li a button:hover {
-    background-color: rgba(255, 255, 255, .3);
-
 }
 
 .nav_link ul li a button .menu {
@@ -161,4 +140,20 @@ nav {
 
 .sidebar ul li .logout:hover {
     background-color: #ff00007b;
+}
+
+.nav_link ul .sideburger {
+    padding-right: 10px;
+    display: none;
+}
+
+.nav_link ul .sideburger a {
+    background-color: black;
+    border-radius: 5px;
+}
+
+.nav_link ul .sideburger a:hover {
+    color: var(--idk-color);
+    border: 1px solid var(--idk-color);
+    transform: scale(0.95);
 }

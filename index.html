@@ -45,22 +45,30 @@
         <div class="nav_link">
             <ul>
                 <li class="logo"><a href="#home">
-                        <img src="img/logo_mangabato.png" alt="logo" width="50px">MANGABATO</a></li>
+                        <img src="img/logo_mangabato.png" alt="logo" width="50px">MANGABATO</a>
+                </li>
                 <li><a href="assets/login.php">
                         <button class="full-rounded">
                             <span>Login</span>
                             <div class="border full-rounded"></div>
                         </button>
-                    </a></li>
-                <li onclick=showSidebar()><a href="#">
+                    </a>
+                </li>
+                <li class="sideburger">
+                    <a href="/assets/profile.php"><i class='bx bx-user-circle' ></i> Profile</a>
+                </li>
+                <li class="sideburger">
+                    <a href="/assets/publisher/publish.php"><i class='bx bx-book-open' ></i> Publish</a>
+                </li>
+                <li id="hamburger" onclick=showSidebar()><a href="#">
                         <button class="full-rounded">
                             <span class="menu"><svg xmlns="http://www.w3.org/2000/svg" height="20"
                                     viewBox="0 -960 960 960" width="20" fill="black">
                                     <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                                 </svg></span>
                             <div class="border full-rounded"></div>
-                        </button></a></li>
-
+                        </button></a>
+                </li>
             </ul>
         </div>
 

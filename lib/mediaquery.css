@@ -1,5 +1,6 @@
 /* media query for Phone */
 @media screen and (max-width: 393px) {
+        
 
     /* media query for making the navbar more responsive */
     .nav_link .logo {
@@ -145,5 +146,27 @@
 
     footer p {
         font-size: 7px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body .responsive-nav .nav_link ul .sideburger {
+        display: none;
+    }
+
+   body .responsive-nav .nav_link ul #hamburger {
+        display: block;
+    
+    }
+    
+}
+
+@media screen and (max-width: 1660px) {
+    #hamburger {
+        display: none;
+    }
+
+    .nav_link ul .sideburger {
+        display: block;
     }
 }
