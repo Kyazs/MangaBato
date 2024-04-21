@@ -81,19 +81,19 @@
                 </header>
                 <article class="article">
                     <div class="chapter">
-                        <a href="#"><h3>chapter 5</h3></a>
+                        <a href="/assets/chapters/chapter-kingdom.html"><h3>chapter 5</h3></a>
                     </div>
                     <div class="chapter">
-                        <a href="#"><h3>chapter 4</h3></a>
+                        <a href="/assets/chapters/chapter-kingdom.html"><h3>chapter 4</h3></a>
                     </div>
                     <div class="chapter">
-                        <a href="#"><h3>chapter 3</h3></a>
+                        <a href="/assets/chapters/chapter-kingdom.html"><h3>chapter 3</h3></a>
                     </div>
                     <div class="chapter">
-                        <a href="#"><h3>chapter 2</h3></a>
+                        <a href="/assets/chapters/chapter-kingdom.html"><h3>chapter 2</h3></a>
                     </div>
                     <div class="chapter">
-                        <a href="#"><h3>chapter 1</h3></a>
+                        <a href="/assets/chapters/chapter-kingdom.html"><h3>chapter 1</h3></a>
                     </div>
                 </article>
             </section>
