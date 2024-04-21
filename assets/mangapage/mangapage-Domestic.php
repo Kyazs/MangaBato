@@ -68,11 +68,11 @@
                     <div class="synopsis">
                         <h2>Synopsis:</h2>
                         <p id="getClapSynopsis"> Tonight, Natsuo loses his virginity. His partner? Her name is Rui and he just met her
-                             today after school. She's the one that brought up this whole situation, stating that she wanted to simply gain the knowledge about sex. 
-                             She does not want to start a relationship, nor does she care about Natsuo. Afterwards, Natsuo feels guilty for losing his virginity 
-                             to a girl he doesn't even particularly like. Mostly, it makes him feel like he betrayed his crush to his high school teacher: 
-                             Hina. A quirky love triangle story unfolds as Natsuo,
-                             Rui, and Hina all end up becoming part of the same family!</p>
+                            today after school. She's the one that brought up this whole situation, stating that she wanted to simply gain the knowledge about sex.
+                            She does not want to start a relationship, nor does she care about Natsuo. Afterwards, Natsuo feels guilty for losing his virginity
+                            to a girl he doesn't even particularly like. Mostly, it makes him feel like he betrayed his crush to his high school teacher:
+                            Hina. A quirky love triangle story unfolds as Natsuo,
+                            Rui, and Hina all end up becoming part of the same family!</p>
                     </div>
                 </div>
             </section>
@@ -81,7 +81,8 @@
             <section class="chapter">
                 <header class="header">
                     <h3>Chapters: </h3>
-                    <h2 id="getClap2">Domestic na Kanojo</h2>
+                    <h2 id="getClap2">Tensei shitara slime datta ken</h2>
+                    <button id="btns" onclick="toggleOrder()"><i class='bx bxs-down-arrow'></i></button>
                 </header>
                 <article class="article">
                     <div class="chapter">
@@ -122,6 +123,7 @@
         <?php include('../php/footer.php'); ?>
     </footer>
     <script src="../../lib/clamp.js"></script>
+    <script src="/js/sort.js"></script>
 </body>
 
 </html>

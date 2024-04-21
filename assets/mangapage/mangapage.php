@@ -81,8 +81,9 @@
                 <header class="header">
                     <h3>Chapters: </h3>
                     <h2 id="getClap2">Tensei shitara slime datta ken</h2>
+                    <button id="btns" onclick="toggleOrder()"><i class='bx bxs-down-arrow'></i></button>
                 </header>
-                <article class="article">
+                <article const invert=chapter [0].style<.order=='-1' ; class="article">
                     <div class="chapter">
                         <a href="/assets/chapters/chapter.html">
                             <h3>chapter 5</h3>
@@ -121,6 +122,7 @@
         <?php include('../php/footer.php'); ?>
     </footer>
     <script src="../../lib/clamp.js"></script>
+    <script src="/js/sort.js"></script>
 </body>
 
 </html>

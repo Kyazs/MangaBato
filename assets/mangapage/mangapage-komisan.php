@@ -35,7 +35,7 @@
                         <h1 id="getClap2">Komi-san wa Komyushou Desu</h1>
                         <h2 id="getClap1">
                             Komi Can't Communicate (english);
-                            古見さんは、コミュ症です (Japanese); 
+                            古見さんは、コミュ症です (Japanese);
                         </h2>
                     </div>
                 </div>
@@ -68,10 +68,10 @@
                     </div>
                     <div class="synopsis">
                         <h2>Synopsis:</h2>
-                        <p id="getClapSynopsis">Komi-san is the beautiful and admirable girl that no-one can take their eyes 
+                        <p id="getClapSynopsis">Komi-san is the beautiful and admirable girl that no-one can take their eyes
                             off her. Almost the whole school sees her as the cold beauty out of their league, but Tadano Shigeo knows
-                             the truth: she's just really bad at communicating with others. Komi-san, who wishes to fix this bad habit of hers, tries to 
-                             improve it with the help of Tadano-kun. </p>
+                            the truth: she's just really bad at communicating with others. Komi-san, who wishes to fix this bad habit of hers, tries to
+                            improve it with the help of Tadano-kun. </p>
                     </div>
                 </div>
             </section>
@@ -80,7 +80,8 @@
             <section class="chapter">
                 <header class="header">
                     <h3>Chapters: </h3>
-                    <h2 id="getClap2">Komi-san wa Komyushou Desu</h2>
+                    <h2 id="getClap2">Tensei shitara slime datta ken</h2>
+                    <button id="btns" onclick="toggleOrder()"><i class='bx bxs-down-arrow'></i></button>
                 </header>
                 <article class="article">
                     <div class="chapter">
@@ -121,6 +122,7 @@
         <?php include('../php/footer.php'); ?>
     </footer>
     <script src="../../lib/clamp.js"></script>
+    <script src="/js/sort.js"></script>
 </body>
 
 </html>

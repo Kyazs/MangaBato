@@ -65,10 +65,10 @@
                     </div>
                     <div class="synopsis">
                         <h2>Synopsis:</h2>
-                        <p id="getClapSynopsis">Millions of years have passed since the times of legends, when the worlds of man and gods 
+                        <p id="getClapSynopsis">Millions of years have passed since the times of legends, when the worlds of man and gods
                             were still the same. In these times it was the desires of man that moved the world. It is the era of the 500 year
-                             war - The Warring States period (403-222 BC in Chinese history). Kingdom is the story of a young boy named Shin who 
-                             grew into a great general and all the trials and bloodshed that lead him there.  </p>
+                            war - The Warring States period (403-222 BC in Chinese history). Kingdom is the story of a young boy named Shin who
+                            grew into a great general and all the trials and bloodshed that lead him there. </p>
                     </div>
                 </div>
             </section>
@@ -77,23 +77,34 @@
             <section class="chapter">
                 <header class="header">
                     <h3>Chapters: </h3>
-                    <h2 id="getClap2">Kingdom</h2>
+                    <h2 id="getClap2">Tensei shitara slime datta ken</h2>
+                    <button id="btns" onclick="toggleOrder()"><i class='bx bxs-down-arrow'></i></button>
                 </header>
                 <article class="article">
                     <div class="chapter">
-                        <a href="/assets/chapters/chapter-kingdom.html"><h3>chapter 5</h3></a>
+                        <a href="/assets/chapters/chapter-kingdom.html">
+                            <h3>chapter 5</h3>
+                        </a>
                     </div>
                     <div class="chapter">
-                        <a href="/assets/chapters/chapter-kingdom.html"><h3>chapter 4</h3></a>
+                        <a href="/assets/chapters/chapter-kingdom.html">
+                            <h3>chapter 4</h3>
+                        </a>
                     </div>
                     <div class="chapter">
-                        <a href="/assets/chapters/chapter-kingdom.html"><h3>chapter 3</h3></a>
+                        <a href="/assets/chapters/chapter-kingdom.html">
+                            <h3>chapter 3</h3>
+                        </a>
                     </div>
                     <div class="chapter">
-                        <a href="/assets/chapters/chapter-kingdom.html"><h3>chapter 2</h3></a>
+                        <a href="/assets/chapters/chapter-kingdom.html">
+                            <h3>chapter 2</h3>
+                        </a>
                     </div>
                     <div class="chapter">
-                        <a href="/assets/chapters/chapter-kingdom.html"><h3>chapter 1</h3></a>
+                        <a href="/assets/chapters/chapter-kingdom.html">
+                            <h3>chapter 1</h3>
+                        </a>
                     </div>
                 </article>
             </section>
@@ -108,6 +119,7 @@
         <?php include('../php/footer.php'); ?>
     </footer>
     <script src="../../lib/clamp.js"></script>
+    <script src="/js/sort.js"></script>
 </body>
 
 </html>

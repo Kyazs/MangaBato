@@ -55,7 +55,7 @@
                         </div>
                         <div class="genre">
                             <h3>Genre:</h3>
-                            <p>: 	Action - Adventure - Comedy - Drama - Fantasy - Mature - Romance - Seinen</p>
+                            <p>: Action - Adventure - Comedy - Drama - Fantasy - Mature - Romance - Seinen</p>
                         </div>
                         <div class="author">
                             <h3>Author:</h3>
@@ -65,8 +65,8 @@
                     </div>
                     <div class="synopsis">
                         <h2>Synopsis:</h2>
-                        <p id="getClapSynopsis">A gate appears in Tokyo's Ginza district sometime in the 21st century. From the gate pours out monsters, 
-                            knights from middle-age Europe, and other fantasy-like beings, and they kill many of the citizens of Tokyo. This event is known as the Ginza Incident. The government sends a small group of soldiers from the Japanese Self-Defense Forces to the alternate world beyond the gate. Led by otaku soldier Yōji, they find that the villages in the world are being attacked by a dragon. 
+                        <p id="getClapSynopsis">A gate appears in Tokyo's Ginza district sometime in the 21st century. From the gate pours out monsters,
+                            knights from middle-age Europe, and other fantasy-like beings, and they kill many of the citizens of Tokyo. This event is known as the Ginza Incident. The government sends a small group of soldiers from the Japanese Self-Defense Forces to the alternate world beyond the gate. Led by otaku soldier Yōji, they find that the villages in the world are being attacked by a dragon.
                             An elf girl who is a survivor from the dragon's rampage joins the group in their travels across the dangerous new world. </p>
                     </div>
                 </div>
@@ -76,23 +76,34 @@
             <section class="chapter">
                 <header class="header">
                     <h3>Chapters: </h3>
-                    <h2 id="getClap2">Gate: Jietai Kare No Chi Nite, Kaku Tatakeri</h2>
+                    <h2 id="getClap2">Tensei shitara slime datta ken</h2>
+                    <button id="btns" onclick="toggleOrder()"><i class='bx bxs-down-arrow'></i></button>
                 </header>
                 <article class="article">
                     <div class="chapter">
-                        <a href="/assets/chapters/chapter-gate.html"><h3>chapter 5</h3></a>
+                        <a href="/assets/chapters/chapter-gate.html">
+                            <h3>chapter 5</h3>
+                        </a>
                     </div>
                     <div class="chapter">
-                        <a href="/assets/chapters/chapter-gate.html"><h3>chapter 4</h3></a>
+                        <a href="/assets/chapters/chapter-gate.html">
+                            <h3>chapter 4</h3>
+                        </a>
                     </div>
                     <div class="chapter">
-                        <a href="/assets/chapters/chapter-gate.html"><h3>chapter 3</h3></a>
+                        <a href="/assets/chapters/chapter-gate.html">
+                            <h3>chapter 3</h3>
+                        </a>
                     </div>
                     <div class="chapter">
-                        <a href="/assets/chapters/chapter-gate.html"><h3>chapter 2</h3></a>
+                        <a href="/assets/chapters/chapter-gate.html">
+                            <h3>chapter 2</h3>
+                        </a>
                     </div>
                     <div class="chapter">
-                        <a href="/assets/chapters/chapter-gate.html"><h3>chapter 1</h3></a>
+                        <a href="/assets/chapters/chapter-gate.html">
+                            <h3>chapter 1</h3>
+                        </a>
                     </div>
                 </article>
             </section>
@@ -107,6 +118,8 @@
         <?php include('../php/footer.php'); ?>
     </footer>
     <script src="../../lib/clamp.js"></script>
+    <script src="/js/sort.js"></script>
+
 </body>
 
 </html>

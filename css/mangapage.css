@@ -238,6 +238,10 @@
     overflow: hidden;
 }
 
+/*! CODE FOR INVERTING */
+.container .chapter .header h5 {}
+
+
 /* !CSS CODE for the section CHAPTER */
 .container .chapter {
     height: 200px;
@@ -291,6 +295,31 @@
     overflow-x: hidden;
     align-items: center;
     padding-bottom: 10px;
+}
+/*? SORT BUTTON */
+.container .chapter .header button {
+    margin-left: auto;
+    margin-right: 20px;
+    background-color: transparent;
+    color: white;
+}
+
+.container .chapter .header button i {
+    font-size: 20px;
+}
+
+.container .chapter .header button:hover {
+    transform: scale(1.1);
+    color: var(--idk-color);
+}
+
+.container .chapter .header button:hover::after {
+    content: 'Sort';
+    position: absolute;
+    top: 0;
+    color: white;
+    font-size: 10px;
+    margin: 10px;
 }
 
 .container .article .chapter {
@@ -446,8 +475,4 @@
     .container .book .main .synopsis {
         width: 500px;
     }
-    
-
-
-
 }
