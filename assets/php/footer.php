@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <base href="../../">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MANGABATO</title>
@@ -26,10 +28,10 @@
                     <i class='bx bxl-github'></i></a>
             </div>
             <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../privacypolicy.php">Privacy Policy</a></li>
-                <li><a href="../terms.php">Terms of Service</a></li>
-                <li><a href="../aboutus.php">About us</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/assets/privacypolicy.php">Privacy Policy</a></li>
+                <li><a href="/assets/terms.php">Terms of Service</a></li>
+                <li><a href="/assets/aboutus.php">About us</a></li>
             </ul>
             <p>© 2024 - Present MangaBato</p>
         </div>

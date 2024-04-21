@@ -6,19 +6,20 @@ main .container-privacy {
 
 .container-privacy .privacy-content {
     display: flex;
+    background-color: var(--main-container-color);
     flex-direction: column;
     width: 80vw;
     height: auto;
     margin: 0 auto;
     padding: 5px;
     /* border: 1px solid var(--main-container-color); */
-    box-shadow: 0 1px 0 2px var(--black-color);
+    box-shadow: 0 2px 3px 3px var(--black-color);
     border-radius: 10px;
 }
 
 .container-privacy .privacy-content header {
     padding: 5px;
-    border-bottom: 3px solid var(--black-color);
+    border-bottom: 2px solid var(--black-color);
 }
 
 .container-privacy .privacy-content header a {
@@ -27,7 +28,7 @@ main .container-privacy {
 
 .container-privacy .privacy-content header a:hover {
     color: var(--main-font-color);
-    transition: 0.5s    ;
+    transition: 0.5s;
 }
 
 .container-privacy .privacy-content article h2 {
@@ -57,4 +58,35 @@ main .container-privacy {
     color: var(--second-font-color);
     font-size: 13px;
     font-weight: normal;
+}
+
+.container-privacy .privacy-content article p:hover {
+    color: var(--main-font-color);
+    transition: 0.5s;
+    cursor: default;
+}
+
+@media screen and (min-width: 600px) {
+    .container-privacy .privacy-content {
+        width: 70vw;
+        padding: 20px;
+    }
+
+    .container-privacy .privacy-content article h4 {
+        font-size: 20px;
+    }
+
+    .container-privacy .privacy-content article p {
+        font-size: 15px;
+    }
+
+
+
+    body .section-container-trending .trending-container {
+        width: 70vw ;
+    }
+
+    .section-container-trending {
+        margin-bottom: 20px;
+    }
 }

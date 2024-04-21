@@ -19,7 +19,7 @@
 .trending-container .topbar {
     color: var(--main-font-color);
     height: 40px;
-    /* border-bottom: 2px solid var(--black-color); */
+    border-bottom: 2px solid var(--black-color);
     padding: 5px 5px 5px 10px;
     font-size: 1.25rem;
     font-weight: 600;
