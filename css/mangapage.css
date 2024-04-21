@@ -3,7 +3,6 @@
     justify-content: center;
     align-items: center;
     height: auto;
-    width: 100vw;
     flex-direction: column;
     padding-top: 20px;
     width: fit-content;
@@ -17,7 +16,8 @@
     height: auto;
     width: 80vw;
     /* border: 1px solid var(--main-container-color); */
-    box-shadow:  0 1px 0 2px var(--black-color);
+    background-color: var(--main-container-color);
+    box-shadow: 0 2px 3px 3px var(--black-color);
     border-radius: 5px;
     display: flex;
     overflow: hidden;
@@ -41,6 +41,8 @@
     left: 15px;
     display: flex;
     flex-direction: row;
+    height: fit-content;
+    width: fit-content;
 }
 
 .book .cover img {
@@ -99,7 +101,7 @@
     padding: 2px;
     margin-top: 10px;
     /* border: 1px solid var(--main-container-color); */
-    box-shadow:  0 1px 0 2px var(--black-color);
+    box-shadow: 0 1px 0 2px var(--black-color);
     border-radius: 5px;
     display: flex;
     justify-content: space-around;
@@ -243,7 +245,8 @@
     display: flex;
     flex-direction: column;
     /* border: 1px solid var(--main-container-color); */
-    box-shadow: 0 1px 0 2px var(--black-color);
+    background-color: var(--main-container-color);
+    box-shadow: 0 2px 3px 3px var(--black-color);
     border-radius: 5px;
 }
 
@@ -286,7 +289,7 @@
     gap: 1em;
     overflow-y: scroll;
     overflow-x: hidden;
-    align-items: center ;
+    align-items: center;
     padding-bottom: 10px;
 }
 
@@ -311,6 +314,140 @@
     box-shadow: 0 1px 0 2px var(--idk-color);
     border-radius: 5px;
 }
+
 .container .article .chapter a h3:hover {
     color: var(--idk-color);
+}
+
+@media only screen and (min-width: 600px) {
+
+    .book .bgc-img {
+        height: 200px;
+    }
+
+    .book .cover img {
+        height: 180px;
+        width: 120px;
+    }
+
+    .book .cover .title {
+        height: 100px;
+    }
+
+    .book .cover .title h1 {
+        font-size: 1.5rem;
+        width: 100%;
+        height: 70px;
+    }
+
+    .book .cover .title h2 {
+        font-size: 1rem;
+        width: 100%;
+        height: 30px;
+    }
+
+    .book .main {
+        justify-content: space-around;
+    }
+
+    .book .main .aside {
+        width: 30%;
+    }
+
+    .book .main .aside .status h3,
+    .book .main .aside .type h3,
+    .book .main .aside .genre h3,
+    .book .main .aside .author h3 {
+        font-size: 1rem;
+    }
+
+    .book .main .aside .status p,
+    .book .main .aside .type p,
+    .book .main .aside .genre p,
+    .book .main .aside .author p {
+        font-size: 1em;
+    }
+
+    .book .main .synopsis {
+        width: 70%;
+    }
+
+    .book .main .synopsis h2 {
+        font-size: 1rem;
+    }
+
+    .book .main .synopsis p {
+        font-size: 1rem;
+    }
+
+    .main .aside .star-rating {
+        width: 133px;
+    }
+
+    /*! MEDIA QUERY CHAPTERS */
+    .container .chapter {
+        height: 30vh;
+    }
+    .container .chapter .header {
+        height: 35px;
+    }
+
+    .container .chapter .header h3 {
+        font-size: 15px;
+    }
+
+    .container .chapter .header h2 {
+        font-size: 12px;
+    }
+
+    .container .article .chapter h3 {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+
+    /*? book head container where image is */
+    .container .book .bgc-img {
+        height: 300px;
+    }
+
+    .book .main  {
+        height: 300px;
+    }
+
+    .container .book .cover {
+        left: 100px;
+    }
+
+    .container .book .cover img {
+        height: 250px;
+        width: 200px;
+    }
+
+    /*? code where synopsis is */
+
+    .container .book .main .aside {
+        width: 200px;
+    }
+
+    .container .book .main .aside .status,
+    .container .book .main .aside .type,
+    .container .book .main .aside .genre,
+    .container .book .main .aside .author
+     {
+        width: 100%;
+    }
+
+    .container .book .main .aside .star-rating {
+        width: 100%;
+    }
+
+    .container .book .main .synopsis {
+        width: 500px;
+    }
+    
+
+
+
 }
