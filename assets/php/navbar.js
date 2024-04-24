@@ -20,10 +20,10 @@ function navbar() {
     </div>
     <div class="nav_link">
         <ul>
-            <li class="logo"><a href="#home">
-                    <img src="img/logo_mangabato.png" alt="logo" width="50px">MANGABATO</a>
+            <li class="logo"><a href="/index.html">
+                    <img src="/img/logo_mangabato.png" alt="logo" width="50px">MANGABATO</a>
             </li>
-            <li><a href="assets/login.php">
+            <li><a href="/assets/login.php">
                     <button class="full-rounded">
                         <span>Login</span>
                         <div class="border full-rounded"></div>

@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($result->num_rows > 0) {
             //redirect to admin page
-            header("Location: ../../admin.php");
+            header("Location: ./dashboard.php");
         } else {
             exit("Invalid username or password");
         }

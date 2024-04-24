@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="dashboard.css">
     <link rel="stylesheet" href="../../../css/navbar.css"> <!-- change the path to css/navbar.css -->
     <link rel="stylesheet" href="../../../css/style.css">
-    <link rel="stylesheet" href="../../../css/navbar.css">
+    <link rel="stylesheet" href="../../../css/maincontent.css">
     <link rel="stylesheet" href="../../../css/footer.css">
     <link rel="stylesheet" href="../../../lib/mediaquery.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>

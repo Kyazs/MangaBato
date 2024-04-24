@@ -16,7 +16,7 @@
             <div class="admin-container">
                 <div class="admin">
                     <h1>Admin Login</h1>
-                    <form action="assets/php/admin/auth.php" method="POST">
+                    <form action="/assets/php/admin/auth.php" method="POST">
                         <input type="text" name="username" placeholder="Username" required>
                         <br>
                         <input type="password" name="password" placeholder="Password" required>

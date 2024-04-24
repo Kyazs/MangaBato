@@ -21,7 +21,7 @@
 
     <main>
         <div class="add-manga">
-            <a href="publish-manga.php"><button><i class='bx bx-plus-circle'></i></button></a>
+            <a href="/assets/publisher/publish-manga.php"><button><i class='bx bx-plus-circle'></i></button></a>
         </div>
         <nav>
 
