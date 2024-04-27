@@ -86,6 +86,11 @@ form p {
     font-size: 15px;
 }
 
+/*?  to hide the login navbar */
+.full-rounded {
+    display: none;
+}
+
 
 .container footer {
     margin-top: auto;

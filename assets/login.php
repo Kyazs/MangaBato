@@ -38,7 +38,7 @@
                 </div>
                 <div class="signup_container">
                     <form id="create" action="" method="POST">
-                        <p>Sign Up</p>
+                        <p>SIGN UP</p>
                         <label for="username">Username:</label>
                         <input type="text" name="username" id="username" placeholder="input username" required>
                         <label for="email">Email:</label>

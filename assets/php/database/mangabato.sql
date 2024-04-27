@@ -3,7 +3,7 @@ CREATE DATABASE mangabato;
 USE mangabato;
 
 CREATE TABLE user (
-    user_id INT AUTO_INCREMENT NOT NULL,
+    user_id INT AUTO_INCREMENT,
     username VARCHAR (255) NOT NULL,
     email VARCHAR (255) NOT NULL,
     password VARCHAR (255) NOT NULL,
@@ -17,8 +17,8 @@ CREATE TABLE user (
 
 
 CREATE TABLE manga_submission (
-    manga_id INT AUTO_INCREMENT NOT NULL,
-    user_id INT NOT NULL,
+    manga_id INT AUTO_INCREMENT,
+    user_id INT,
     title VARCHAR (255) NOT NULL,
     genre VARCHAR (50) NOT NULL,
     type VARCHAR (20) NOT NULL,
@@ -32,8 +32,8 @@ CREATE TABLE manga_submission (
 );
 
 CREATE TABLE chapter (
-    chapter_id INT AUTO_INCREMENT NOT NULL,
-    manga_id INT NOT NULL,
+    chapter_id INT AUTO_INCREMENT,
+    manga_id INT,
     title VARCHAR (255) NOT NULL,
     release_date VARCHAR (20) NOT NULL,
     number_of_pages INT NOT NULL,
@@ -43,8 +43,8 @@ CREATE TABLE chapter (
 );
 
 CREATE TABLE page (
-    page_id INT AUTO_INCREMENT NOT NULL,
-    chapter_id INT NOT NULL,
+    page_id INT AUTO_INCREMENT,
+    chapter_id INT,
     page_number INT NOT NULL,
     image_url VARCHAR (255),
     CONSTRAINT pk_page_id PRIMARY KEY (page_id),

@@ -95,7 +95,6 @@
     background-color: rgb(30, 0, 255);
     box-shadow: 0 2px 0px 4px var(--black-color);
     transform: scale(0.95);
-    /* box-shadow: 5px 5px 2px #a072ef5a; */
 }
 
 .box p:hover {
