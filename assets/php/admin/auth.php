@@ -5,6 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //RETRIEVE FORM DATA
     $user = $_POST['username'];
     $pass = $_POST['password'];
+    $admin = '1';
 
     $servername = "localhost";
     $username = "root";
@@ -20,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
 
         // validate login authentication
-        $query = "SELECT * FROM admin WHERE  username = '$user' AND password = '$pass'";
+        $query = "SELECT * FROM user WHERE  username = '$user' AND password = '$pass' AND is_admin = '$admin'";
 
         $result = $conn->query($query);
 
@@ -28,7 +29,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             //redirect to admin page
             header("Location: ./dashboard.php");
         } else {
-            exit("Invalid username or password");
+            echo "<script>alert('Invalid username or password.');</script>";
+            header("Location: /admin.php");
         }
     }
 }
