@@ -26,7 +26,7 @@
         <main>
             <div class="form_container">
                 <div class="login_container">
-                    <form action="" method="post" enctype="multipart/form-data">
+                    <form action="/logon.html" method="post" enctype="multipart/form-data">
                         <p>LOGIN</p>
                         <label for="username">Username:</label>
                         <input type="text" name="username" id="username" placeholder="Input username" required>
@@ -49,7 +49,7 @@
                         <input type="file" accept="image/*" name="profile" id="profile" required>
                         <label for="biography">Description</label>
                         <textarea name="biography" id="biography" cols="30" rows="10" style="resize: none;"></textarea>
-                        <input type="submit" value="Create Account" id="submit">
+                        <input onclick="alerts()" type="submit" value="Create Account" id="submit">
                         <label id="signup">Have an account? <i onclick="login()"> Login</i></label>
                     </form>
                 </div>
@@ -62,6 +62,9 @@
     <script src="/js/navfot.js" type="module"></script>
     <script>
         //todo SCRIPT FOR CHANGING BETWEEN LOGIN AND SIGN UP
+        function alerts() {
+            alert("Account created! Now you can login.");
+        }
 
         function create() {
             const login = document.querySelector('.login_container')

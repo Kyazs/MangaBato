@@ -188,6 +188,10 @@ main nav ul li a:hover {
     justify-content: space-evenly;
     overflow: scroll;
 }
+/*remove the scrollbar in the chrome browse */
+.publish-container header article .manga .box .chapter_contents ul::-webkit-scrollbar{
+    display: none;
+}
 
 .publish-container header article .manga .box .chapter_contents ul li {
     color: var(--second-font-color);
