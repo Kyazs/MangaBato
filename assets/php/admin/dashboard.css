@@ -119,9 +119,41 @@ main .aside .aside-container .profile .circle img {
 /*todo DASHBOARD LISTS */
 
 /*?USERS */
+.material-symbols-outlined {
+    color: var(--idk-color);
+}
+
+.material-symbols-outlined:hover{
+    color: red;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#suspend:hover::after {
+    content: "Suspend User";
+    font-size: 8px;
+    position: absolute;
+    right: 50%;
+    top: 100%;
+    color: white;
+}
+
+#delete:hover::after {
+    content: "Rem0ved User";
+    font-size: 8px;
+    position: absolute;
+    right: 100%;
+    top: 100%;
+    color: white;
+}
+
 
 .article .users-container {
     display: none;
+}
+
+.article .users-container table tr {
+    position: relative;
 }
 
 .article .users-container table {
@@ -175,6 +207,7 @@ main .aside .aside-container .profile .circle img {
 .article .manga-container table tr td p {
     color: var(--second-font-color);
 }
+
 .article .manga-container table tr td a {
     color: white;
 }
@@ -187,7 +220,7 @@ main .aside .aside-container .profile .circle img {
     width: 80px;
     height: 100px;
     object-fit: cover;
-    
+
 }
 
 /*? PENDING */
@@ -235,6 +268,7 @@ main .aside .aside-container .profile .circle img {
 .article .pending-container table tr td p {
     color: var(--second-font-color);
 }
+
 .article .pending-container table tr td a {
     color: white;
 }
@@ -247,7 +281,7 @@ main .aside .aside-container .profile .circle img {
     width: 80px;
     height: 100px;
     object-fit: cover;
-    
+
 }
 
 

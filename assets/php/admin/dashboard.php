@@ -16,7 +16,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../../../css/footer.css">
     <link rel="icon" href="../../../img/logo_mangabato.png" type="image/-icon">
-    <!-- link for the chart.js -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!-- link for the chart.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 
 </head>
@@ -71,6 +71,8 @@
                                 <th>Password</th>
                                 <th>Role</th>
                                 <th># post</th>
+                                <th style="color: darkred;">Suspend</th>
+                                <th style="color: darkred;">Delete</th>
                             </tr>
                             <tr>
                                 <td>12399</td>
@@ -79,6 +81,14 @@
                                 <td>*********</td>
                                 <td>Administrator</td>
                                 <td>12</td>
+                                <td>
+                                    <span id="suspend" class="material-symbols-outlined" onclick="suspend()">
+                                        block
+                                    </span>
+                                </td>
+                                <td><span id="delete" class="material-symbols-outlined" onclick="remove()">
+                                        delete_forever
+                                    </span></td>
                             </tr>
                             <tr>
                                 <td>12399</td>
@@ -87,6 +97,14 @@
                                 <td>*********</td>
                                 <td>Administrator</td>
                                 <td>12</td>
+                                <td>
+                                    <span id="suspend" class="material-symbols-outlined" onclick="suspend()">
+                                        block
+                                    </span>
+                                </td>
+                                <td><span id="delete" class="material-symbols-outlined" onclick="remove()">
+                                        delete_forever
+                                    </span></td>
                             </tr>
                             <tr>
                                 <td>12399</td>
@@ -96,6 +114,14 @@
                                 <td>*********</td>
                                 <td>Administrator</td>
                                 <td>12</td>
+                                <td>
+                                    <span id="suspend" class="material-symbols-outlined" onclick="suspend()">
+                                        block
+                                    </span>
+                                </td>
+                                <td><span id="delete" class="material-symbols-outlined" onclick="remove()">
+                                        delete_forever
+                                    </span></td>
                             </tr>
                             <tr>
                                 <td>12399</td>
@@ -105,6 +131,14 @@
                                 <td>*********</td>
                                 <td>Administrator</td>
                                 <td>12</td>
+                                <td>
+                                    <span id="suspend" class="material-symbols-outlined" onclick="suspend()">
+                                        block
+                                    </span>
+                                </td>
+                                <td><span id="delete" class="material-symbols-outlined" onclick="remove()">
+                                        delete_forever
+                                    </span></td>
                             </tr>
                         </table>
                     </div>
@@ -340,15 +374,34 @@
     </script>
 
     <script>
-
         function alerts() {
             var response = confirm('Do you want to approve this manga?')
             if (response == true) {
-            alert('Manga has been approved')
-            }else {
+                alert('Manga has been approved')
+            } else {
                 alert('Manga has been rejected')
             }
         }
+
+        function suspend() {
+            var respond = confirm('Do you want to suspend this user?')
+            if (respond == true) {
+                alert('User Has been suspended')
+            } else {
+                alert('Action cancelled')
+            }
+        }
+
+        function remove() {
+            var respond = confirm('Do you want to Remove this user?')
+            if (respond == true) {
+                alert('User Has been Removed')
+            } else {
+                alert('Action cancelled')
+            }
+        }
+
+
         //todo SCRIPT TO SHOW DASHBOARD, USERS, MANGA, PENDING
         function dashboard() {
             const dashboard = document.querySelector('.dashboard-container')
