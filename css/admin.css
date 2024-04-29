@@ -59,3 +59,10 @@ footer {
     /*? to move the footer to the bottom */
     margin-top: auto;
 }
+
+@media screen and (min-width: 1020px) {
+    .container main .admin-container .admin {
+        min-width: 30vw;
+    }
+
+}
