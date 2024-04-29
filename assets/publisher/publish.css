@@ -250,6 +250,13 @@ footer {
         font-size: 1rem;
     }
 
+    .publish-container .head> :nth-child(2) {
+        margin-right: 150px;
+    }
+    .publish-container .head> :nth-child(3) {
+        margin-right: 50px;
+    }
+
     .publish-container .head> :nth-child(2),
     .publish-container .head> :nth-child(3) {
         font-size: 12px;

@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     //RETRIEVE FORM DATA
@@ -29,9 +29,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             //redirect to admin page
             header("Location: ./dashboard.php");
         } else {
-            echo "<script>alert('Invalid username or password.');</script>";
-            header("Location: /admin.php");
+            $errorMessage = 'Invalid username or password.';
+            $_SESSION['error_message'] = $errorMessage; // Set error message in session
         }
     }
+
+    header("Location: /admin.php");
+    exit();
 }
-?>
