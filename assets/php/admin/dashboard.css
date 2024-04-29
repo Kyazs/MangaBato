@@ -63,6 +63,19 @@ main .aside .aside-container .profile .circle img {
     font-size: 1.25rem;
     color: white;
 }
+/*aside header color */
+#dash {
+    color: var(--idk-color);
+}
+#us {
+    color: white;
+}
+#man {
+    color:  white;
+}
+#pen {
+    color:  white;
+}
 
 .container main .contents ul li a:hover {
     color: var(--idk-color);
@@ -140,6 +153,15 @@ main .aside .aside-container .profile .circle img {
 
 #delete:hover::after {
     content: "Rem0ved User";
+    font-size: 8px;
+    position: absolute;
+    right: 100%;
+    top: 100%;
+    color: white;
+}
+
+#deleteto:hover::after {
+    content: "REM0VE";
     font-size: 8px;
     position: absolute;
     right: 100%;

@@ -33,10 +33,10 @@
                     </div>
                     <div class="contents">
                         <ul>
-                            <li onclick=dashboard()><a href="#">Dashboard</a></li>
-                            <li onclick=users()><a href="#">Users</a></li>
-                            <li onclick=manga()><a href="#">Manga</a></li>
-                            <li onclick=pending()><a href="#">Pending</a></li>
+                            <li onclick=dashboard()><a id="dash" href="#">Dashboard</a></li>
+                            <li onclick=users()><a id="us" href="#">Users</a></li>
+                            <li onclick=manga()><a id="man" href="#">Manga</a></li>
+                            <li onclick=pending()><a id="pen" href="#">Pending</a></li>
                         </ul>
                     </div>
                 </div>
@@ -72,7 +72,7 @@
                                 <th>Role</th>
                                 <th># post</th>
                                 <th style="color: darkred;">Suspend</th>
-                                <th style="color: darkred;">Delete</th>
+                                <th style="color: darkred;">Remove</th>
                             </tr>
                             <tr>
                                 <td>12399</td>
@@ -154,6 +154,7 @@
                                 <th>Genre</th>
                                 <th>Status</th>
                                 <th>Type</th>
+                                <th style="color: darkred;">Remove</th>
                             </tr>
                             <tr>
                                 <td>123</td>
@@ -168,6 +169,10 @@
                                 </td>
                                 <td>Ongoing</td>
                                 <td>Manga</td>
+                                <td><span id="deleteto" class="material-symbols-outlined" onclick="remove()">
+                                        delete_forever
+                                    </span>
+                                </td>
                             </tr>
                             <tr>
                                 <td>123</td>
@@ -182,6 +187,10 @@
                                 </td>
                                 <td>Ongoing</td>
                                 <td>Manga</td>
+                                <td><span id="deleteto" class="material-symbols-outlined" onclick="remove()">
+                                        delete_forever
+                                    </span>
+                                </td>
                             </tr>
                             <tr>
                                 <td>123</td>
@@ -196,6 +205,10 @@
                                 </td>
                                 <td>Ongoing</td>
                                 <td>Manga</td>
+                                <td><span id="deleteto" class="material-symbols-outlined" onclick="remove()">
+                                        delete_forever
+                                    </span>
+                                </td>
                             </tr>
                             <tr>
                                 <td>123</td>
@@ -210,6 +223,10 @@
                                 </td>
                                 <td>Ongoing</td>
                                 <td>Manga</td>
+                                <td><span id="deleteto" class="material-symbols-outlined" onclick="remove()">
+                                        delete_forever
+                                    </span>
+                                </td>
                             </tr>
                             <tr>
                                 <td>123</td>
@@ -224,6 +241,10 @@
                                 </td>
                                 <td>Ongoing</td>
                                 <td>Manga</td>
+                                <td><span id="deleteto" class="material-symbols-outlined" onclick="remove()">
+                                        delete_forever
+                                    </span>
+                                </td>
                             </tr>
                             <tr>
                                 <td>123</td>
@@ -238,6 +259,10 @@
                                 </td>
                                 <td>Ongoing</td>
                                 <td>Manga</td>
+                                <td><span id="deleteto" class="material-symbols-outlined" onclick="remove()">
+                                        delete_forever
+                                    </span>
+                                </td>
                             </tr>
                         </table>
                     </div>
@@ -415,6 +440,19 @@
             //! to hide the pending
             const pending = document.querySelector('.pending-container')
             pending.style.display = 'none'
+
+            //? color of the aside header
+            const computedStyle = getComputedStyle(document.documentElement);
+            const idkColor = computedStyle.getPropertyValue('--idk-color');
+
+            const dash = document.getElementById('dash')
+            dash.style.color = idkColor;
+            const us = document.getElementById('us')
+            us.style.color = 'white'
+            const man = document.getElementById('man')
+            man.style.color = 'white'
+            const pen = document.getElementById('pen')
+            pen.style.color = 'white'
         }
 
         function users() {
@@ -430,6 +468,20 @@
 
             const users = document.querySelector('.users-container')
             users.style.display = 'block'
+
+            //? color of the aside header
+            const computedStyle = getComputedStyle(document.documentElement);
+            const idkColor = computedStyle.getPropertyValue('--idk-color');
+
+            const dash = document.getElementById('dash')
+            dash.style.color = 'white'
+            const us = document.getElementById('us')
+            us.style.color = idkColor;
+            const man = document.getElementById('man')
+            man.style.color = 'white'
+            const pen = document.getElementById('pen')
+            pen.style.color = 'white'
+
         }
 
         function manga() {
@@ -445,6 +497,18 @@
 
             const manga = document.querySelector('.manga-container')
             manga.style.display = 'block'
+
+            const computedStyle = getComputedStyle(document.documentElement);
+            const idkColor = computedStyle.getPropertyValue('--idk-color');
+
+            const dash = document.getElementById('dash')
+            dash.style.color = 'white'
+            const us = document.getElementById('us')
+            us.style.color = 'white'
+            const man = document.getElementById('man')
+            man.style.color = idkColor;
+            const pen = document.getElementById('pen')
+            pen.style.color = 'white'
         }
 
         function pending() {
@@ -460,6 +524,18 @@
 
             const pending = document.querySelector('.pending-container')
             pending.style.display = 'block'
+
+            const computedStyle = getComputedStyle(document.documentElement);
+            const idkColor = computedStyle.getPropertyValue('--idk-color');
+
+            const dash = document.getElementById('dash')
+            dash.style.color = 'white';
+            const us = document.getElementById('us')
+            us.style.color = 'white'
+            const man = document.getElementById('man')
+            man.style.color = 'white'
+            const pen = document.getElementById('pen')
+            pen.style.color = idkColor;
         }
 
         //todo SCRIPT FOR CHART
