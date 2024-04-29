@@ -28,7 +28,7 @@
             </ul>
         </nav>
 
-        <form action="../php/database/upload-manga.php" method="post" enctype="multipart/form-data">
+        <form action="/assets/publisher/publish.php" method="post" enctype="multipart/form-data">
             <div class="container">
                 <div class="title">
                     <label for="title">Title: </label>
@@ -91,7 +91,7 @@
                 </div>
                 <div class="agreement">
                     <input type="checkbox" name="terms" id="terms" required>
-                    <label for="terms">I agree to the MangaBato’s <a href="../privacypolicy.php" target="_blank">Privacy Policy</a> and <a href="../terms.php" target="_blank">Terms & Conditions</a></label>
+                    <label for="terms">I agree to the MangaBato’s <a href="/assets/privacypolicy.php" target="_blank">Privacy Policy</a> and <a href="/assets/terms.php" target="_blank">Terms & Conditions</a></label>
                 </div>
                 <br>
                 <div class="submitcontainer">
