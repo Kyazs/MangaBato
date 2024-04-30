@@ -7,10 +7,18 @@
 }
 
 :root {
-    --main-bg-color: #16161A;
-    --main-container-color: #94A1B2;
+    --black-color: #000000;
+    --white-color: #FFFFFF;
+    --main-bg-color: #051118;
+    --main-container-color: #102735;
     --main-head-color: #7F5AF0;
     --main-font-color: #FFFFFE;
+    --second-font-color: #727272;
+    --second-head-color: #2CB67D;
+    --idk-color:#9747FF;
+    --hover-color: #0f0f0f;
+    --main-font-family:  "Oswald", sans-serif;
+    --second-font-family: "Raleway", sans-serif;
 }
 
 .Tfont {
@@ -40,7 +48,7 @@ body {
     margin: 20px 80px;
     grid-template-columns: 70% 30%;
     font-family: "Raleway", sans-serif;
-    gap: 1em;
+    gap: 1.5rem;
 }
 
 @media screen and (max-width: 768px) {

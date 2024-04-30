@@ -1,4 +1,40 @@
+/* FEATURED 🆘🆘👌⭐ */
+.topbar {
+
+    /* background-color: black; */
+    width: 100%;
+    color: white;
+    /* border: 1px solid var(--main-container-color);
+    border-bottom: none;
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ; */
+    padding: 5px;
+
+}
+
+.topbar p {
+    border-bottom: 2px solid var(--black-color);
+    width: 100%;
+    padding-left: 20px;
+    font-family: var(--main-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    /* border-bottom: 1px solid white; */
+
+
+}
+
+.trendingContainer {
+    box-shadow: 0 2px 3px 4px var(--black-color);
+    background-color: var(--main-container-color);
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+
+}
+
 .trending {
+    /* border: 1px solid var(--main-container-color);
+    border-top: none; */
     scroll-behavior: smooth;
     width: 100%;
     display: flex;
@@ -7,15 +43,25 @@
     align-items: center;
     font-weight: 600;
     letter-spacing: 1px;
-    border-radius: 15px;
-    background-color: BLACK;
+    /* border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px; */
+    /* background-color: BLACK; */
+    padding: 0 5px 5px 5px;
+}
+
+.trending:first-child {
+    color: white;
+    top: 0;
+    left: 0;
 }
 
 .trending .box {
     flex: 0 0 0 auto;
     background-color: aqua;
-    height: 200px;
-    min-width: 150px;
+    height: 190px;
+    min-width: 140px;
     margin: 10px;
     border-radius: 10px;
     position: relative;
@@ -34,18 +80,21 @@
     width: 100%;
     color: white;
     text-align: center;
-    display: flex;
     align-items: flex-start;
     bottom: 0px;
     left: 0px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .trending .box:hover {
     background-color: rgb(30, 0, 255);
-    box-shadow: -10px 0 10px #a072ef53;
+    box-shadow: 0 2px 0px 4px var(--black-color);
+    transform: scale(0.95);
 }
 
 .box p:hover {
@@ -55,7 +104,7 @@
 /* RANKING 😵‍💫😵‍💫🆘 */
 .ranking {
     /* border: 1px solid var(--main-container-color); */
-    background-color: black;
+    background-color: var(--main-container-color);
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -63,14 +112,25 @@
     height: 740px;
     overflow: hidden;
     align-content: flex-start;
-    border: 1px solid var(--main-container-color);
+    /* border: 1px solid var(--main-container-color); */
+    width: 100%;
+    box-shadow: 0 2px 3px 4px var(--black-color);
+
 
 }
 
 .ranking .rtopbar {
-    border-bottom: 2px solid white;
+    border-bottom: 3px solid var(--black-color);
     padding-left: 10px;
     padding: 5px;
+
+}
+
+.ranking .rtopbar h2 {
+    font-family: var(--main-font-family);
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-left: 10px;
 
 }
 
@@ -79,8 +139,15 @@
     height: 120px;
     display: flex;
     flex-wrap: nowrap;
-    border: 1px solid rgba(255, 255, 255, 0.257);
+    /* border: 1px solid rgba(255, 255, 255, 0.257); */
+    box-shadow: 0 1px 3px 2px var(--black-color);
     overflow: hidden;
+}
+
+.ranking .rank_box:hover {
+    
+    transform: scale(0.95);
+    box-shadow: 0 2px 0px 4px var(--black-color);
 }
 
 /* image */
@@ -108,9 +175,14 @@
     text-decoration: none;
 }
 
-.ranking .rank_box .chapter_contents .title {
-    height: 30%;
+.ranking .rank_box .chapter_contents a {
+    height: 30px;
+    white-space: nowrap;
     padding-bottom: 10px;
+    /* added ellipsis when overflow */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .ranking .rank_box .chapter_contents a:hover {
@@ -157,19 +229,22 @@
 
 /* latest manga 😵‍💫😵‍💫🆘😒😒 */
 .latest_manga {
-    background-color: black;
+    /* border: 1px solid var(--main-container-color);*/
+    background-color: var(--main-container-color);
+    box-shadow: 0 2px 3px 4px var(--black-color);
     width: 100%;
     margin-top: 15px;
     overflow-wrap: normal;
     border-radius: 15px;
     padding: 5px;
-
+    margin-bottom: 1.5rem;
 }
 
 .latest_manga .topbar {
+    border: none;
     font-family: "Oswald", sans-serif;
     display: flex;
-    border-bottom: 2px solid white;
+    border-bottom: 3px solid var(--black-color);
     padding: 10px 20px;
     justify-content: space-between;
     align-items: center;
@@ -187,7 +262,7 @@
 }
 
 .latest_manga .topbar a:hover {
-    color: blue;
+    color: var(--idk-color);
 }
 
 /* MAIN CONTENT🆘🆘 */
@@ -213,9 +288,15 @@
 .latest_box {
     display: flex;
     flex-wrap: nowrap;
-    border: 1px solid rgba(255, 255, 255, 0.257);
+    /* border: 1px solid rgba(255, 255, 255, 0.257); */
+    box-shadow: 0 1px 3px 2px var(--black-color);
     width: 100%;
     overflow: hidden;
+}
+
+.latest_box:hover {
+    transform: scale(0.95);
+    box-shadow: 0 2px 0px 4px var(--black-color);
 }
 
 .latest_box a {

@@ -1,0 +1,62 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.container main .viewAll-container {
+    width: 60vw;
+    margin: 0 auto;
+}
+
+.container main .viewAll-container section .trending-container {
+    width: 60vw;
+}
+
+.container main .viewAll-container section .trending-container .trending .box {
+    height: 150px;
+    width: 150px;
+}
+
+.container main .viewAll-container .latest_manga footer {
+    text-align: center;
+
+}
+.container main .viewAll-container .latest_manga footer button {
+    background-color: var(--main-head-color);
+    width: 50px;
+    height: 25px;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+.container main .viewAll-container .latest_manga footer button:hover {
+    background-color: var(--idk-color);
+    transform: scale(1.1);
+}
+
+.container main .viewAll-container .latest_manga .countpage ul{
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    color: white;
+}
+.container main .viewAll-container .latest_manga .countpage ul li:nth-child(1) {
+    color: var(--black-color);
+}
+.container main .viewAll-container .latest_manga .countpage ul li:hover {
+    color: var(--idk-color);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+
+
+.container footer {
+    margin-top: auto;
+}

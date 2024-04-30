@@ -1,0 +1,314 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 6vh;
+}
+
+/*! MAIN CONTENTS */
+.container main {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* ! aside */
+.container main .aside {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 520px;
+    background-color: black;
+}
+
+main .aside .aside-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .aside .aside-container .profile {
+    margin-bottom: 5vh;
+}
+
+main .aside .aside-container .profile h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--idk-color);
+}
+
+main .aside .aside-container .profile .circle img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    object-fit: fill;
+}
+
+.container main .contents {
+    text-align: center;
+}
+
+.container main .contents ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.container main .contents ul li a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: white;
+}
+/*aside header color */
+#dash {
+    color: var(--idk-color);
+}
+#us {
+    color: white;
+}
+#man {
+    color:  white;
+}
+#pen {
+    color:  white;
+}
+
+.container main .contents ul li a:hover {
+    color: var(--idk-color);
+}
+
+/*! article */
+.container main .article {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    height: 520px;
+    /* background-color: var(--main-container-color);  */
+    order: 1;
+}
+
+
+.article .dashboard-container .total {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+}
+
+.article .dashboard-container .total .card {
+    width: 150px;
+    height: 180px;
+    background-color: rgba(0, 0, 0, 0.747);
+    border-radius: 10px;
+}
+
+.article .dashboard-container .total .card h3 {
+    color: white;
+    font-family: var(--main-font-family);
+    text-align: center;
+    padding: 10px;
+}
+
+.article .dashboard-container .total .card p {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px
+}
+
+.article .dashboard-container .graph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*todo DASHBOARD LISTS */
+
+/*?USERS */
+.material-symbols-outlined {
+    color: var(--idk-color);
+}
+
+.material-symbols-outlined:hover{
+    color: red;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#suspend:hover::after {
+    content: "Suspend User";
+    font-size: 8px;
+    position: absolute;
+    right: 50%;
+    top: 100%;
+    color: white;
+}
+
+#delete:hover::after {
+    content: "Rem0ved User";
+    font-size: 8px;
+    position: absolute;
+    right: 100%;
+    top: 100%;
+    color: white;
+}
+
+#deleteto:hover::after {
+    content: "REM0VE";
+    font-size: 8px;
+    position: absolute;
+    right: 100%;
+    top: 100%;
+    color: white;
+}
+
+
+.article .users-container {
+    display: none;
+}
+
+.article .users-container table tr {
+    position: relative;
+}
+
+.article .users-container table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    margin: 20px;
+    text-align: center;
+}
+
+.article .users-container table th {
+    background-color: var(--main-head-color);
+    color: white;
+    padding: 10px;
+}
+
+.article .users-container table td {
+    background-color: var(--main-container-color);
+    color: white;
+    padding: 10px;
+}
+
+/*? MANGA */
+
+.article .manga-container {
+    display: none;
+    overflow-y: scroll;
+    margin: 20px;
+}
+
+.article .manga-container table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    text-align: center;
+}
+
+.article .manga-container table th {
+    background-color: var(--main-head-color);
+    color: white;
+    padding: 10px;
+}
+
+.article .manga-container table td {
+    background-color: var(--main-container-color);
+    color: white;
+    border-bottom: 1px solid var(--black-color);
+    padding: 10px;
+}
+
+.article .manga-container table tr td p {
+    color: var(--second-font-color);
+}
+
+.article .manga-container table tr td a {
+    color: white;
+}
+
+.article .manga-container table tr td a:hover {
+    color: var(--idk-color);
+}
+
+.article .manga-container table tr td img {
+    width: 80px;
+    height: 100px;
+    object-fit: cover;
+
+}
+
+/*? PENDING */
+
+
+.article .pending-container {
+    display: none;
+    overflow-y: scroll;
+    margin: 20px;
+}
+
+.article .pending-container table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    text-align: center;
+}
+
+.article .pending-container table th {
+    background-color: var(--main-head-color);
+    color: white;
+    padding: 10px;
+}
+
+.article .pending-container table tr td button {
+    background-color: transparent;
+}
+
+.article .pending-container table tr td button i {
+    font-size: 1.5rem;
+}
+
+.article .pending-container table tr td button i:hover {
+    color: var(--idk-color);
+    transform: scale(1.2);
+}
+
+.article .pending-container table td {
+    background-color: var(--main-container-color);
+    color: white;
+    border-bottom: 1px solid var(--black-color);
+    padding: 10px;
+}
+
+.article .pending-container table tr td p {
+    color: var(--second-font-color);
+}
+
+.article .pending-container table tr td a {
+    color: white;
+}
+
+.article .pending-container table tr td a:hover {
+    color: var(--idk-color);
+}
+
+.article .pending-container table tr td img {
+    width: 80px;
+    height: 100px;
+    object-fit: cover;
+
+}
+
+
+
+
+footer {
+    margin-top: auto;
+}

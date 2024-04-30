@@ -1,0 +1,172 @@
+/* media query for Phone */
+@media screen and (max-width: 393px) {
+        
+
+    /* media query for making the navbar more responsive */
+    .nav_link .logo {
+        font-size: 1.1rem;
+    }
+
+    .nav_link ul li a {
+        padding: 0;
+    }
+
+    .nav_link ul li a button {
+        font-size: 10px;
+    }
+
+    .nav_link ul li {
+        width: 50px;
+    }
+
+    /* side bar  */
+    .sidebar {
+        width: 150px;
+    }
+
+    .sidebar .logo {
+        font-size: 10px;
+    }
+
+    .sidebar .logo img {
+        width: 35px;
+    }
+
+    .sidebar .close svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .sidebar:last-child {
+        padding-right: 10px;
+    }
+
+    /* Media query for responsive main container */
+
+    .main_container {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    /* CSS CODE FOR FEATURED */
+    .trending .box {
+        height: 120px;
+        min-width: 90px;
+    }
+
+    .main_container .topbar p {
+        font-size: 1rem;
+        padding-left: 10px;
+    }
+
+    .trending .box a p {
+        font-size: 10px;
+    }
+
+    /* CSS CODE FOR LATEST MANGA */
+
+    .main_container .latest_manga .topbar {
+        height: 30px;
+        padding-left: 10px;
+    }
+
+    .main_container .latest_manga .topbar h2 {
+        font-size: 15px;
+    }
+
+    .main_container .latest_manga .topbar a {
+        font-size: 8px;
+    }
+
+    .latest_manga_content .latest_box {
+        width: 145px;
+        height: 85px;
+        padding-bottom: 3px;
+        padding-top: 3px;
+    }
+
+
+    .latest_manga_content .latest_box .title-chapter {
+        margin-top: 5px;
+        padding: 0;
+    }
+
+    .latest_manga_content .latest_box img {
+        width: 120%;
+        height: 100%;
+        padding: 3px;
+    }
+
+    .latest_box .title-chapter .latest_content_title {
+        font-size: 10px;
+    }
+
+    .latest_box .title-chapter ul {
+        padding-left: 20px;
+    }
+
+    .latest_box .title-chapter ul li {
+        font-size: 7px;
+    }
+
+    /* CODE FOR RANKING */
+
+    .ranking {
+        height: 610px;
+    }
+
+    .ranking .rtopbar h2 {
+        font-size: 1rem;
+    }
+
+    .ranking .rank_box {
+        height: 100px;
+        margin-bottom: 0;
+    }
+
+    .ranking .rank_box .chapter_contents a {
+        font-size: 15px;
+    }
+
+    .ranking .rank_box .chapter_contents ul li{
+        font-size: 12px;
+    }
+
+    .ranking .rank_box .chapter_contents .star-rating .material-symbols-outlined  {
+        font-size: 20px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+
+    footer ul li {
+        height: 35px;
+    }
+
+    footer p {
+        font-size: 7px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body .responsive-nav .nav_link ul .sideburger {
+        display: none;
+    }
+
+   body .responsive-nav .nav_link ul #hamburger {
+        display: block;
+    
+    }
+    
+}
+
+@media screen and (max-width: 1660px) {
+    #hamburger {
+        display: none;
+    }
+
+    .nav_link ul .sideburger {
+        display: block;
+    }
+}

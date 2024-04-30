@@ -1,0 +1,162 @@
+@media screen and (min-width: 768px) {
+    /* ! BOOK */
+    .book .bgc-img {
+        height: 250px;
+    }
+
+    .book .cover {
+        top: 100px;
+        left: 40px;
+    }
+
+    .book .cover img {
+        height: 200px;
+        width: 150px;
+    }
+
+    .book .cover .title {
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 150px;
+        width: 400px;
+    }
+
+    .book .cover .title h1 {
+        font-size: 30px;
+        width: 400px;
+        height: 100px;
+    }
+
+    .book .cover .title h2 {
+        font-size: 15px;
+        width: 400px;
+        height: 25px;
+    }
+
+    .book .main .aside {
+        margin-top: 70px;
+        margin-left: 30px;
+        width: 100px;
+        height: 200px;
+        margin-bottom: 50px;
+    }
+
+    /* ! STATUS */
+
+    .book .main .aside .status {
+        width: 150px;
+    }
+
+    .book .main .aside .status h3 {
+
+        font-size: 15px;
+    }
+
+    .book .main .aside .status p {
+        font-size: 15px;
+    }
+
+    /* ! TYPE */
+
+    .book .main .aside .type {
+        width: 150px;
+    }
+
+    .book .main .aside .type h3 {
+        font-size: 15px;
+    }
+
+    .book .main .aside .type p {
+        font-size: 15px;
+    }
+
+    /* ! genre */
+    .book .main .aside .genre {
+        width: 150px;
+    }
+
+    .book .main .aside .genre h3 {
+        font-size: 15px;
+    }
+
+    .book .main .aside .genre p {
+        font-size: 15px;
+    }
+
+    .book .main .aside .author {
+        width: 150px;
+    }
+
+    /* ! AUTHOR */
+
+    .book .main .aside .author h3 {
+        font-size: 15px;
+    }
+
+    .book .main .aside .author p {
+        font-size: 15px;
+    }
+
+    /* ! STAR */
+
+    .main .aside .star-rating {
+        width: 150px;
+        height: 30px;
+    }
+
+    .main .aside .star-rating .material-symbols-outlined {
+        font-size: 20px;
+    }
+
+    /* ! SYNOPSIS */
+
+    .book .main .synopsis {
+        margin-top: 40px;
+        margin-left: 80px;
+        width: 360px;
+        height: 285px;
+        overflow: hidden;
+    }
+
+    .book .main .synopsis h3 {
+        font-size: 20px;
+    }
+
+    .book .main .synopsis p {
+        font-size: 15px;
+    }
+
+    /* ! CHAPTERS */
+    .container .chapter {
+        height: 300px;
+    }
+
+    .container .chapter .header {
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .container .chapter .header h2 {
+        font-size: 15px;
+    }
+
+    .container .chapter .header h3 {
+        font-size: 15px;
+    }
+
+    .container .article .chapter a h3 {
+        font-size: 15px;
+    }
+
+    /* ! FEATURED */
+
+    .section-container-trending .trending-container {
+        height: 250px;
+        margin-bottom: 20px;
+    }
+
+    .section-container-trending .trending-container .trending .box {
+        min-width: 140px;
+        height: 190px;
+    }
+}
