@@ -1,6 +1,7 @@
 body {
     color: var(--main-bg-color);
 }
+
 .container {
     display: flex;
     flex-direction: column;
@@ -11,7 +12,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top:  20vh;
+    margin-top: 20vh;
     margin-bottom: 20vh;
 }
 
@@ -22,14 +23,18 @@ main .form_container form label i {
 }
 
 main .form_container .login_container {
-    display: 'block';
+    display: block;
 }
 
 main .form_container .signup_container {
     display: none;
 }
 
-main .form_container form p{
+main .form_container .forgot_container {
+    display: none;
+}
+
+main .form_container form p {
     color: white;
     text-align: center;
 }
@@ -38,7 +43,7 @@ main .form_container form {
     color: white;
     display: flex;
     flex-direction: column;
-    row-gap:10px;
+    row-gap: 10px;
     width: 30vw;
 }
 
@@ -76,6 +81,13 @@ main .form_container form button:hover {
     box-shadow: 0 2px 2px 2px var(--black-color);
 }
 
+main .form_container form textarea {
+    resize: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.192);
+
+}
+
 form p {
     font-size: 1.5rem;
     font-weight: 700;
@@ -84,6 +96,22 @@ form p {
 #signup {
     text-align: center;
     font-size: 15px;
+}
+#fgot {
+    font-size: 15px;
+    text-decoration: none;
+}
+
+main .form_container form .button {
+    background-color: var(--idk-color);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+main .form_container form .button:hover {
+    box-shadow: 0 2px 4px 3px black;
+    cursor: pointer;
+
 }
 
 /*?  to hide the login navbar */
