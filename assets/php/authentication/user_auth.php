@@ -25,8 +25,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $result = $conn->query($query);
 
         if ($result->num_rows > 0) {
-            //redirect to admin page
-            header("Location: ./dashboard.php");
+            //redirect to logon page
+            header("Location: /logon.html");
+            exit();
         } else {
             $errorMessage = 'Invalid username or password.';
             $_SESSION['error_message'] = $errorMessage; // Set error message in session
