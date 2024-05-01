@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,10 +36,9 @@
                         <label for="username">Password:</label>
                         <input type="password" name="password" id="password" placeholder="Input password" required>
                         <label><i id="fgot" onclick="forgot()">Forgot Password? </i></label>
-                        <input type="submit" class="button" value="Login">
+                        <input type="submit" name="submit" class="button" value="Login">
                         <div id="error" style="color: red; font-size:15px;">
                             <?php
-                            session_start();
                             if (isset($_SESSION['error_message'])) {
                                 echo $_SESSION['error_message'];
                                 unset($_SESSION['error_message']); // Clear the error message from session
@@ -48,7 +50,7 @@
                     </form>
                 </div>
                 <div class="signup_container">
-                    <form id="create" action="" method="POST">
+                    <form id="create" action="/assets/php/authentication/create_user.php" method="POST" enctype="multipart/form-data">
                         <p>SIGN UP</p>
                         <label for="username">Username:</label>
                         <input type="text" name="username" id="username" placeholder="input username" required>
@@ -60,7 +62,7 @@
                         <input type="file" accept="image/*" name="profile" id="profile" required>
                         <label for="biography">Description</label>
                         <textarea name="biography" id="biography" cols="30" rows="10"></textarea>
-                        <input onclick="alerts()" type="submit" value="Create Account" class="button"><br>
+                        <input type="submit" name="submit" value="Create Account" class="button"><br>
                         <label id="signup">Have an account? <i onclick="login()"> Login</i></label>
                     </form>
                 </div>
@@ -71,7 +73,7 @@
                         <input type="text" name="username" placeholder="Enter Username" required>
                         <label for="email">Email:</label>
                         <input type="email" name="email" placeholder="Enter Email" required>
-                        <input onclick="alerts()" class="button" type="submit" value="Recover"><br>
+                        <input onclick="alerts()" class="button" name="submit" type="submit" value="Recover"><br>
                         <label id="signup">Have an Account? <i onclick="login()">Login</i></label>
                     </form>
                 </div>
@@ -83,10 +85,28 @@
     <script src="/js/navbar.js"></script>
     <script src="/js/navfot.js" type="module"></script>
     <script>
-        //todo SCRIPT FOR CHANGING BETWEEN LOGIN AND SIGN UP
-        function alerts() {
-            alert("Account created! Now you can login.");
+        <?php
+        //! PHP CODE FOR SHOWING IF UPLOAD SUCCESS
+        if (isset($_SESSION['created']) && $_SESSION['created'] === true) {
+            // Echo JavaScript code to show alert
+            echo 'alert("Upload successful!");';
+            // Unset the session variable to avoid showing the alert on page refresh
+            unset($_SESSION['created']);
         }
+        if (isset($_SESSION['unsuccesfull'])) {
+            // Echo JavaScript code to show alert
+            echo 'alert("Upload unsucessfull!");';
+            // Unset the session variable to avoid showing the alert on page refresh
+            unset($_SESSION['unsucessfull']);
+        }
+        if (isset($_SESSION['duplicate'])) {
+            echo 'alert("Existing username or email");';
+            unset($_SESSION['duplicate']);
+        }
+        ?>
+    </script>
+    <script>
+        //todo SCRIPT FOR CHANGING BETWEEN LOGIN AND SIGN UP
 
         function create() {
             const login = document.querySelector('.login_container')
@@ -113,6 +133,10 @@
             signup.style.display = 'none'
             const forgot = document.querySelector('.forgot_container')
             forgot.style.display = 'block'
+        }
+
+        function alerts() {
+            alert("Go to misto to recover your account");
         }
     </script>
 </body>
