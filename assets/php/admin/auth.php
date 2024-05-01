@@ -28,6 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($result->num_rows > 0) {
             //redirect to admin page
             header("Location: ./dashboard.php");
+            exit();
         } else {
             $errorMessage = 'Invalid username or password.';
             $_SESSION['error_message'] = $errorMessage; // Set error message in session
