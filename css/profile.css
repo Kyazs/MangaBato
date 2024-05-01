@@ -1,0 +1,211 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 6vh;
+}
+
+.container main .profile-container {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    display: block;
+    width: 50vw;
+    min-height: 80vh;
+    margin: 0 auto;
+    background-color: var(--main-container-color);
+    border-radius: 10px;
+}
+
+.container main .profile-container .header button {
+    background-color: var(--main-head-color);
+    margin: 5px;
+    border: 1px solid var(--black-color);
+    border-radius: 10px;
+}
+
+.container main .profile-container .header button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 1px 10px 2px var(--black-color);
+
+}
+
+.container main .profile-container .header button i {
+    font-size: 1.5rem;
+    color: var(--black-color);
+}
+
+.container main .profile-container .contents {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.container main .profile-container .contents .username h3 {
+    font-size: 1.5rem;
+    color: var(--idk-color);
+}
+
+.container main .profile-container .contents .email h4 {
+    color: var(--second-font-color);
+    margin-bottom: 4vh;
+
+}
+
+.container main .profile-container .contents .description p {
+    color: var(--white-color);
+}
+
+.container main .profile-container .contents .profile {
+    width: 100%;
+    height: 200px;
+    background-image: url(/img/bgc-ezgif.com-video-to-gif-converter.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container main .profile-container .contents .profile img {
+    box-shadow: 0 1px 3px 2px var(--black-color);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: fill;
+}
+
+.container main .profile-container .edit {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    padding: 10px;
+}
+
+.container main .profile-container .edit button {
+    background-color: var(--main-head-color);
+    margin: 5px;
+    border: 1px solid var(--black-color);
+    border-radius: 10px;
+}
+
+.container main .profile-container .edit button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 1px 10px 2px var(--black-color);
+}
+
+.container main .profile-container .edit button:hover::after {
+    content: "Edit Profile";
+    position: absolute;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    bottom: 0;
+    white-space: nowrap;
+    /* Prevents the text from breaking into multiple lines */
+}
+
+.container main .profile-container .edit button i {
+    font-size: 1.5rem;
+}
+
+/*! CODE FOR THE EDIT PROFILE */
+.container main .edit-profile {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50vw;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: var(--main-container-color);
+    border-radius: 10px;
+}
+
+.container main .edit-profile .profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.container main .edit-profile .form {
+    color: white;
+}
+
+form input {
+    background-color: transparent;
+    border: 1px solid var(--black-color);
+    color: var(--white-color);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 100%;
+}
+
+form textarea {
+    background-color: transparent;
+    border: 1px solid var(--black-color);
+    color: var(--white-color);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 100%;
+    height: 100px;
+    resize: none;
+}
+
+form .button {
+    text-align: center;
+}
+
+form .button .btn {
+    background-color: var(--main-head-color);
+    border: 1px solid var(--black-color);
+    color: var(--black-color);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 50px;
+}
+
+form .button .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 1px 10px 2px var(--black-color);
+}
+
+
+.container main .edit-profile .header button {
+    background-color: var(--main-head-color);
+    margin: 5px;
+    border: 1px solid var(--black-color);
+    border-radius: 10px;
+
+}
+
+.container main .edit-profile .header button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 1px 10px 2px var(--black-color);
+
+}
+
+.container main .edit-profile .header button i {
+    font-size: 1.5rem;
+    color: var(--black-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+.container footer {
+    margin-top: auto;
+}

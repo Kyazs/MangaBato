@@ -1,0 +1,128 @@
+hmtl {
+    scroll-behavior: smooth;
+}
+
+.chapter-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+
+.chapter-container footer {
+    margin-top: auto;
+}
+
+.chapter-container main .chapter {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.chapter-container main .chapter .contents {
+    margin: 0 auto;
+    width: 70vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    /* border: 1px solid white; */
+}
+
+.chapter-container main .chapter .contents header {
+    background-color: var(--main-container-color);
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 2px 3px 3px var(--black-color);
+    
+}
+
+.chapter-container main .chapter .contents header ul {
+    display: flex;
+    gap: 2vw;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.chapter-container main .chapter .contents header ul li {
+    font-size: 15px;
+    padding:10px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}
+
+.chapter-container main .chapter .contents header ul li:hover
+ {
+    color: var(--idk-color);
+}
+.chapter-container main .chapter .contents header ul li a:hover {
+    color: var(--idk-color);
+}
+
+
+main .chapter .contents header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/*! CHAPTER */
+.chapter-container main .chapter .contents nav {
+    background-color: transparent;
+    margin-right: auto;
+}
+
+.chapter-container main .chapter .contents nav select{
+    background-color: var(--main-container-color);
+    box-shadow: 0px 2px 3px 3px var(--black-color);
+    color: white;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: large;
+}
+
+.chapter-container main .chapter .contents article {
+    /* background-color: var(--main-container-color); */
+    width: 100%;
+    border-radius: 10px;
+    /* box-shadow: 0px 2px 3px 3px var(--black-color); */
+    padding: 20px;
+}
+
+.chapter-container main .chapter .contents article .article-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chapter-container main .chapter .contents .btn {
+    /* background-color: var(--main-container-color); */
+}
+
+.chapter-container main .chapter .contents .btn a i {
+    font-size: 30px;
+    position: relative;
+}
+
+.chapter-container main .chapter .contents .btn a i:hover {
+    color: var(--idk-color);
+    transform: scale(1.1);
+}
+
+.chapter-container main .chapter .contents .btn a i:hover::after {
+    position: absolute;
+    bottom: 0;
+    content: "Go top";
+    font-size: 15px;
+    white-space: nowrap;
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--idk-color);
+    transition: width 0.3s;
+}

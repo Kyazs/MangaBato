@@ -1,0 +1,357 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 2vh;
+    flex: 1;
+}
+
+/*! code for the nav of the file */
+
+main nav {
+    background-color: transparent;
+
+}
+
+main nav ul {
+    display: flex;
+    gap: 5px;
+    padding-left: 0;
+    list-style: none;
+}
+
+main nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+main nav ul li a:hover {
+    color: var(--idk-color);
+}
+
+/*! MAIN CONTAINER OF THE FORM */
+main form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    /* border: 1px solid var(--main-container-color); */
+    border-radius: 10px;
+}
+
+main form .container {
+    margin: 0 auto;
+    box-shadow: 0 2px 0px 3px var(--black-color);
+    background-color: var(--main-container-color);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+}
+
+main form label {
+    font-size: 12px;
+    color: white;
+}
+
+/*! TITLE */
+main form .title {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+
+main form .title input {
+    color: white;
+    height: 2vh;
+    width: 120px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--black-color);
+    background-color: transparent;
+}
+
+main form .coverfile {
+    text-align: center;
+    color: white;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: 1px solid var(--black-color);
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+main form .coverfile:hover {
+    color: var(--idk-color);
+}
+
+/*todo CODE FOR WHEN HOVERED A MSG APPPEAR */
+main form .coverfile:hover::after {
+    content: "Upload Image file only!";
+    /* Text content of the message */
+    font-size: 10px;
+    position: absolute;
+    /* Position absolutely relative to the anchor tag */
+    top: 100%;
+    /* Position the message below the anchor */
+    left: 0;
+    right: 0;
+    /* Align the message with the left edge of the anchor */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Background color of the message */
+    color: red;
+    /* Text color of the message */
+    padding: 5px;
+    /* Padding around the message text */
+    border-radius: 5px;
+    /* Rounded corners for the message */
+    white-space: nowrap;
+    /* Prevent line break */
+}
+
+main form .coverfile  img {
+    width: 98px;
+    height: 98px;
+    object-fit: fill;
+    border-radius: 7px;
+}
+
+/*? to hide the BROWSER file input */
+main form #mangaCover {
+    display: none;
+}
+
+/*! GENRES🆘 */
+main form .genre {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+main form .genre select {
+    /* color: white; */
+    color: white;
+    background-color: transparent;
+    border: 1px solid var(--black-color);
+    border-radius: 5px;
+}
+
+main form .genre select option {
+    color: black;
+    background-color: transparent;
+}
+
+/*! SYNOPSIS🆘 */
+main form .synopsis {
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;}
+
+main form .synopsis textarea {
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    border: 1px solid var(--black-color);
+    resize: none;
+    color: white;
+}
+
+/*! CHAPTER 🆘 */
+main form .chapter {
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px; */
+}
+main form .chapter #chapupload {
+    color: var(--main-bg-color);
+    position: relative;
+    color: var(--second-font-color);
+
+}
+
+main form .chapter #chapter {
+    background-color: transparent;
+    border: 1px solid var(--black-color);
+    border-radius: 5px;
+    color: white;
+}
+
+main form .chapter #chapupload:hover {
+    color: var(--idk-color);
+    cursor: pointer;
+}
+
+main form .chapter #chapupload:hover::after {
+    content: "Upload zip file only!";
+    /* Text content of the message */
+    font-size: 10px;
+    position: absolute;
+    /* Position absolutely relative to the anchor tag */
+    top: 0; 
+    /* position it beside the element */
+    color: red;
+    /* Text color of the message */
+    padding: 5px;
+    /* Padding around the message text */
+    border-radius: 5px;
+    /* Rounded corners for the message */
+    white-space: nowrap;
+    /* Prevent line break */
+    text-align: center;
+}
+
+main form .chapter #chapterfile {
+    color: white;
+    display: none;
+}
+
+/*! SUBMIT BUTTON */
+
+main form .submit {
+    font-weight: 600;
+    width: 50px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: var(--main-bg-color);
+    color: white;
+    text-align: center;
+
+}
+
+/*? to set the btn in the end */
+main form .agreement { 
+    text-align: center;
+}
+
+main form .submitcontainer {
+    display: flex;
+    justify-content: end;
+
+}
+
+main form .submit:hover {
+    background-color: var(--idk-color);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5;
+}
+
+/*? to hide the submit input btn */
+footer {
+    margin-top: auto;
+}
+
+@media screen and (min-width: 600px) {
+
+    main form label{
+        font-size: 15px;
+    }
+    main form .title input {
+        width: 50%;
+        height: 30px;
+    }
+
+    main form .coverfile {
+        width: 120px;
+        height: 120px;
+    }
+
+    main form .coverfile img {
+        width: 100%;
+        height: 100%;
+    }
+
+    main form .genre{
+        gap: 10px;
+    }
+
+    main form .genre select {
+        height: 30px;
+        width: 50%;
+    }
+
+
+    main form .synopsis textarea {
+        width: 100%;
+        height: 200px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+
+        main form {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        main form .title {
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        main form .title input {
+            width: 50%;
+            height: 30px;
+        }
+
+        main form .coverfile {
+            width: 120px;
+            height: 120px;
+        }
+
+        main form .coverfile img {
+            width: 100%;
+            height: 100%;
+        }
+
+        main form .genre {
+            gap: 10px;
+        }
+
+        main form .genre select {
+            height: 30px;
+            width: 50%;
+        }
+
+        main form .synopsis textarea {
+            width: 100%;
+            height: 200px;
+        }
+
+        main form .chapter {
+            gap: 10px;
+        }
+
+        main form .chapter #chapter {
+            width: 50%;
+            height: 30px;
+        }
+
+        main form .submit {
+            width: 100px;
+            height: 40px;
+        }
+
+    }
+
+
+
+    
+
+}

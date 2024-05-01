@@ -1,5 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     border: 0;
 }
+
+:root {
+    --black-color: #000000;
+    --white-color: #FFFFFF;
+    --main-bg-color: #051118;
+    --main-container-color: #102735;
+    --main-head-color: #7F5AF0;
+    --main-font-color: #FFFFFE;
+    --second-font-color: #727272;
+    --second-head-color: #2CB67D;
+    --idk-color:#9747FF;
+    --hover-color: #0f0f0f;
+    --main-font-family:  "Oswald", sans-serif;
+    --second-font-family: "Raleway", sans-serif;
+}
+
+.Tfont {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Oswald", "Raleway", sans-serif;
+    background-color: var(--main-bg-color);
+    /* background-image: url(/img/logo_mangabato.png); */
+    min-height: auto;
+}
+
+.main_container {
+    display: grid;
+    margin: 20px 80px;
+    grid-template-columns: 70% 30%;
+    font-family: "Raleway", sans-serif;
+    gap: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .main_container {
+        grid-template-columns: 100%;
+    }
+}
+

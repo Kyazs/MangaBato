@@ -1,0 +1,105 @@
+footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-image: linear-gradient(var(--main-bg-color), var(--main-head-color));
+}
+
+footer .footer-container .icons {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin: 0 auto;
+    width: 100%;
+    height: 10vh;
+    gap: 10px;
+
+}
+
+footer .footer-container .icons a {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.227);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer .footer-container .icons a i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: black;
+    margin: 0 1rem;
+}
+
+footer .footer-container .icons a i:hover {
+    transform: scale(1.5);
+    transition: 0.3s;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+footer .footer-container ul {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 15px;
+    padding: 0;
+    width: 100%;
+    height: 3vh;
+
+}
+
+footer .footer-container ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-container ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+footer .footer-container ul li a:hover {
+    color: rgba(0, 0, 0, 0.8);
+    transform: scale(1.2);
+}
+
+footer .footer-container p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    height: 2vh;
+    margin: 10px 0 20px 0;
+}
+
+/* ! FOOTER MEDIA QUERY */
+
+@media screen and (min-width: 768px) {
+
+    footer .footer-container .icons {
+        height: 20vh;
+        align-items: center;
+    }
+
+    footer .footer-container .icons a {
+        width: 50px;
+        height: 50px;
+    }
+
+    footer .footer-container .icons a i {
+        font-size: 2rem;
+        margin: 0 2rem;
+    }
+
+    footer .footer-container ul {
+        height: 5vh;
+    }
+}

@@ -1,0 +1,125 @@
+body {
+    color: var(--main-bg-color);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+}
+
+main .form_container form label i {
+    color: var(--idk-color);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+main .form_container .login_container {
+    display: block;
+}
+
+main .form_container .signup_container {
+    display: none;
+}
+
+main .form_container .forgot_container {
+    display: none;
+}
+
+main .form_container form p {
+    color: white;
+    text-align: center;
+}
+
+main .form_container form {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 30vw;
+}
+
+main .form_container form input {
+    border-radius: 5px;
+    padding: 5px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.192);
+    color: white;
+}
+
+main .form_container form label {
+    font-size: 1.25rem;
+}
+
+main .form_container form #submit {
+    background-color: var(--main-head-color);
+}
+
+main .form_container form #submit:hover {
+    background-color: var(--idk-color);
+    box-shadow: 0 2px 2px 2px var(--black-color);
+}
+
+main .form_container form button {
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    background-color: var(--main-head-color);
+}
+
+main .form_container form button:hover {
+    background-color: var(--idk-color);
+    box-shadow: 0 2px 2px 2px var(--black-color);
+}
+
+main .form_container form textarea {
+    resize: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.192);
+
+}
+
+form p {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#signup {
+    text-align: center;
+    font-size: 15px;
+}
+#fgot {
+    font-size: 15px;
+    text-decoration: none;
+}
+
+main .form_container form .button {
+    background-color: var(--idk-color);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+main .form_container form .button:hover {
+    box-shadow: 0 2px 4px 3px black;
+    cursor: pointer;
+
+}
+
+/*?  to hide the login navbar */
+.full-rounded {
+    display: none;
+}
+
+
+.container footer {
+    margin-top: auto;
+}

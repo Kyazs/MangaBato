@@ -1,0 +1,59 @@
+main .container-privacy {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.container-privacy .privacy-content {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: auto;
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid var(--main-container-color);
+    box-shadow: 0 1px 0 2px var(--black-color);
+    border-radius: 10px;
+}
+
+.container-privacy .privacy-content header {
+    border-bottom: 1px solid var(--main-container-color);
+}
+
+.container-privacy .privacy-content header a {
+    text-decoration: none;
+}
+
+.container-privacy .privacy-content header a:hover {
+    color: var(--main-font-color);
+    transition: 0.5s    ;
+}
+
+.container-privacy .privacy-content article h2 {
+    text-align: center;
+}
+
+.container-privacy .privacy-content article {
+    margin-top: 5px;
+}
+
+.container-privacy .privacy-content article h4 {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.container-privacy .privacy-content article ul {
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container-privacy .privacy-content article ul li {
+    margin-left: 5px;
+}
+
+.container-privacy .privacy-content article p {
+    color: var(--second-font-color);
+    font-size: 13px;
+    font-weight: normal;
+}

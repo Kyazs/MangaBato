@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    
+    
+}
+
+.container main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+.container main .admin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: auto;   
+}
+
+.container main .admin-container .admin {
+    min-width: 60vw;
+    min-height: 200px;
+    background-color: var(--main-container-color);
+    box-shadow: 0 1px 0 2px var(--black-color);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.container main .admin-container .admin form  input{
+    background-color: transparent;
+    border: 1px solid var(--black-color);
+    color: var(--white-color);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.container main .admin-container .admin form  .submit {
+    background-color: var(--main-head-color);
+}
+
+.container main .admin-container .admin form  .submit:hover {
+    transform: scale(1.1);
+    box-shadow: 0 1px 10px 2px var(--black-color);
+}
+
+footer {
+    /*? to move the footer to the bottom */
+    margin-top: auto;
+}
+
+@media screen and (min-width: 1020px) {
+    .container main .admin-container .admin {
+        min-width: 30vw;
+    }
+
+}

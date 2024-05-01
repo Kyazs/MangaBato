@@ -1,13 +1,479 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MANGABATO</title>
+    <!-- link for the star icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <!-- link for the boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/maincontent.css">
+    <link rel="stylesheet" href="lib/mediaquery.css">
+    <link rel="icon" href="img/logo_mangabato.png" type="image/-icon">
+
 </head>
-<body>
-        
-    
+
+<body id="home">
+    <!-- !NAVBAR -->
+
+    <nav class="responsive-nav">
+        <div class="sidebar">
+            <ul>
+                <li onclick=closeSidebar()>
+                    <button class="close">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"
+                            fill="red">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></button>
+                </li>
+                <li><a class="logo" href="#home">
+                        <img src="img/logo_mangabato.png" alt="logo">MANGABATO</a></li>
+                <li><a href="/assets/profile.php">Profile</a></li>
+                <li><a href="assets/publisher/publish.php">Publish</a></li>
+                <li><a href="assets/aboutus.php">About us</a></li>
+            </ul>
+        </div>
+        <div class="nav_link">
+            <ul>
+                <li class="logo"><a href="#home">
+                        <img src="img/logo_mangabato.png" alt="logo" width="50px">MANGABATO</a>
+                </li>
+                <li><a href="assets/login.php">
+                        <button class="full-rounded">
+                            <span>Login</span>
+                            <div class="border full-rounded"></div>
+                        </button>
+                    </a>
+                </li>
+                <li class="sideburger">
+                    <a href="/assets/profile.php"><i class='bx bx-user-circle' ></i> Profile</a>
+                </li>
+                <li class="sideburger">
+                    <a href="/assets/publisher/publish.php"><i class='bx bx-book-open' ></i> Publish</a>
+                </li>
+                <li id="hamburger" onclick=showSidebar()><a href="#">
+                        <button class="full-rounded">
+                            <span class="menu"><svg xmlns="http://www.w3.org/2000/svg" height="20"
+                                    viewBox="0 -960 960 960" width="20" fill="black">
+                                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                                </svg></span>
+                            <div class="border full-rounded"></div>
+                        </button></a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div class="main_container">
+        <div class="featured">
+            <!-- TRENDING MANGA -->
+            <div class="trendingContainer">
+                <div class="topbar">
+                    <p>Featured</p>
+                </div>
+                <!-- ! FEATURED MANGA -->
+                <header class="trending">
+                    <div class="box">
+                        <a href="assets/mangapage/mangapage.php"><img src="img/books/berserk.jpg" alt="Berserk">
+                            <p>BERSERK</p>
+                        </a>
+                    </div>
+                    <div class="box"><a href="assets/mangapage/mangapage-Gate.php"><img src="img/books/gate.jpg"
+                                alt="gate">
+                            <p>Gate - Jietai Kare No Chi Nite, Kaku Tatakeri</p>
+                        </a></div>
+                    <div class="box"><a href="assets/mangapage/mangapage-Domestic.php"><img
+                                src="img/books/domestic-na-kanojo.jpg" alt="Berserk">
+                            <p>Domestic Na Kanojo</p>
+                        </a></div>
+                    <div class="box"><a href="assets/mangapage/mangapage-komisan.php"><img src="img/books/komisan.jpg"
+                                alt="komisan">
+                            <p>Komi-san wa Komyushou Desu</p>
+                        </a></div>
+                    <div class="box"><a href="assets/mangapage/mangapage-Kingdom.php"><img src="img/books/kingdom.jpg"
+                                alt="kingdom">
+                            <p>Kingdom</p>
+                        </a></div>
+                    <div class="box">
+                        <a href="#"><img src="img/books/berserk.jpg" alt="Berserk">
+                            <p>BERSERK</p>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="#"><img src="img/books/berserk.jpg" alt="Berserk">
+                            <p>BERSERK</p>
+                        </a>
+                    </div>
+                    <div class="box"><a href="#"><img src="img/books/berserk.jpg" alt="Berserk">
+                            <p>BERSERK</p>
+                        </a></div>
+                    <div class="box"><a href="#"><img src="img/books/berserk.jpg" alt="Berserk">
+                            <p>BERSERK</p>
+                        </a></div>
+                    <div class="box"><a href="#"><img src="img/books/berserk.jpg" alt="Berserk">
+                            <p>BERSERK</p>
+                        </a></div>
+                </header>
+            </div>
+            <!-- !LATEST MANGA -->
+            <article class="latest_manga">
+                <div class="topbar">
+                    <h2>Latest Manga</h2>
+                    <a href="/assets/viewall.php">View All</a>
+                </div>
+                <div class="latest_manga_content">
+                    <div class="latest_box">
+                        <a href="img/books/berserk.jpg"><img src="img/books/berserk.jpg" alt=""></a>
+                        <div class="title-chapter">
+                            <a class="latest_content_title" href="assets/mangapage/mangapage.php">BERSERK</a>
+                            <ul>
+                                <li>
+                                    <a href="/assets/chapters/chapter.html">Chapter 3</a>
+                                </li>
+                                <li>
+                                    <a href="/assets/chapters/chapter.html">Chapter 2</a>
+                                </li>
+                                <li>
+                                    <a href="/assets/chapters/chapter.html">Chapter 1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="latest_box">
+                        <a href="img/books/gate.jpg"><img src="img/books/gate.jpg" alt=""></a>
+                        <div class="title-chapter">
+                            <a class="latest_content_title" href="assets/mangapage/mangapage-Gate.php">Gate - Jietai
+                                Kare No Chi Nite, Kaku Tatakeri</a>
+                            <ul>
+                                <li>
+                                    <a href="/assets/chapters/chapter-gate.html">Chapter 3</a>
+                                </li>
+                                <li>
+                                    <a href="/assets/chapters/chapter-gate.html">Chapter 2</a>
+                                </li>
+                                <li>
+                                    <a href="/assets/chapters/chapter-gate.html">Chapter 1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="latest_box">
+                        <a href="img/books/domestic-na-kanojo.jpg"><img src="img/books/domestic-na-kanojo.jpg"
+                                alt=""></a>
+                        <div class="title-chapter">
+                            <a class="latest_content_title" href="#">Domestic Na Kanojo</a>
+                            <ul>
+                                <li>
+                                    <a href="/assets/chapters/chapter-domestic.html">Chapter 3</a>
+                                </li>
+                                <li>
+                                    <a href="/assets/chapters/chapter-domestic.html">Chapter 2</a>
+                                </li>
+                                <li>
+                                    <a href="/assets/chapters/chapter-domestic.html">Chapter 1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="latest_box">
+                        <a href="img/books/komisan.jpg"><img src="img/books/komisan.jpg" alt=""></a>
+                        <div class="title-chapter">
+                            <a class="latest_content_title" href="assets/mangapage/mangapage-komisan.php">Komi-san wa
+                                Komyushou Desu</a>
+                            <ul>
+                                <li>
+                                    <a href="/assets/chapters/chapter-komisan.html">Chapter 3</a>
+                                </li>
+                                <li>
+                                    <a href="/assets/chapters/chapter-komisan.html">Chapter 2</a>
+                                </li>
+                                <li>
+                                    <a href="/assets/chapters/chapter-komisan.html">Chapter 1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="latest_box">
+                        <a href="img/books/kingdom.jpg"><img src="img/books/kingdom.jpg" alt=""></a>
+                        <div class="title-chapter">
+                            <a class="latest_content_title" href="assets/mangapage/mangapage-Kingdom.php">Kingdom</a>
+                            <ul>
+                                <li>
+                                    <a href="/assets/chapters/chapter-kingdom.html">Chapter 3</a>
+                                </li>
+                                <li>
+                                    <a href="/assets/chapters/chapter-kingdom.html">Chapter 2</a>
+                                </li>
+                                <li>
+                                    <a href="/assets/chapters/chapter-kingdom.html">Chapter 1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="latest_box">
+                        <a href="img/books/berserk.jpg"><img src="img/books/berserk.jpg" alt=""></a>
+                        <div class="title-chapter">
+                            <a class="latest_content_title" href="#">BERSERK</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Chapter 3</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chapter 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chapter 1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="latest_box">
+                        <a href="img/books/berserk.jpg"><img src="img/books/berserk.jpg" alt=""></a>
+                        <div class="title-chapter">
+                            <a class="latest_content_title" href="#">BERSERK</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Chapter 3</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chapter 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chapter 1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="latest_box">
+                        <a href="img/books/berserk.jpg"><img src="img/books/berserk.jpg" alt=""></a>
+                        <div class="title-chapter">
+                            <a class="latest_content_title" href="#">BERSERK</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Chapter 3</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chapter 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chapter 1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="latest_box">
+                        <a href="img/books/berserk.jpg"><img src="img/books/berserk.jpg" alt=""></a>
+                        <div class="title-chapter">
+                            <a class="latest_content_title" href="#">BERSERK kjsadnjasndajksdkjasndkasjdknasdnasdnaskj
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="#">Chapter 3</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chapter 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chapter 1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="latest_box">
+                        <a href="img/books/berserk.jpg"><img src="img/books/berserk.jpg" alt=""></a>
+                        <div class="title-chapter">
+                            <a class="latest_content_title" href="#">BERSERK</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Chapter 3</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chapter 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chapter 1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!--! RANKING OF MANGA -->
+        <aside class="ranking">
+            <!-- topbar -->
+            <div class="rtopbar">
+                <h2>Ranking</h2>
+            </div>
+            <!--👌 CARDS -->
+            <div class="rank_box">
+                <div class="rank_image"><a href="img/books/berserk.jpg "><img src="img/books/berserk.jpg" alt=""></a>
+                </div>
+                <div class="chapter_contents">
+                    <a class="Tfont" class="title" href="assets/mangapage/mangapage.php">BERSERK</a>
+                    <ul>
+                        <!--  GENRES-->
+                        <li>Genre:</li>
+                        <li>Adventure, </li>
+                        <li>Fantasy, </li>
+                        <li>Horror, </li>
+                        <li>Mature, </li>
+                        <li>Seinen, </li>
+                        <li>Supernatural, </li>
+                        <li>Tragedy, </li>
+                    </ul>
+                    <div class="star-rating">
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">star_half</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="rank_box">
+                <div class="rank_image"><a href="img/books/gate.jpg "><img src="img/books/gate.jpg" alt=""></a>
+                </div>
+                <div class="chapter_contents">
+                    <a class="Tfont" class="title" href="assets/mangapage/mangapage-Gate.php">Gate - Jietai Kare No Chi
+                        Nite, Kaku Tatakeri</a>
+                    <ul>
+                        <!--  GENRES-->
+                        <li>Genre:</li>
+                        <li>action, </li>
+                        <li>Adventure, </li>
+                        <li>Comedy, </li>
+                        <li>Drama, </li>
+                        <li>Fantasy, </li>
+                        <li>Mature, </li>
+                        <li>Romance, </li>
+                        <li>Seinen, </li>
+                    </ul>
+                    <div class="star-rating">
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">star_half</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="rank_box">
+                <div class="rank_image"><a href="img/books/domestic-na-kanojo.jpg "><img
+                            src="img/books/domestic-na-kanojo.jpg" alt=""></a>
+                </div>
+                <div class="chapter_contents">
+                    <a class="Tfont" class="title" href="assets/mangapage/mangapage-Domestic.php">Domestic Na Kanojo</a>
+                    <ul>
+                        <!--  GENRES-->
+                        <li>Genre:</li>
+                        <li>Drama, </li>
+                        <li>Harem, </li>
+                        <li>Mature, </li>
+                        <li>Romance, </li>
+                        <li>School life, </li>
+                        <li>Shounen,</li>
+                    </ul>
+                    <div class="star-rating">
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">star_half</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="rank_box">
+                <div class="rank_image"><a href="img/books/komisan.jpg "><img src="img/books/komisan.jpg" alt=""></a>
+                </div>
+                <div class="chapter_contents">
+                    <a class="Tfont" class="title" href="assets/mangapage/mangapage-komisan.php">Komi-san wa Komyushou
+                        Desu</a>
+                    <ul>
+                        <!--  GENRES-->
+                        <li>Genre:</li>
+                        <li>Comedy, </li>
+                        <li>Romance, </li>
+                        <li>School, </li>
+                        <li>life, </li>
+                    </ul>
+                    <div class="star-rating">
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">star_half</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="rank_box">
+                <div class="rank_image"><a href="img/books/kingdom.jpg "><img src="img/books/kingdom.jpg" alt=""></a>
+                </div>
+                <div class="chapter_contents">
+                    <a class="Tfont" class="title" href="assets/mangapage/mangapage-Kingdom.php">Kingdom</a>
+                    <ul>
+                        <!--  GENRES-->
+                        <li>Genre:</li>
+                        <li>action, </li>
+                        <li>Adventure, </li>
+                        <li>Comedy, </li>
+                        <li>Drama, </li>
+                        <li>Historical, </li>
+                        <li>Martial arts, </li>
+                        <li>Romance, </li>
+                    </ul>
+                    <div class="star-rating">
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">star_half</span>
+                    </div>
+
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- ! FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <!-- ! ICONS FROM BOXICONS -->
+            <div class="icons">
+                <a href="https://www.facebook.com">
+                    <i class='bx bxl-facebook-circle'></i></a>
+                <a href="https://www.discord.com">
+                    <i class='bx bxl-discord-alt'></i></a>
+                <a href="https://www.reddit.com">
+                    <i class='bx bxl-reddit'></i></a>
+                <a href="https://github.com/Kyazs/MangaBato">
+                    <i class='bx bxl-github'></i></a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="assets/privacypolicy.php">Privacy Policy</a></li>
+                <li><a href="assets/terms.php">Terms of Service</a></li>
+                <li><a href="assets/aboutus.php">About us</a></li>
+            </ul>
+            <p>© 2024 - Present MangaBato</p>
+        </div>
+    </footer>
+    <script src="js/navbar.js"></script>
 </body>
+
 </html>
