@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,7 +27,6 @@
                         <input class="submit" type="submit" value="Login" src="">
                         <div id="error" style="color: red; font-size:15px;">
                             <?php
-                            session_start();
                             if (isset($_SESSION['error_message'])) {
                                 echo $_SESSION['error_message'];
                                 unset($_SESSION['error_message']); // Clear the error message from session

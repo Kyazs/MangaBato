@@ -19,16 +19,16 @@
                 <li><a href="../../index.html">
                         < Home</a>
                 </li>
-                <li><a href="../../publish.php">
+                <li><a href="../../assets/publisher/publish.php">
                         < Publish</a>
                 </li>
-                <li><a href="../../publisher/publish-manga.php">
+                <li><a href="../../assets/publisher/publish-manga.php">
                         < Publish Manga</a>
                 </li>
             </ul>
         </nav>
 
-        <form action="/assets/publisher/publish.php" method="post" enctype="multipart/form-data">
+        <form action="" method="post" enctype="multipart/form-data">
             <div class="container">
                 <div class="title">
                     <label for="title">Title: </label>
@@ -95,7 +95,7 @@
                 </div>
                 <br>
                 <div class="submitcontainer">
-                    <input class="submit" id="submitinput" type="submit" name="submit" value="Upload">
+                    <input onclick="alerts()" class="submit" id="submitinput" type="submit" name="submit" value="Upload">
                 </div>
             </div>
         </form>
@@ -130,6 +130,10 @@
                 $('label[for="chapterfile"]').text(fileName);
             });
         });
+
+        function alerts() {
+            alert("Manga Uploaded Sucessfully");
+        }
     </script>
 
 </body>

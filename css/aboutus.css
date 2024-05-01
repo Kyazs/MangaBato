@@ -1,7 +1,7 @@
 /* ! MAIN HEADER OF THE ABOUT US */
 main .aboutus-container {
     height: auto;
-    width: 100vw;
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
 }

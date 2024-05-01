@@ -3,53 +3,71 @@ CREATE DATABASE mangabato;
 USE mangabato;
 
 CREATE TABLE user (
-    user_id INT AUTO_INCREMENT,
-    username VARCHAR (255) NOT NULL,
-    email VARCHAR (255) NOT NULL,
-    password VARCHAR (255) NOT NULL,
-    registered_date VARCHAR (20) NOT NULL,
-    profile_Picture VARCHAR (255),
-    biography VARCHAR (255),
+    user_id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL UNIQUE,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    registration_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    profile_picture VARCHAR(255) NOT NULL,
+    biography TEXT NOT NULL,
     is_admin BOOLEAN DEFAULT FALSE,
-    is_deleted BOOLEAN DEFAULT FALSE,
-    CONSTRAINT pk_user_id PRIMARY KEY (user_id)
+    is_deleted BOOLEAN DEFAULT FALSE
 );
 
+CREATE TABLE manga_status (
+    manga_status_id INT AUTO_INCREMENT PRIMARY KEY,
+    status_name VARCHAR(50) NOT NULL,
+    description VARCHAR(255) NOT NULL
+);
 
-CREATE TABLE manga_submission (
-    manga_id INT AUTO_INCREMENT,
+CREATE TABLE manga_upload (
+    manga_id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT,
-    title VARCHAR (255) NOT NULL,
-    genre VARCHAR (50) NOT NULL,
-    type VARCHAR (20) NOT NULL,
-    status VARCHAR (20) DEFAULT 'pending',
-    synopsis VARCHAR (255) NOT NULL,
-    cover_img VARCHAR (255) NOT NULL,
-    submission_date VARCHAR (20) NOT NULL,
+    status_id INT,
+    title VARCHAR(255) NOT NULL,
+    type VARCHAR(50) NOT NULL,
+    cover_img VARCHAR(255) NOT NULL,
+    upload_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     is_deleted BOOLEAN DEFAULT FALSE,
-    CONSTRAINT pk_manga_id PRIMARY KEY (manga_id),
-    CONSTRAINT fk_user_id FOREIGN KEY (user_id) REFERENCES user(user_id)
+    CONSTRAINT fk_user_id FOREIGN KEY (user_id) REFERENCES user(user_id),
+    CONSTRAINT fk_manga_upload_status_id FOREIGN KEY (status_id) REFERENCES manga_status(manga_status_id)
+);
+
+CREATE TABLE genre (
+    genre_id INT AUTO_INCREMENT PRIMARY KEY,
+    genre_name VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE manga_genre (
+    -- manga_genre_id INT PRIMARY KEY AUTO_INCREMENT,
+    manga_id INT,
+    genre_id INT,
+    CONSTRAINT fk_manga_genre_manga_id FOREIGN KEY (manga_id) REFERENCES manga_upload(manga_id),
+    CONSTRAINT fk_manga_genre_genre_id FOREIGN KEY (genre_id) REFERENCES genre(genre_id)
+);
+
+CREATE TABLE chapter_status (
+    chapter_status_id INT AUTO_INCREMENT PRIMARY KEY,
+    chapter_name VARCHAR(50) NOT NULL,
+    description VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE chapter (
     chapter_id INT AUTO_INCREMENT,
     manga_id INT,
-    title VARCHAR (255) NOT NULL,
-    release_date VARCHAR (20) NOT NULL,
-    number_of_pages INT NOT NULL,
+    chapter_status INT,
+    chapter_number INT NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    release_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     is_deleted BOOLEAN DEFAULT FALSE,
-    CONSTRAINT pk_chapter_n_manga_id PRIMARY KEY (chapter_id, manga_id),
-    CONSTRAINT fk_manga_id FOREIGN KEY (manga_id) REFERENCES manga_submission(manga_id)
+    PRIMARY KEY (chapter_id, manga_id),
+    CONSTRAINT fk_chapter_manga_id FOREIGN KEY (manga_id) REFERENCES manga_upload(manga_id),
+    CONSTRAINT fk_chapter_status FOREIGN KEY (chapter_status) REFERENCES chapter_status(chapter_status_id)
 );
 
-CREATE TABLE page (
-    page_id INT AUTO_INCREMENT,
+CREATE TABLE image (
+    image_id INT AUTO_INCREMENT PRIMARY KEY,
     chapter_id INT,
-    page_number INT NOT NULL,
-    image_url VARCHAR (255),
-    CONSTRAINT pk_page_id PRIMARY KEY (page_id),
-    CONSTRAINT fk_chapter_id FOREIGN KEY (chapter_id) REFERENCES chapter(chapter_id)
+    image_url VARCHAR(255) NOT NULL,
+    CONSTRAINT fk_image_chapter_id FOREIGN KEY (chapter_id) REFERENCES chapter(chapter_id)
 );
-
-
-SHOW TABLES;
