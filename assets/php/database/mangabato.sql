@@ -8,7 +8,7 @@ CREATE TABLE user (
     email VARCHAR(255) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL,
     registration_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    profile_picture VARCHAR(255) NOT NULL,
+    profile_picture  VARCHAR(255),
     biography TEXT NOT NULL,
     is_admin BOOLEAN DEFAULT FALSE,
     is_deleted BOOLEAN DEFAULT FALSE
@@ -25,9 +25,10 @@ CREATE TABLE manga_upload (
     user_id INT,
     status_id INT,
     title VARCHAR(255) NOT NULL,
-    type VARCHAR(50) NOT NULL,
+    type enum ('Manga', 'Manhwa', 'Manhua') NOT NULL,
     cover_img VARCHAR(255) NOT NULL,
     upload_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    synopsis TEXT,
     is_deleted BOOLEAN DEFAULT FALSE,
     CONSTRAINT fk_user_id FOREIGN KEY (user_id) REFERENCES user(user_id),
     CONSTRAINT fk_manga_upload_status_id FOREIGN KEY (status_id) REFERENCES manga_status(manga_status_id)
@@ -68,6 +69,6 @@ CREATE TABLE chapter (
 CREATE TABLE image (
     image_id INT AUTO_INCREMENT PRIMARY KEY,
     chapter_id INT,
-    image_url VARCHAR(255) NOT NULL,
+    image_url VARCHAR(255),
     CONSTRAINT fk_image_chapter_id FOREIGN KEY (chapter_id) REFERENCES chapter(chapter_id)
 );
