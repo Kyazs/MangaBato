@@ -1,5 +1,7 @@
 This MANGABATO repository is built for the Final Project in cc128.
 
+[Demo Link](https://kyazs.github.io/MangaBato/)
+
 Welcome to MangaBato, your ultimate destination for manga reading and publishing! MangaBato is not just a website; it's a vibrant community of manga enthusiasts, creators, and readers coming together to celebrate the art of storytelling through manga.
 
 Our purpose at MangaBato is twofold: to provide manga fans with a seamless and enjoyable reading experience, and to empower aspiring manga artists to share their creations with the world.
